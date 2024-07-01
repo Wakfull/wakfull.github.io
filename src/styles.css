@@ -1,0 +1,47 @@
+
+:root{
+    /* Background colors*/
+    --bgColor : #faf9f6;/* #1e293d; */
+    --secondaryBgColor : #2cb1c9; /* #3e425e;*/
+
+    /* Text colors */
+    --mainTextColor : black;
+    --secondaryTextcolor : white;
+
+    /* Highlight colors */
+    --mainHighlightColor : #1e53a1 ;/* #F1F1F1*/
+    --secondaryHighlightColor : #272727;
+
+    /* Fonts */
+    --baseFont : "Times New Roman", Times, serif;
+    --impactFont : Impact, "Times New Roman", Times, serif;
+
+
+    /* Items rarity colors*/
+    --white : #ffffff;
+    --green : #37a823;
+    --orange : #e69d00;
+    --yellow : #ffd438;
+    --mauve : #460960;
+    --violet : #9a6fb1;
+    --red : #c03b44;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+  
+app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
