@@ -12,15 +12,15 @@ A terme il y aura des :
 
 
 ### Prochaines étapes
-[x] avant de se stuff
-[x] stuffs20
-[x] stuffs50
-[ ] stuffs80
-[ ] stuffs110
-[ ] stuffs140
-[ ] stuffs170
-[ ] stuffs200
-[ ] stuffs230
+- [x] avant de se stuff
+- [x] stuffs20
+- [x] stuffs50
+- [ ] stuffs80
+- [ ] stuffs110
+- [ ] stuffs140
+- [ ] stuffs170
+- [ ] stuffs200
+- [ ] stuffs230
 
 - [ ] Quêtes mercenaires
     - [ ] Amakna
