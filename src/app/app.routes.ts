@@ -12,6 +12,7 @@ import { Stuffs230Component } from './components/stuffs/stuffs230/stuffs230.comp
 import { AboutComponent } from './components/about/about.component';
 import { BeforeGearingUpComponent } from './components/stuffs/before-gearing-up/before-gearing-up.component';
 import { StuffPagesLayoutComponent } from './components/stuffs/stuff-pages-layout/stuff-pages-layout.component';
+import { HowToStreamComponent } from './components/how-to-stream/how-to-stream.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },
@@ -54,7 +55,7 @@ export const routes: Routes = [
             { path:'', component : Stuffs230Component },
         ] },
     { path:'about', component : AboutComponent },
-    
+    { path:'howToStream', component : HowToStreamComponent },
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
 ];

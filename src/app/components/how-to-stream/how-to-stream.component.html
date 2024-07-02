@@ -1,0 +1,84 @@
+
+<div class="container">
+    <div class="content">
+        <div >
+            <h2 class="text-center">Comment stream / enregistrer Wakfu avec Obs</h2>
+            <h5 class="text-center">Streamlabs c'est la même chose. Idem pour Discord.</h5>
+            <br>
+            <h4>Les problèmes récurrents lors des tentatives de stream Wakfu :</h4>
+                <ul>
+                    <li>
+                        Le stream du jeu qui reste figé sur la première frame (le jeu fonctionne, le stream fonctionne pas)
+                    </li>
+                    <li>
+                        Le stream reste en écran noir
+                    </li>
+                    <li>
+                        Après un court moment (moins de 2 mins en général), la mémoire de votre ordi se remplit jusqu'à 100%, puis selon votre chance soit votre ordi freeze, soit il plante. #fuiteDeMémoire
+                    </li>
+                        <ul>
+                            <li>
+                                Ceci est tout particulièrement vrai si vous essayez de stream le jeu depuis Discord
+                            </li>
+                        </ul>
+                    <li>
+                        Le stream est "haché", ça ressemble à un powerpoint (sans qu'il n'y ait de problème au niveau de la connection ou des settings du stream en lui-même)
+                    </li>
+                </ul>
+        </div>
+
+        <div class="content">
+            Il y a deux solutions possibles :<br>
+            <ul>
+                <li>
+                    1. Stream le jeu en windowed
+                    <ul>
+                        <li>
+                            Ceci est la façon de faire conseillée. Le seul désavantage étant que l'on voit la bordure de la fenêtre de Wakfu sur le stream. Le plus simple si cela vous dérange vraiment est d'utiliser un overlay pour la cacher.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    2. Stream votre écran physique en entier (non-recommandé)
+                </li>
+                <ul>
+                    <li>
+                        <b>Attention</b>, lorsque vous streamez votre <b>écran en entier</b>, si vous faites des alt-tab tout le monde peut tout voir. Si vous choissisez cette option, faites très attention à ce que vous faites.
+                    </li>
+                </ul>
+            </ul>
+
+            <h4>Solution 1 - Stream le jeu en Windowed</h4>
+                Dans Wakfu allez dans :
+                <ul>
+                    <li>
+                        options => Video => Affichage
+                        <ul>
+                            <li>
+                                => Choissez "Fenêtré" ("Windowed" en anglais)
+                                <ul>
+                                    <li>
+                                        Attention, il s'agit bien de "Fenêtré" et non pas de "Plein écran fenêtré"
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                => Activez l'option "Désactiver le ralentissement en arrière-plan"
+                                <ul>
+                                    <li>
+                                        optionnel, mais ceci évitera d'avoir le jeu qui lag visuellement sur le stream quand vous faites des alt-tab, ou si vous jouez avec deux comptes
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                Dans OBS/Streamlabs, utilisez une capture de fenêtre ("Window capture" en anglais). La "capture de jeu" ("Game capture") ne fonctionnera pas correctement, n'y touchez pas.<br>
+                Vous devriez à présent être en mesure de stream Wakfu ! Bon amusement ! <br>
+                <br>
+            <h4>Solution 2 - Stream l'écran entier</h4>
+                Dans OBS (ou streamlabs) ajoutez une capture d'écran et selectionnez l'écran que vous utilisez pour le jeu. <br>
+                Il n'y a rien d'autre à faire, mais faites très attention à ce que vous montrez, absolument tout ce que vous voyez sur cet écran, le stream le voit aussi. Attention aux alt-tabs sur les dm.<br>
+        </div>
+    </div>
+</div>

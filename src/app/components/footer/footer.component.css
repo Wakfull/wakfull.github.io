@@ -1,4 +1,7 @@
-  
+
+.padding{
+    min-height : 3rem;
+}
 .footer {
     background-color: var(--secondaryBgColor);
     padding: 1rem 0;
