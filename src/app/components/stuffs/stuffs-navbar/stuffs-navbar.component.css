@@ -1,6 +1,15 @@
 
+.navbar{
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
 .nav-item{
     border-right: 1px solid lightgrey;
     min-width: 5rem;
     text-align: center;
+}
+
+.navbar-nav .nav-item :hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }

@@ -1,5 +1,10 @@
+
+.navbar{
+  box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
 .navbar-brand img {
     /* Adjust the size of the icon if necessary */
     max-width: 100%;
     height: auto;
-  }
+}
