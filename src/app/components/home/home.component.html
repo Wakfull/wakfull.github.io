@@ -1,6 +1,23 @@
 
     <div class="container">
         <div class="content">
-            Welcome Home :)     
+            <div class="text-center">
+                <h2> Bienvenue sur Wakfull ! </h2>
+                <p>
+                Le but de Wakfull est de proposer une aide aux joueurs débutants et chevronnés en partageant des guides, stuffs ou autres informations autours du jeu WAKFU !
+                </p>
+            </div>
+
+            <div class="row">
+                <app-preview class="col-md-4 mb-4"
+                    *ngFor="let preview of previews"
+                        [title]="preview.title"
+                        [description]="preview.description"
+                        [link]="preview.link"
+                        [backgroundImage]="preview.backgroundImage"
+                    >
+                </app-preview>
+            </div>
+            
         </div>
     </div>

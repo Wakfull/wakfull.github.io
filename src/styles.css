@@ -2,7 +2,7 @@
 :root{
     /* Background colors*/
     --bgColor : #faf9f6;/* #1e293d; */
-    --secondaryBgColor : #2cb1c9; /* #3e425e;*/
+    --secondaryBgColor : rgb(33, 37, 41); /* #3e425e;*/
 
     /* Text colors */
     --mainTextColor : black;

@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { WakfuComponent } from './components/wakfu/wakfu.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { Stuffs20Component } from './components/stuffs/stuffs20/stuffs20.component';
 import { Stuffs50Component } from './components/stuffs/stuffs50/stuffs50.component';
@@ -16,7 +15,6 @@ import { StuffPagesLayoutComponent } from './components/stuffs/stuff-pages-layou
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },
-    { path:'wakfu', component : WakfuComponent },
     
     { path:'beforeGearing', component : StuffPagesLayoutComponent,
         children :[
