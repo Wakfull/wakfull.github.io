@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "docs",
-            "baseHref": "/my-angular-app/",
+            "baseHref": "/",
             "index": {
               "input": "src/index.html",
               "output": "index.html"
