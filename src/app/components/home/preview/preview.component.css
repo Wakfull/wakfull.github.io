@@ -37,6 +37,10 @@
     white-space: nowrap;
 }
 
+.card-body{
+    background-color: white;
+}
+
 .card-text{
     overflow: hidden;
     text-overflow: ellipsis;

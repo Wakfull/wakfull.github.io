@@ -34,6 +34,7 @@ html, body{
 body {
     display: flex;
     flex-direction: column;
+    background-color: #fefcf5;/* #FFF5EE;*/
 }
   
 app-root {
