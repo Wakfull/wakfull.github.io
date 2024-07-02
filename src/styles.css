@@ -46,3 +46,9 @@ app-root {
 .content {
     flex: 1;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
