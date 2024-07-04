@@ -22,6 +22,7 @@ export class HomeComponent {
     { title: 'Stuffs 20', description: "Besoin de stuffs pour débuter, reprendre ou tryhard ? Commence  ici !", link: '/stuff20', backgroundImage: this.bouftouRoyalUrl},
     { title: 'Stuffs 50', description: "Le donjon Moogr et la tour minérale n'attendent que toi !", link: '/stuff50', backgroundImage: this.royalMoogrUrl},
     { title: 'Stuffs 110', description: "Pour aborder sereinement les BU et les super-vilains !", link: '/stuff110', backgroundImage: this.magmogImageUrl },
+    { title: 'La Modulation', description: "La modulation : quoi, pourquoi et comment.", link: '/modulation' },
   ];
   
 }
