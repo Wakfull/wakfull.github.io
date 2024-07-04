@@ -13,10 +13,10 @@ import { AboutComponent } from './components/about/about.component';
 import { BeforeGearingUpComponent } from './components/stuffs/before-gearing-up/before-gearing-up.component';
 import { StuffPagesLayoutComponent } from './components/stuffs/stuff-pages-layout/stuff-pages-layout.component';
 import { HowToStreamComponent } from './components/how-to-stream/how-to-stream.component';
+import { ModulationComponent } from './components/modulation/modulation.component';
 
 export const routes: Routes = [
-    { path:'home', component : HomeComponent },
-    
+    { path:'home', component : HomeComponent },    
     { path:'beforeGearing', component : StuffPagesLayoutComponent,
         children :[
             { path:'', component : BeforeGearingUpComponent },
@@ -54,8 +54,10 @@ export const routes: Routes = [
         children :[
             { path:'', component : Stuffs230Component },
         ] },
-    { path:'about', component : AboutComponent },
+    { path:'home', component : HomeComponent },
     { path:'howToStream', component : HowToStreamComponent },
+    { path:'modulation', component : ModulationComponent },
+    { path:'about', component : AboutComponent },
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
 ];
