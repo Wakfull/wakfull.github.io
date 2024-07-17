@@ -12,6 +12,7 @@ import { PreviewComponent } from './preview/preview.component';
 })
 export class HomeComponent {
   
+  thinkingElio = "https://i.imgur.com/wxZRTLQ.png";
   bouftouRoyalUrl = "https://i.imgur.com/CUl0FDk.png";
   royalMoogrUrl ="https://i.imgur.com/DNyK0ep.png";
   dardevilImageUrl = "https://i.imgur.com/RvZ3Ndb.png";

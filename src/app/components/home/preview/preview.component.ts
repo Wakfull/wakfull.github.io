@@ -18,5 +18,5 @@ export class PreviewComponent {
   defaultTitle:string = "Sram stole this title, but we're sure it used to be great!";
   defaultDescription:string = "My crumpets, then this description ?! This bloody Sram god can't keep getting away stealing everything ! ";
   defaultLink:string = "/404";
-  defaultImage:string = ""; // TODO set default "image not found image" for broken/missing links. Preferably a local image.
+  defaultImage:string = "https://i.imgur.com/wxZRTLQ.png"; // TODO : Preferably a local image.
 }
