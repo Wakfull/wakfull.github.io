@@ -22,5 +22,7 @@ A terme il y aura des :
 - [ ] stuffs200
 - [ ] stuffs230
 
+- [x] liens vers les fansites utiles (Method, Zenith, ...)
+
 - [ ] Quêtes mercenaires
     - [ ] Amakna
