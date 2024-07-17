@@ -15,6 +15,7 @@ import { StuffPagesLayoutComponent } from './components/stuffs/stuff-pages-layou
 import { HowToStreamComponent } from './components/how-to-stream/how-to-stream.component';
 import { ModulationComponent } from './components/modulation/modulation.component';
 import { ThemesComponent } from './components/themes/themes.component';
+import { ExternalResourcesComponent } from './components/external-resources/external-resources.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -59,6 +60,7 @@ export const routes: Routes = [
     { path:'howToStream', component : HowToStreamComponent },
     { path:'modulation', component : ModulationComponent },
     { path:'about', component : AboutComponent },
+    { path:'extResources', component : ExternalResourcesComponent },
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
 ];
