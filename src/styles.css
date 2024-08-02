@@ -47,6 +47,12 @@ app-root {
     flex: 1;
     padding-bottom: 2rem;
 }
+.bannerContent {
+    padding: 1rem;
+    border: 1px rgba(0, 0, 0, 20%) solid;
+    border-radius: 0.3rem;
+    background-color: rgba(27, 27, 27, 0.05);
+}
 
 img {
     max-width: 100%;
