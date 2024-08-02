@@ -2,11 +2,11 @@
 :root{
     /* Background colors*/
     --bgColor : #faf9f6;/* #1e293d; */
-    --secondaryBgColor : rgb(33, 37, 41); /* #3e425e;*/
+    --secondaryBgColor : rgb(33, 37, 41); /* #3e425e;*/ 
 
     /* Text colors */
     --mainTextColor : black;
-    --secondaryTextcolor : white;
+    --secondaryTextcolor : rgba(255, 255, 255, 0.8);
 
     /* Highlight colors */
     --mainHighlightColor : #1e53a1 ;/* #F1F1F1*/
@@ -52,13 +52,26 @@ app-root {
     display: flex;
     flex-direction: column;
     gap : 1rem;
+    padding : 1rem;
+}
+
+.textcontentContainer{
+  background-color: white;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .textContent {
-    background-color: white;
-    padding: 1rem;
+    padding-top: 0;
+    padding : 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.textContentTitle{
+    background-color: var(--secondaryBgColor) ;
+    color: var(--secondaryTextcolor);
+    padding: 0.5rem;
 }
 
 .bannerContent {
