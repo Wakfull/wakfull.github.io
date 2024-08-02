@@ -2,11 +2,11 @@
     <div class="preview-cards-home">
          <a [routerLink]="link ? link : defaultLink">
             <div class="card h-100">
-                <div class="card-title-decoration bg-dark" [ngStyle]="{'background-image': 'url(' + backgroundImage || defaultImage + ')'}"></div>
+                <div class="card-title-decoration bg-dark" [ngStyle]="{'background-image': 'url(' + (backgroundImage ? backgroundImage : defaultImage) + ')'}"></div>
                 <div class="card-body">
-                    <h5 class="card-title text-center">{{ title || defaultTitle}} </h5>
+                    <h5 class="card-title text-center">{{ title ? title : defaultTitle}} </h5>
                     <div class="card-text">
-                        {{ description || defaultDescription }}
+                        {{ description ? description : defaultDescription }}
                     </div>
                 </div>
             </div>
