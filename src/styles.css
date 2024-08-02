@@ -47,6 +47,20 @@ app-root {
     flex: 1;
     padding-bottom: 2rem;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+}
+
+.textContent {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
 .bannerContent {
     padding: 1rem;
     border: 1px rgba(0, 0, 0, 20%) solid;
