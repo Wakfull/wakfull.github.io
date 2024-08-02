@@ -16,7 +16,7 @@ export class HomeComponent {
   bouftouRoyalUrl = "https://i.imgur.com/CUl0FDk.png";
   royalMoogrUrl ="https://i.imgur.com/DNyK0ep.png";
   dardevilImageUrl = "https://i.imgur.com/RvZ3Ndb.png";
-  magmogImageUrl ="https://i.imgur.com/JR9e88l.png"
+  magmogImageUrl ="https://i.imgur.com/JR9e88l.png";
 
 
   previews: {title?:string,description?:string, link?:string, backgroundImage?:string}[] = [
