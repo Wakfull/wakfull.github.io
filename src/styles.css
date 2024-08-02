@@ -45,6 +45,7 @@ app-root {
 
 .content {
     flex: 1;
+    padding-bottom: 2rem;
 }
 
 img {

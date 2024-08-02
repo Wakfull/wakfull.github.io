@@ -16,6 +16,7 @@ import { HowToStreamComponent } from './components/how-to-stream/how-to-stream.c
 import { ModulationComponent } from './components/modulation/modulation.component';
 import { ThemesComponent } from './components/themes/themes.component';
 import { ExternalResourcesComponent } from './components/external-resources/external-resources.component';
+import { EldersWisdomComponent } from './components/elders-wisdom/elders-wisdom.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -61,6 +62,7 @@ export const routes: Routes = [
     { path:'modulation', component : ModulationComponent },
     { path:'about', component : AboutComponent },
     { path:'extResources', component : ExternalResourcesComponent },
+    { path:'eldersWisdom', component : EldersWisdomComponent },
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
 ];
