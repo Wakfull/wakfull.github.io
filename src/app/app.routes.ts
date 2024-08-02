@@ -17,6 +17,7 @@ import { ModulationComponent } from './components/modulation/modulation.componen
 import { ThemesComponent } from './components/themes/themes.component';
 import { ExternalResourcesComponent } from './components/external-resources/external-resources.component';
 import { EldersWisdomComponent } from './components/elders-wisdom/elders-wisdom.component';
+import { KamasTipsComponent } from './components/kamas-tips/kamas-tips.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -63,6 +64,7 @@ export const routes: Routes = [
     { path:'about', component : AboutComponent },
     { path:'extResources', component : ExternalResourcesComponent },
     { path:'eldersWisdom', component : EldersWisdomComponent },
+    { path:'kamas', component : KamasTipsComponent },
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
 ];
