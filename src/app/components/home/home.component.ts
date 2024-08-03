@@ -29,5 +29,6 @@ export class HomeComponent {
     { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation" },
     { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes"},
   ];
-  
+
+
 }
