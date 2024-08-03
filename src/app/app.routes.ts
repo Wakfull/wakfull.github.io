@@ -18,6 +18,9 @@ import { ThemesComponent } from './components/themes/themes.component';
 import { ExternalResourcesComponent } from './components/external-resources/external-resources.component';
 import { EldersWisdomComponent } from './components/elders-wisdom/elders-wisdom.component';
 import { KamasTipsComponent } from './components/kamas-tips/kamas-tips.component';
+import { RiftOverviewComponent } from './components/rifts/rift-overview/rift-overview.component';
+import { RiftTainelaComponent } from './components/rifts/rift-tainela/rift-tainela.component';
+import { RiftSufokiaComponent } from './components/rifts/rift-sufokia/rift-sufokia.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -65,6 +68,9 @@ export const routes: Routes = [
     { path:'extResources', component : ExternalResourcesComponent },
     { path:'eldersWisdom', component : EldersWisdomComponent },
     { path:'kamas', component : KamasTipsComponent },
+    { path:'rift', component : RiftOverviewComponent},
+    { path:'rift-tainela', component : RiftTainelaComponent},
+    { path:'rift-sufokia', component : RiftSufokiaComponent},
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
 ];
