@@ -21,6 +21,7 @@ import { KamasTipsComponent } from './components/kamas-tips/kamas-tips.component
 import { RiftOverviewComponent } from './components/rifts/rift-overview/rift-overview.component';
 import { RiftTainelaComponent } from './components/rifts/rift-tainela/rift-tainela.component';
 import { RiftSufokiaComponent } from './components/rifts/rift-sufokia/rift-sufokia.component';
+import { ClassesGameplayComponent } from './components/classes-gameplay/classes-gameplay.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -61,6 +62,9 @@ export const routes: Routes = [
         children :[
             { path:'', component : Stuffs230Component },
         ] },
+    
+    { path:'classes', component : ClassesGameplayComponent },
+
     { path:'themes', component : ThemesComponent },
     { path:'howToStream', component : HowToStreamComponent },
     { path:'modulation', component : ModulationComponent },
@@ -68,6 +72,7 @@ export const routes: Routes = [
     { path:'extResources', component : ExternalResourcesComponent },
     { path:'eldersWisdom', component : EldersWisdomComponent },
     { path:'kamas', component : KamasTipsComponent },
+
     { path:'rift', component : RiftOverviewComponent},
     { path:'rift-tainela', component : RiftTainelaComponent},
     { path:'rift-sufokia', component : RiftSufokiaComponent},
