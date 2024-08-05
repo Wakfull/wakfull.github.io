@@ -15,7 +15,10 @@ export class ClassesGameplayComponent {
   osaIconUrl ="https://i.imgur.com/UKq7xIP.jpeg";
 
   previews: {title?:string,description?:string, link?:string, backgroundImage?:string}[] = [
-    { title: "Elio CATACLYSME", link: "/themes", backgroundImage : this.thinkingElio},
-    { title: "Osa DRAGON", link: "/themes", backgroundImage : this.osaIconUrl},
-  ];
-}
+      { title: "Elio CATACLYSME", link: "/elioMelee", backgroundImage : this.thinkingElio},
+      { title: "Elio Distance", link: "/elioDist", backgroundImage : this.thinkingElio},
+      { title: "Osa DRAGON", link: "/osaDragon", backgroundImage : this.osaIconUrl},
+      { title: "Osa Support", link: "/osaSupport", backgroundImage : this.osaIconUrl},
+    ]
+  }
+  

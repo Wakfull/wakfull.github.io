@@ -22,6 +22,11 @@ import { RiftOverviewComponent } from './components/rifts/rift-overview/rift-ove
 import { RiftTainelaComponent } from './components/rifts/rift-tainela/rift-tainela.component';
 import { RiftSufokiaComponent } from './components/rifts/rift-sufokia/rift-sufokia.component';
 import { ClassesGameplayComponent } from './components/classes-gameplay/classes-gameplay.component';
+import { ElioMeleeComponent } from './components/classes-gameplay/Elio/elio-melee/elio-melee.component';
+import { ElioDistComponent } from './components/classes-gameplay/Elio/elio-dist/elio-dist.component';
+import { OsaDragonComponent } from './components/classes-gameplay/Osa/osa-dragon/osa-dragon.component';
+import { OsaSupportComponent } from './components/classes-gameplay/Osa/osa-support/osa-support.component';
+import { EnchantementComponent } from './components/enchantement/enchantement.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -64,6 +69,10 @@ export const routes: Routes = [
         ] },
     
     { path:'classes', component : ClassesGameplayComponent },
+    { path:'elioMelee', component : ElioMeleeComponent },
+    { path:'elioDist', component : ElioDistComponent },
+    { path:'osaDragon', component : OsaDragonComponent },
+    { path:'osaSupport', component : OsaSupportComponent },
 
     { path:'themes', component : ThemesComponent },
     { path:'howToStream', component : HowToStreamComponent },
@@ -72,6 +81,7 @@ export const routes: Routes = [
     { path:'extResources', component : ExternalResourcesComponent },
     { path:'eldersWisdom', component : EldersWisdomComponent },
     { path:'kamas', component : KamasTipsComponent },
+    { path:'enchant', component : EnchantementComponent },
 
     { path:'rift', component : RiftOverviewComponent},
     { path:'rift-tainela', component : RiftTainelaComponent},
