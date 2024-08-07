@@ -23,7 +23,6 @@ export class HomeComponent {
   previews: {title?:string,description?:string, link?:string, backgroundImage?:string}[] = [
     { title: "Bien débuter", description: "Tout ce que j'aurais aimé savoir quand j'ai commencé en vrac !", link: "/eldersWisdom",backgroundImage: this.thinkingElio },
     { title: "Astuces kamas", description: "Des astuces kamas en vrac !", link: "/kamas", backgroundImage: this.kamasSymbolImageUrl },
-    { title: "Presentation de gameplays", description: "Découvrez d'autres façons de jouer!", link: "/classes"},
 
     { title: "Stuffs 20", description: "Besoin de stuffs pour débuter, reprendre ou tryhard ? Commence  ici !", link: "/stuff20", backgroundImage: this.bouftouRoyalUrl},
     { title: "Stuffs 50", description: "Le donjon Moogr et la tour minérale n'attendent que toi !", link: "/stuff50", backgroundImage: this.royalMoogrUrl},
@@ -33,6 +32,7 @@ export class HomeComponent {
     { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes"},
     { title: "L'enchantement", description: "Les bases de l'enchantement", link: "/enchant"},
   ];
+  //     { title: "Presentation de gameplays", description: "Découvrez d'autres façons de jouer!", link: "/classes"},
 
 
 }
