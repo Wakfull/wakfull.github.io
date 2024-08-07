@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class EnchantementComponent {
 
+  imgExLardanteUrl = "https://i.imgur.com/xa4xOjk.png";
 }
