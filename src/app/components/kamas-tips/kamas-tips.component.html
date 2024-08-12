@@ -1,6 +1,8 @@
 <div class="container">
     <h2 class="text-center">Astuces kamas en vrac</h2>
 
+<!--  <a href="#ref1"> Ref 1 link </a>-->
+
     <div class="textcontentContainer">
         <div class="textContentTitle">Préface</div>
         <div class="textContent">
@@ -15,6 +17,20 @@
     </div>
 
     <div class="textcontentContainer">
+        <div class="textContentTitle">Sommaire</div>
+        <div class="textContent">
+            <ul>
+                <li><a [routerLink]="[]" fragment="achatCraftVente">Achat, Craft, et revente</a></li>
+                <li><a [routerLink]="[]" fragment="farmSteles">Farm steles</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="achatCraftVente"></span>
         <div class="textContentTitle">Achat, Craft, et revente</div>
         <div class="textContent">
             <p>
@@ -341,6 +357,7 @@
     </div>
 
     <div class="textcontentContainer">
+        <span id="farmSteles"></span>
         <div class="textContentTitle">Farm stèles</div>
         <div class="textContent">
             <p> Coming soon ™ </p>
