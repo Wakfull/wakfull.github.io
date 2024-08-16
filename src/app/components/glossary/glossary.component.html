@@ -11,14 +11,20 @@
             <p>
                 Si vous pensez qu'un terme ou une abréviation est manquante, mal définie, ou devrait être ajoutée, votre contribution est bienvenue sur le Discord ou sur le Stream.
             </p>
+            <p>
+                Rappel : CTRL+F dans le navigateur pour chercher un mot.
+            </p>
         </div>
     </div>
 
     <div class="textcontentContainer">
         <div class="textContentTitle">Glossaire</div>
+        <div class="searchInput text-center">
+                Chercher un terme : <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (ngModelChange)="filterList()" />
+        </div>
         <div class="textContent">
             <ul>
-            <div class="glossaryWordList" *ngFor="let item of wordList">
+            <div class="glossaryWordList" *ngFor="let item of filteredWordList">
                 <li> <strong>{{ item.word }}</strong>: {{ item.definition }} </li>
               </div>
             </ul>
