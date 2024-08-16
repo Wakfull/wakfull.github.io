@@ -31,6 +31,7 @@ export class HomeComponent {
     { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation" },
     { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes"},
     { title: "L'enchantement", description: "Les bases de l'enchantement", link: "/enchant"},
+    { title: "Glossaire", description: "un mot ou une abréviation inconnue ? Plus maintenant !", link: "/glossary"},
   ];
   //     { title: "Presentation de gameplays", description: "Découvrez d'autres façons de jouer!", link: "/classes"},
 

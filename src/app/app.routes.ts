@@ -27,6 +27,7 @@ import { ElioDistComponent } from './components/classes-gameplay/Elio/elio-dist/
 import { OsaDragonComponent } from './components/classes-gameplay/Osa/osa-dragon/osa-dragon.component';
 import { OsaSupportComponent } from './components/classes-gameplay/Osa/osa-support/osa-support.component';
 import { EnchantementComponent } from './components/enchantement/enchantement.component';
+import { GlossaryComponent } from './components/glossary/glossary.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -82,6 +83,7 @@ export const routes: Routes = [
     { path:'eldersWisdom', component : EldersWisdomComponent },
     { path:'kamas', component : KamasTipsComponent },
     { path:'enchant', component : EnchantementComponent },
+    { path:'glossary', component : GlossaryComponent },
 
     { path:'rift', component : RiftOverviewComponent},
     { path:'rift-tainela', component : RiftTainelaComponent},

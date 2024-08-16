@@ -1,0 +1,27 @@
+
+<div class="container">
+    <h2 class="text-center">Glossaire</h2>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Contenu</div>
+        <div class="textContent">
+            <p> 
+                Le but de ce glossaire est d'aider les joueurs débutants en répertorierant l'ensemble des termes et abréviations spécifiques à Wakfu qu'ils peuvent rencontrer en jeu.
+            </p>
+            <p>
+                Si vous pensez qu'un terme ou une abréviation est manquante, mal définie, ou devrait être ajoutée, votre contribution est bienvenue sur le Discord ou sur le Stream.
+            </p>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Glossaire</div>
+        <div class="textContent">
+            <ul>
+            <div class="glossaryWordList" *ngFor="let item of wordList">
+                <li> <strong>{{ item.word }}</strong>: {{ item.definition }} </li>
+              </div>
+            </ul>
+        </div>
+    </div>
+</div>
