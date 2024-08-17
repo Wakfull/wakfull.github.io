@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { GlossaryService } from '../../services/glossary.service';
+import { GlossaryService } from './glossary.service';
 
 @Component({
   selector: 'app-glossary',
@@ -18,7 +18,7 @@ export class GlossaryComponent {
   filteredWordList: { word: string, definition: string }[] = []; // List containing the results after user uses the input to search for a word (he searchTerm)
   wordList: { word:string, definition:string }[] = [];
 
-  // Reminder : sorting in constructor rather than onInit because that way it's statically generated when building. This avoids having to have the client sort the array every single time the page loads.
+  // Reminder : sorting in constructor rather than onInit because that way the starting list is statically generated once when building. This avoids having to have the client sort the array every single time the page first loads.
   constructor(private glossaryServ: GlossaryService){
     this.wordList = this.glossaryServ.getWordList();
     this.sortWordList();
