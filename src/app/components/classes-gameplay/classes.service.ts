@@ -50,7 +50,7 @@ export class ClassesService {
         maleImgUrl:"https://i.imgur.com/Do6UqWL.png",
         femaleImgUrl:"https://i.imgur.com/E9FDKBz.png"
       },
-      "Hupper" :{
+      "Huppermage" :{
         maleImgUrl:"https://i.imgur.com/EkcDAuv.png",
         femaleImgUrl:"https://i.imgur.com/BWtJlCP.png"
       },

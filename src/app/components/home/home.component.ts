@@ -31,9 +31,9 @@ export class HomeComponent {
     { title: "Astuces kamas", description: "Des astuces kamas en vrac !", link: "/kamas", backgroundImage: this.kamasSymbolImageUrl },
     { title: "Glossaire", description: "Mot ou abréviation inconnue au bataillon ? Plus maintenant !", link: "/glossary", backgroundImage : this.featherImageUrl},
 
-    { title: "Stuffs 20", description: "Besoin de stuffs pour débuter, reprendre ou tryhard ? Commence  ici !", link: "/stuff20", backgroundImage: this.bouftouRoyalUrl },
-    { title: "Stuffs 50", description: "Le donjon Moogr et la tour minérale n'attendent que toi !", link: "/stuff50", backgroundImage: this.royalMoogrUrl },
-    { title: "Stuffs 110", description: "Pour aborder sereinement les BU et les super-vilains !", link: "/stuff110", backgroundImage: this.magmogImageUrl },
+    { title: "Stuffs 20", description: "Besoin de stuffs pour débuter, reprendre ou tryhard ? Commence  ici !", link: "/stuff/20", backgroundImage: this.bouftouRoyalUrl },
+    { title: "Stuffs 50", description: "Le donjon Moogr et la tour minérale n'attendent que toi !", link: "/stuff/50", backgroundImage: this.royalMoogrUrl },
+    { title: "Stuffs 110", description: "Pour aborder sereinement les BU et les super-vilains !", link: "/stuff/110", backgroundImage: this.magmogImageUrl },
     
     { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes", backgroundImage: this.stylishEnuGlassesImageUrl},
     { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },

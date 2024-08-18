@@ -11,14 +11,6 @@ interface IconDictionary {
   };
 };
 
-interface IconListItem {
-  className:string, 
-  image: {
-    maleImgUrl:string, 
-    femaleImgUrl:string
-  }
-};
-
 interface PreviewItem {
   title?:string,
   description?:string,
@@ -98,10 +90,28 @@ export class ClassesGameplayComponent {
 
     populatePreviews(){
       this.previews = [
-        { title: "Elio mêlée", link: "/elioMelee", backgroundImage : this.elioChibiIconUrl},
-        { title: "Elio Distance", link: "/elioDist", backgroundImage : this.elioChibiIconUrl},
-        { title: "Osa DRAGON", link: "/osaDragon", backgroundImage : this.osaChibiIconUrl},
-        { title: "Osa Support", link: "/osaSupport", backgroundImage : this.osaChibiIconUrl},
+        { title: "Eliotrope", link: "./elio", backgroundImage : this.elioChibiIconUrl}, // ok
+        { title: "Osamodas", link: "./osa", backgroundImage : this.osaChibiIconUrl}, // ok
+        { title: "Cra", link: "./cra", backgroundImage : this.craChibiIconUrl},
+        { title: "Ecaflip", link: "./eca", backgroundImage : this.ecaflipChibiIconUrl},
+        { title: "Enu", link: "./enu", backgroundImage : this.enuChibiIconUrl},
+        
+        { title: "Feca", link: "./feca", backgroundImage : this.fecaChibiIconUrl},
+        { title: "Steamer", link: "./steam", backgroundImage : this.steamChibiIconUrl},
+        { title: "Huppermage", link: "./hupper", backgroundImage : this.hupperChibiIconUrl},
+        { title: "Iop", link: "./iop", backgroundImage : this.iopChibiIconUrl},
+        { title: "Eniripsa", link: "./eni", backgroundImage : this.eniChibiIconUrl},
+        
+        { title: "Ouginak", link: "./ougi", backgroundImage : this.ougiChibiIconUrl},
+        { title: "Pandawa", link: "./panda", backgroundImage : this.pandaChibiIconUrl},
+        { title: "Roublard", link: "./roub", backgroundImage : this.roubChibiIconUrl},
+        { title: "Sacrieur", link: "./sacri", backgroundImage : this.sacriChibiIconUrl},
+        { title: "Sadida", link: "./sadi", backgroundImage : this.sadiChibiIconUrl},
+        
+        { title: "Sram", link: "./sram", backgroundImage : this.sramChibiIconUrl},
+        { title: "Xelor", link: "./xel", backgroundImage : this.xelChibiIconUrl},
+        { title: "Zobal", link: "./zobal", backgroundImage : this.zobalChibiIconUrl},
+
       ]
     }
   }

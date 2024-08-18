@@ -28,6 +28,12 @@ import { OsaDragonComponent } from './components/classes-gameplay/Osa/osa-dragon
 import { OsaSupportComponent } from './components/classes-gameplay/Osa/osa-support/osa-support.component';
 import { EnchantementComponent } from './components/enchantement/enchantement.component';
 import { GlossaryComponent } from './components/glossary/glossary.component';
+import { GameplaysPageLayoutComponent } from './components/classes-gameplay/gameplays-page-layout/gameplays-page-layout.component';
+import { ElioGameplaysComponent } from './components/classes-gameplay/Elio/elio-gameplays/elio-gameplays.component';
+import { RiftPageLayoutComponent } from './components/rifts/rift-page-layout/rift-page-layout.component';
+import { ElioGameplaysPageLayoutComponent } from './components/classes-gameplay/Elio/elio-gameplays-page-layout/elio-gameplays-page-layout.component';
+import { OsaGameplaysComponent } from './components/classes-gameplay/Osa/osa-gameplays/osa-gameplays.component';
+import { OsaGameplaysPageLayoutComponent } from './components/classes-gameplay/Osa/osa-gameplays-page-layout/osa-gameplays-page-layout.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -35,59 +41,53 @@ export const routes: Routes = [
         children :[
             { path:'', component : BeforeGearingUpComponent },
         ] },
-    { path:'stuff20', component : StuffPagesLayoutComponent,
+    { path:'stuff', component : StuffPagesLayoutComponent,
         children :[
-            { path:'', component : Stuffs20Component },
+            { path:'20', component : Stuffs20Component },
+            { path:'50', component : Stuffs50Component },
+            { path:'80', component : Stuffs80Component },
+            { path:'110', component : Stuffs110Component },
+            { path:'140', component : Stuffs140Component },
+            { path:'170', component : Stuffs170Component },
+            { path:'200', component : Stuffs200Component },
+            { path:'230', component : Stuffs230Component },
         ]
      },
-    { path:'stuff50', component : StuffPagesLayoutComponent,
+    { path:'gameplays', component : GameplaysPageLayoutComponent,
         children :[
-            { path:'', component : Stuffs50Component },
+            { path:'', component : ClassesGameplayComponent },
+            { path:'elio', component : ElioGameplaysPageLayoutComponent,
+                children :[
+                    { path:'', component : ElioGameplaysComponent },
+                    { path:'melee', component : ElioMeleeComponent },
+                    { path:'dist', component : ElioDistComponent },
+                ] },
+            { path:'osa', component : OsaGameplaysPageLayoutComponent,
+                children :[
+                    { path:'', component : OsaGameplaysComponent},
+                    { path:'support', component : OsaSupportComponent },
+                    { path:'melee', component : OsaDragonComponent },
+                ] },
         ] },
-    { path:'stuff80', component : StuffPagesLayoutComponent,
-        children :[
-            { path:'', component : Stuffs80Component },
-        ] },
-    { path:'stuff110', component : StuffPagesLayoutComponent,
-        children :[
-            { path:'', component : Stuffs110Component },
-        ] },
-    { path:'stuff140', component : StuffPagesLayoutComponent,
-        children :[
-            { path:'', component : Stuffs140Component },
-        ] },
-    { path:'stuff170', component : StuffPagesLayoutComponent,
-        children :[
-            { path:'', component : Stuffs170Component },
-        ] },
-    { path:'stuff200', component : StuffPagesLayoutComponent,
-        children :[
-            { path:'', component : Stuffs200Component },
-        ] },
-    { path:'stuff230', component : StuffPagesLayoutComponent,
-        children :[
-            { path:'', component : Stuffs230Component },
-        ] },
-    
-    { path:'classes', component : ClassesGameplayComponent },
-    { path:'elioMelee', component : ElioMeleeComponent },
-    { path:'elioDist', component : ElioDistComponent },
-    { path:'osaDragon', component : OsaDragonComponent },
-    { path:'osaSupport', component : OsaSupportComponent },
 
     { path:'themes', component : ThemesComponent },
     { path:'howToStream', component : HowToStreamComponent },
     { path:'modulation', component : ModulationComponent },
     { path:'about', component : AboutComponent },
     { path:'extResources', component : ExternalResourcesComponent },
+    
     { path:'eldersWisdom', component : EldersWisdomComponent },
     { path:'kamas', component : KamasTipsComponent },
     { path:'enchant', component : EnchantementComponent },
     { path:'glossary', component : GlossaryComponent },
 
-    { path:'rift', component : RiftOverviewComponent},
-    { path:'rift-tainela', component : RiftTainelaComponent},
-    { path:'rift-sufokia', component : RiftSufokiaComponent},
+    { path:'rift', component : RiftPageLayoutComponent, // todo : create layout with subnavar to navigate between rifts easily (like /stuff)
+        children :[
+            { path:'', component : RiftOverviewComponent },
+            { path:'tainela', component : RiftTainelaComponent },
+            { path:'sufokia', component : RiftSufokiaComponent },
+        ]},
+
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
 ];
