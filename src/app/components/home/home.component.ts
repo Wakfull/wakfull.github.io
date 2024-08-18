@@ -29,15 +29,16 @@ export class HomeComponent {
   previews: {title?:string,description?:string, link?:string, backgroundImage?:string}[] = [
     { title: "Bien débuter", description: "Tout ce que j'aurais aimé savoir quand j'ai commencé en vrac !", link: "/eldersWisdom",backgroundImage: this.elioGodImageUrl },
     { title: "Astuces kamas", description: "Des astuces kamas en vrac !", link: "/kamas", backgroundImage: this.kamasSymbolImageUrl },
+    { title: "Glossaire", description: "Mot ou abréviation inconnue au bataillon ? Plus maintenant !", link: "/glossary", backgroundImage : this.featherImageUrl},
 
     { title: "Stuffs 20", description: "Besoin de stuffs pour débuter, reprendre ou tryhard ? Commence  ici !", link: "/stuff20", backgroundImage: this.bouftouRoyalUrl },
     { title: "Stuffs 50", description: "Le donjon Moogr et la tour minérale n'attendent que toi !", link: "/stuff50", backgroundImage: this.royalMoogrUrl },
     { title: "Stuffs 110", description: "Pour aborder sereinement les BU et les super-vilains !", link: "/stuff110", backgroundImage: this.magmogImageUrl },
     
-    { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
     { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes", backgroundImage: this.stylishEnuGlassesImageUrl},
+    { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
     { title: "L'enchantement", description: "Les bases de l'enchantement !", link: "/enchant", backgroundImage: this.hupperGodImageUrl},
-    { title: "Glossaire", description: "Mot ou abréviation inconnue au bataillon ? Plus maintenant !", link: "/glossary", backgroundImage : this.featherImageUrl},
+    
   ];
   //     { title: "Presentation de gameplays", description: "Découvrez d'autres façons de jouer!", link: "/classes"},
 

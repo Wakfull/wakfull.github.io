@@ -47,7 +47,7 @@ export class GlossaryService {
       { word:"rall PA", definition: "Il s'agit du fait de retirer des PA à une entité. Le terme vient de Dofus, du sort \"Ralentissement\" du xelor." },
       { word:"rall PM", definition: "Il s'agit du fait de retirer des PM à une entité." },
       { word:"rall res", definition: "Il s'agit du fait de retirer de la resistance à une entité. Notez qu'il est possible d'enlever un maximum de 200 res par entité." },
-      { word:"coque", definition: "\"Armure/Shield\". Nom que certains anciens joueurs utilisent pour les shields." },
+      { word:"Coque", definition: "\"Armure/Shield\". Nom que certains anciens joueurs utilisent pour les shields." },
     ];
 
   constructor() {
