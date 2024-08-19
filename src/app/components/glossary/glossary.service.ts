@@ -47,7 +47,9 @@ export class GlossaryService {
       { word:"rall PA", definition: "Il s'agit du fait de retirer des PA à une entité. Le terme vient de Dofus, du sort \"Ralentissement\" du xelor." },
       { word:"rall PM", definition: "Il s'agit du fait de retirer des PM à une entité." },
       { word:"rall res", definition: "Il s'agit du fait de retirer de la resistance à une entité. Notez qu'il est possible d'enlever un maximum de 200 res par entité." },
-      { word:"Coque", definition: "\"Armure/Shield\". Nom que certains anciens joueurs utilisent pour les shields." },
+      { word:"Coque", definition: "\"Armure/Shield\". Nom que certains anciens joueurs utilisent pour les shields. Svp ne l'utilisez pas. Soyez des gens normaux et dites Shield comme tout le monde." },
+      { word:"Cac", definition: "\"Corps à Corps\". Peut vouloir dire deux choses. Soit il s'agit du positionnement de votre personnage, qui se situe alors \"au cac\" d'un ennemi (donc sur une cellule adjacente à un mob, \"contre\" le mob), Soit il s'agit de l'arme couramment équipée par votre personnage (ex: c'est quoi ton cac ?)." },
+      { word:"Dist", definition: "\"Distance\". Il s'agit soit du type de maitrise d'un DPT (ex : un elio distance), soit il s'agit du positionnement des personnages en combat, à + de 2 cases des mobs." },
     ];
 
   constructor() {
