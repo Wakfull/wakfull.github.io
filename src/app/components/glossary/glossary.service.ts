@@ -51,6 +51,7 @@ export class GlossaryService {
       { word:"Cac", definition: "\"Corps à Corps\". Peut vouloir dire deux choses. Soit il s'agit du positionnement de votre personnage, qui se situe alors \"au cac\" d'un ennemi (donc sur une cellule adjacente à un mob, \"contre\" le mob), Soit il s'agit de l'arme couramment équipée par votre personnage (ex: c'est quoi ton cac ?)." },
       { word:"Dist", definition: "\"Distance\". Il s'agit soit du type de maitrise d'un DPT (ex : un elio distance), soit il s'agit du positionnement des personnages en combat, à + de 2 cases des mobs." },
       { word:"HS", definition: "\"Havre-Sac\"." },
+      { word:"PS", definition: "\"Points de Stasis\". Il s'agit de la ressource spécifique à la classe Steamer. Un peu comme une autre sorte de PW ou de BQ, mais que pour les steamers." },
     ];
 
   constructor() {
