@@ -1,0 +1,23 @@
+
+<div class="container">
+    <div class="content">
+        <div class="text-center">
+            <h2> Guide des donjons </h2>
+        </div>
+
+        <div class="row">
+            <app-dungeon-preview class="col-md-4 mb-4"
+                    *ngFor="let preview of previews"
+                        [name]="preview.name"
+                        [level]="preview.level"
+                        [nbr_rooms]="preview.nbr_rooms"
+                        [nbr_players]="preview.nbr_players"
+                        [is_UB]="preview.is_UB"
+                        [description]="preview.description"
+                        [siteUrl]="preview.siteUrl"
+                        [backgroundImage]="preview.backgroundImage"
+                    >
+                </app-dungeon-preview>
+        </div>
+    </div>
+</div>

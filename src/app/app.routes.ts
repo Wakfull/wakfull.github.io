@@ -77,6 +77,7 @@ import { XelorSupportComponent } from './components/classes-gameplay/Xelor/xelor
 import { ZobalGameplaysComponent } from './components/classes-gameplay/Zobal/zobal-gameplays/zobal-gameplays.component';
 import { ZobalSupportComponent } from './components/classes-gameplay/Zobal/zobal-support/zobal-support.component';
 import { ZobalMeleeComponent } from './components/classes-gameplay/Zobal/zobal-melee/zobal-melee.component';
+import { DungeonsComponent } from './components/dungeons/dungeons.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -223,6 +224,8 @@ export const routes: Routes = [
                 ]
             }
         ] },
+
+    { path:'dungeons', component : DungeonsComponent },
 
     { path:'themes', component : ThemesComponent },
     { path:'howToStream', component : HowToStreamComponent },

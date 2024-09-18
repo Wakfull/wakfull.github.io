@@ -1,0 +1,20 @@
+
+<div class="preview-cards-home">
+    <a [routerLink]="siteUrl ? siteUrl : defaultSiteUrl">
+        <div class="card h-100">
+            <div class="card-title-decoration bg-dark" [ngStyle]="{'background-image': 'url(' + (backgroundImage ? backgroundImage : defaultImage) + ')'}"></div>
+            <div class="card-body">
+                <h5 class="card-title text-center">{{ name ? name : defaultName}}</h5>
+                <div class="dg-info-misc text-center">
+                    <div class="dg-info-item"> <div class="dg-level">Accès Lv {{level}}</div> </div>
+                    <div class="dg-info-item"> <div class="dg-nbr-ppl">{{nbr_players}} personnes</div> </div>
+                    <div class="dg-info-item"> <div class="dg-rooms">{{nbr_rooms}} salles</div> </div>
+                </div>
+                <hr />
+                <div class="card-text">
+                    {{ description ? description : defaultDescription }}
+                </div>
+           </div>
+       </div>
+   </a>
+</div>
