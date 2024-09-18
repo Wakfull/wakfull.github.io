@@ -3,13 +3,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 import { ClassesService } from '../../classes.service';
-
-interface PreviewItem {
-  title?:string,
-  description?:string,
-  link?:string,
-  backgroundImage?:string
-}
+import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
 
 @Component({
   selector: 'app-elio-gameplays',

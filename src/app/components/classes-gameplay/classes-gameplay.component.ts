@@ -26,8 +26,6 @@ interface PreviewItem {
   styleUrl: './classes-gameplay.component.css'
 })
 export class ClassesGameplayComponent {
-  thinkingElio = "https://i.imgur.com/WoWn4Bn.png";
-  tmpOsaIconUrl ="https://i.imgur.com/UKq7xIP.jpeg";
 
   // classesChibiIconsList: IconListItem[] = [];
   classesChibiIconsDic: IconDictionary = {};

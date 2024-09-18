@@ -38,6 +38,9 @@ export class HomeComponent {
     { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes", backgroundImage: this.stylishEnuGlassesImageUrl},
     { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
     { title: "L'enchantement", description: "Les bases de l'enchantement !", link: "/enchant", backgroundImage: this.hupperGodImageUrl},
+
+    { title: "Gameplays de classes", description: "Découvrez et apprenez à jouer votre classe", link: "/gameplays"},
+    { title: "Guide des donjons", description: "Besoin d'explications pour un donjon ? C'est ici que ça se passe !", link: "/dungeons"},
     
   ];
   //     { title: "Presentation de gameplays", description: "Découvrez d'autres façons de jouer!", link: "/classes"},

@@ -3,13 +3,7 @@ import { ClassesService } from '../../classes.service';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
-
-interface PreviewItem {
-  title?:string,
-  description?:string,
-  link?:string,
-  backgroundImage?:string
-}
+import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
 
 @Component({
   selector: 'app-osa-gameplays',
