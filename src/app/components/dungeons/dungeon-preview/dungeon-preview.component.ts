@@ -25,7 +25,7 @@ export class DungeonPreviewComponent {
   defaultIs_UB:Boolean = false;
   defaultDescription:string = "";
   defaultSiteUrl:string = "/404";
-  defaultImage:string = "";
+  defaultImage:string = "https://i.imgur.com/7NTPbre.png";
   
   /* TODO
     name?:string,
