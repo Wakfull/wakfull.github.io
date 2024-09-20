@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
-import { ClassesService } from '../../classes.service';
+import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
   selector: 'app-roub-gameplays',

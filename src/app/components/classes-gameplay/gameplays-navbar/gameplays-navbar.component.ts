@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ClassesService } from '../classes.service';
+import { ClassesService } from '../../../services/classes.service';
 import { CommonModule } from '@angular/common';
 
 interface IconDictionary {

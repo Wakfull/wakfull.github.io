@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
-import { ClassesService } from '../../classes.service';
+import { ClassesService } from '../../../../services/classes.service';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
 import { RouterModule } from '@angular/router';
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ClassesService } from '../../classes.service';
+import { ClassesService } from '../../../../services/classes.service';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';

@@ -79,6 +79,9 @@ import { ZobalSupportComponent } from './components/classes-gameplay/Zobal/zobal
 import { ZobalMeleeComponent } from './components/classes-gameplay/Zobal/zobal-melee/zobal-melee.component';
 import { DungeonsComponent } from './components/dungeons/dungeons.component';
 import { MimicsComponent } from './components/mimics/mimics.component';
+import { ZobalDoPouComponent } from './components/classes-gameplay/Zobal/zobal-do-pou/zobal-do-pou.component';
+import { EcaSupportComponent } from './components/classes-gameplay/Eca/eca-support/eca-support.component';
+import { SteamTourelleComponent } from './components/classes-gameplay/Steam/steam-tourelle/steam-tourelle.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -125,6 +128,7 @@ export const routes: Routes = [
                 children :[
                     { path:'', component : EcaGameplaysComponent},
                     { path:'dist', component : EcaDistComponent},
+                    { path:'support', component : EcaSupportComponent},
                 ]
             },
             { path:'enu', component : GenericClassPageLayoutComponent,
@@ -145,7 +149,8 @@ export const routes: Routes = [
                 children :[
                     { path:'', component : SteamGameplaysComponent},
                     { path:'support', component : SteamSupportComponent },
-                    { path:'zone', component : SteamDptZoneComponent }
+                    { path:'zone', component : SteamDptZoneComponent },
+                    { path:'turret', component : SteamTourelleComponent }
                 ]
             },
             { path:'hupper', component : GenericClassPageLayoutComponent,
@@ -221,7 +226,9 @@ export const routes: Routes = [
                 children :[
                     { path:'', component : ZobalGameplaysComponent},
                     { path:'support', component : ZobalSupportComponent },
-                    { path:'melee', component : ZobalMeleeComponent }
+                    { path:'melee', component : ZobalMeleeComponent },
+                    { path:'support', component : ZobalSupportComponent },
+                    { path:'dopou', component : ZobalDoPouComponent }
                 ]
             }
         ] },
