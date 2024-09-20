@@ -1,234 +1,178 @@
 import { Routes } from '@angular/router';
+
+/* Generic things */
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { Stuffs20Component } from './components/stuffs/stuffs20/stuffs20.component';
-import { Stuffs50Component } from './components/stuffs/stuffs50/stuffs50.component';
-import { Stuffs80Component } from './components/stuffs/stuffs80/stuffs80.component';
-import { Stuffs110Component } from './components/stuffs/stuffs110/stuffs110.component';
-import { Stuffs140Component } from './components/stuffs/stuffs140/stuffs140.component';
-import { Stuffs170Component } from './components/stuffs/stuffs170/stuffs170.component';
-import { Stuffs200Component } from './components/stuffs/stuffs200/stuffs200.component';
-import { Stuffs230Component } from './components/stuffs/stuffs230/stuffs230.component';
 import { AboutComponent } from './components/about/about.component';
-import { BeforeGearingUpComponent } from './components/stuffs/before-gearing-up/before-gearing-up.component';
-import { StuffPagesLayoutComponent } from './components/stuffs/stuff-pages-layout/stuff-pages-layout.component';
 import { HowToStreamComponent } from './components/how-to-stream/how-to-stream.component';
-import { ModulationComponent } from './components/modulation/modulation.component';
 import { ThemesComponent } from './components/themes/themes.component';
+
+/* Stuffs/gear suggestions per level*/
+import * as StuffsComponents from './components/stuffs';
+
+/* Gameplay guides */
+import * as gameplayComponents from './components/classes-gameplay';
+
+/* Rifts guides */
+import * as RiftComponents from './components/rifts';
+
+/* Guides misc */
+import { DungeonsComponent } from './components/dungeons/dungeons.component';
+import { MimicsComponent } from './components/mimics/mimics.component';
+import { ModulationComponent } from './components/modulation/modulation.component';
 import { ExternalResourcesComponent } from './components/external-resources/external-resources.component';
 import { EldersWisdomComponent } from './components/elders-wisdom/elders-wisdom.component';
 import { KamasTipsComponent } from './components/kamas-tips/kamas-tips.component';
-import { RiftOverviewComponent } from './components/rifts/rift-overview/rift-overview.component';
-import { RiftTainelaComponent } from './components/rifts/rift-tainela/rift-tainela.component';
-import { RiftSufokiaComponent } from './components/rifts/rift-sufokia/rift-sufokia.component';
-import { ClassesGameplayComponent } from './components/classes-gameplay/classes-gameplay.component';
-import { ElioMeleeComponent } from './components/classes-gameplay/Elio/elio-melee/elio-melee.component';
-import { ElioDistComponent } from './components/classes-gameplay/Elio/elio-dist/elio-dist.component';
-import { OsaDragonComponent } from './components/classes-gameplay/Osa/osa-dragon/osa-dragon.component';
-import { OsaSupportComponent } from './components/classes-gameplay/Osa/osa-support/osa-support.component';
 import { EnchantementComponent } from './components/enchantement/enchantement.component';
 import { GlossaryComponent } from './components/glossary/glossary.component';
-import { GameplaysPageLayoutComponent } from './components/classes-gameplay/gameplays-page-layout/gameplays-page-layout.component';
-import { ElioGameplaysComponent } from './components/classes-gameplay/Elio/elio-gameplays/elio-gameplays.component';
-import { RiftPageLayoutComponent } from './components/rifts/rift-page-layout/rift-page-layout.component';
-import { GenericClassPageLayoutComponent } from './components/classes-gameplay/generic-class-page-layout/generic-class-page-layout.component';
-import { OsaGameplaysComponent } from './components/classes-gameplay/Osa/osa-gameplays/osa-gameplays.component';
-import { CraGameplaysComponent } from './components/classes-gameplay/Cra/cra-gameplays/cra-gameplays.component';
-import { CraDistClassicComponent } from './components/classes-gameplay/Cra/cra-dist-classic/cra-dist-classic.component';
-import { EcaGameplaysComponent } from './components/classes-gameplay/Eca/eca-gameplays/eca-gameplays.component';
-import { EcaDistComponent } from './components/classes-gameplay/Eca/eca-dist/eca-dist.component';
-import { EnuGameplaysComponent } from './components/classes-gameplay/Enu/enu-gameplays/enu-gameplays.component';
-import { EnuMeleeComponent } from './components/classes-gameplay/Enu/enu-melee/enu-melee.component';
-import { EnuSupportComponent } from './components/classes-gameplay/Enu/enu-support/enu-support.component';
-import { FecaGameplaysComponent } from './components/classes-gameplay/Feca/feca-gameplays/feca-gameplays.component';
-import { FecaSupportComponent } from './components/classes-gameplay/Feca/feca-support/feca-support.component';
-import { FecaGlypheComponent } from './components/classes-gameplay/Feca/feca-glyphe/feca-glyphe.component';
-import { SteamGameplaysComponent } from './components/classes-gameplay/Steam/steam-gameplays/steam-gameplays.component';
-import { SteamSupportComponent } from './components/classes-gameplay/Steam/steam-support/steam-support.component';
-import { SteamDptZoneComponent } from './components/classes-gameplay/Steam/steam-dpt-zone/steam-dpt-zone.component';
-import { HupperMeleeTerreComponent } from './components/classes-gameplay/Hupper/hupper-melee-terre/hupper-melee-terre.component';
-import { HupperFullElemComponent } from './components/classes-gameplay/Hupper/hupper-full-elem/hupper-full-elem.component';
-import { HupperGameplaysComponent } from './components/classes-gameplay/Hupper/hupper-gameplays/hupper-gameplays.component';
-import { IopGameplaysComponent } from './components/classes-gameplay/Iop/iop-gameplays/iop-gameplays.component';
-import { IopMeleeComponent } from './components/classes-gameplay/Iop/iop-melee/iop-melee.component';
-import { EniGameplaysComponent } from './components/classes-gameplay/Eni/eni-gameplays/eni-gameplays.component';
-import { EniSupportComponent } from './components/classes-gameplay/Eni/eni-support/eni-support.component';
-import { EniPoisonComponent } from './components/classes-gameplay/Eni/eni-poison/eni-poison.component';
-import { OugiGameplaysComponent } from './components/classes-gameplay/Ougi/ougi-gameplays/ougi-gameplays.component';
-import { OugiMeleeComponent } from './components/classes-gameplay/Ougi/ougi-melee/ougi-melee.component';
-import { OugiPoisonComponent } from './components/classes-gameplay/Ougi/ougi-poison/ougi-poison.component';
-import { PandaGameplaysComponent } from './components/classes-gameplay/Panda/panda-gameplays/panda-gameplays.component';
-import { PandaTankComponent } from './components/classes-gameplay/Panda/panda-tank/panda-tank.component';
-import { RoubGameplaysComponent } from './components/classes-gameplay/Roub/roub-gameplays/roub-gameplays.component';
-import { RoubDefaultComponent } from './components/classes-gameplay/Roub/roub-default/roub-default.component';
-import { SacriGameplaysComponent } from './components/classes-gameplay/Sacri/sacri-gameplays/sacri-gameplays.component';
-import { SacriMeleeComponent } from './components/classes-gameplay/Sacri/sacri-melee/sacri-melee.component';
-import { SacriTankComponent } from './components/classes-gameplay/Sacri/sacri-tank/sacri-tank.component';
-import { SadiGameplaysComponent } from './components/classes-gameplay/Sadi/sadi-gameplays/sadi-gameplays.component';
-import { SadiDistComponent } from './components/classes-gameplay/Sadi/sadi-dist/sadi-dist.component';
-import { SadiPoisonComponent } from './components/classes-gameplay/Sadi/sadi-poison/sadi-poison.component';
-import { SadiSupportComponent } from './components/classes-gameplay/Sadi/sadi-support/sadi-support.component';
-import { SramGameplaysComponent } from './components/classes-gameplay/Sram/sram-gameplays/sram-gameplays.component';
-import { SramMeleeComponent } from './components/classes-gameplay/Sram/sram-melee/sram-melee.component';
-import { XelorGameplaysComponent } from './components/classes-gameplay/Xelor/xelor-gameplays/xelor-gameplays.component';
-import { XelorDistFeuComponent } from './components/classes-gameplay/Xelor/xelor-dist-feu/xelor-dist-feu.component';
-import { XelorDistZoneComponent } from './components/classes-gameplay/Xelor/xelor-dist-zone/xelor-dist-zone.component';
-import { XelorSupportComponent } from './components/classes-gameplay/Xelor/xelor-support/xelor-support.component';
-import { ZobalGameplaysComponent } from './components/classes-gameplay/Zobal/zobal-gameplays/zobal-gameplays.component';
-import { ZobalSupportComponent } from './components/classes-gameplay/Zobal/zobal-support/zobal-support.component';
-import { ZobalMeleeComponent } from './components/classes-gameplay/Zobal/zobal-melee/zobal-melee.component';
-import { DungeonsComponent } from './components/dungeons/dungeons.component';
-import { MimicsComponent } from './components/mimics/mimics.component';
-import { ZobalDoPouComponent } from './components/classes-gameplay/Zobal/zobal-do-pou/zobal-do-pou.component';
-import { EcaSupportComponent } from './components/classes-gameplay/Eca/eca-support/eca-support.component';
-import { SteamTourelleComponent } from './components/classes-gameplay/Steam/steam-tourelle/steam-tourelle.component';
+
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
-    { path:'beforeGearing', component : StuffPagesLayoutComponent,
+    { path:'beforeGearing', component : StuffsComponents.StuffPagesLayoutComponent,
         children :[
-            { path:'', component : BeforeGearingUpComponent },
+            { path:'', component : StuffsComponents.BeforeGearingUpComponent },
         ] },
-    { path:'stuff', component : StuffPagesLayoutComponent,
+    { path:'stuff', component : StuffsComponents.StuffPagesLayoutComponent,
         children :[
-            { path:'20', component : Stuffs20Component },
-            { path:'50', component : Stuffs50Component },
-            { path:'80', component : Stuffs80Component },
-            { path:'110', component : Stuffs110Component },
-            { path:'140', component : Stuffs140Component },
-            { path:'170', component : Stuffs170Component },
-            { path:'200', component : Stuffs200Component },
-            { path:'230', component : Stuffs230Component },
+            { path:'20', component : StuffsComponents.Stuffs20Component },
+            { path:'50', component : StuffsComponents.Stuffs50Component },
+            { path:'80', component : StuffsComponents.Stuffs80Component },
+            { path:'110', component : StuffsComponents.Stuffs110Component },
+            { path:'140', component : StuffsComponents.Stuffs140Component },
+            { path:'170', component : StuffsComponents.Stuffs170Component },
+            { path:'200', component : StuffsComponents.Stuffs200Component },
+            { path:'230', component : StuffsComponents.Stuffs230Component },
         ]
      },
-    { path:'gameplays', component : GameplaysPageLayoutComponent,
+    { path:'gameplays', component : gameplayComponents.GameplaysPageLayoutComponent,
         children :[
-            { path:'', component : ClassesGameplayComponent },
-            { path:'elio', component : GenericClassPageLayoutComponent,
+            { path:'', component :gameplayComponents.ClassesGameplayComponent },
+            { path:'elio', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : ElioGameplaysComponent },
-                    { path:'melee', component : ElioMeleeComponent },
-                    { path:'dist', component : ElioDistComponent },
+                    { path:'', component : gameplayComponents.ElioGameplaysComponent },
+                    { path:'melee', component : gameplayComponents.ElioMeleeComponent },
+                    { path:'dist', component : gameplayComponents.ElioDistComponent },
                 ]
             },
-            { path:'osa', component : GenericClassPageLayoutComponent,
+            { path:'osa', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : OsaGameplaysComponent},
-                    { path:'support', component : OsaSupportComponent },
-                    { path:'melee', component : OsaDragonComponent },
+                    { path:'', component : gameplayComponents.OsaGameplaysComponent},
+                    { path:'support', component : gameplayComponents.OsaSupportComponent },
+                    { path:'melee', component :gameplayComponents. OsaDragonComponent },
                 ]
             },
-            { path:'cra', component : GenericClassPageLayoutComponent,
+            { path:'cra', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : CraGameplaysComponent},
-                    { path:'classic', component : CraDistClassicComponent }
+                    { path:'', component : gameplayComponents.CraGameplaysComponent},
+                    { path:'classic', component : gameplayComponents.CraDistClassicComponent }
                 ]
             },
-            { path:'eca', component : GenericClassPageLayoutComponent,
+            { path:'eca', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : EcaGameplaysComponent},
-                    { path:'dist', component : EcaDistComponent},
-                    { path:'support', component : EcaSupportComponent},
+                    { path:'', component : gameplayComponents.EcaGameplaysComponent},
+                    { path:'dist', component : gameplayComponents.EcaDistComponent},
+                    { path:'support', component : gameplayComponents.EcaSupportComponent},
                 ]
             },
-            { path:'enu', component : GenericClassPageLayoutComponent,
+            { path:'enu', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : EnuGameplaysComponent},
-                    { path:'melee', component : EnuMeleeComponent},
-                    { path:'support', component : EnuSupportComponent},
+                    { path:'', component : gameplayComponents.EnuGameplaysComponent},
+                    { path:'melee', component : gameplayComponents.EnuMeleeComponent},
+                    { path:'support', component : gameplayComponents.EnuSupportComponent},
                 ]
             },
-            { path:'feca', component : GenericClassPageLayoutComponent,
+            { path:'feca', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : FecaGameplaysComponent},
-                    { path:'support', component : FecaSupportComponent},
-                    { path:'glyph', component : FecaGlypheComponent},
+                    { path:'', component : gameplayComponents.FecaGameplaysComponent},
+                    { path:'support', component : gameplayComponents.FecaSupportComponent},
+                    { path:'glyph', component : gameplayComponents.FecaGlypheComponent},
                 ]
             },
-            { path:'steam', component : GenericClassPageLayoutComponent,
+            { path:'steam', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : SteamGameplaysComponent},
-                    { path:'support', component : SteamSupportComponent },
-                    { path:'zone', component : SteamDptZoneComponent },
-                    { path:'turret', component : SteamTourelleComponent }
+                    { path:'', component : gameplayComponents.SteamGameplaysComponent},
+                    { path:'support', component : gameplayComponents.SteamSupportComponent },
+                    { path:'zone', component : gameplayComponents.SteamDptZoneComponent },
+                    { path:'turret', component : gameplayComponents.SteamTourelleComponent }
                 ]
             },
-            { path:'hupper', component : GenericClassPageLayoutComponent,
+            { path:'hupper', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : HupperGameplaysComponent},
-                    { path:'melee', component : HupperMeleeTerreComponent },
-                    { path:'elem', component : HupperFullElemComponent },
+                    { path:'', component : gameplayComponents.HupperGameplaysComponent},
+                    { path:'melee', component : gameplayComponents.HupperMeleeTerreComponent },
+                    { path:'elem', component : gameplayComponents.HupperFullElemComponent },
                 ]
             },
-            { path:'iop', component : GenericClassPageLayoutComponent,
+            { path:'iop', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : IopGameplaysComponent},
-                    { path:'melee', component : IopMeleeComponent }
+                    { path:'', component : gameplayComponents.IopGameplaysComponent},
+                    { path:'melee', component : gameplayComponents.IopMeleeComponent }
                 ]
             },
-            { path:'eni', component : GenericClassPageLayoutComponent,
+            { path:'eni', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : EniGameplaysComponent},
-                    { path:'support', component : EniSupportComponent },
-                    { path:'poison', component : EniPoisonComponent }
+                    { path:'', component : gameplayComponents.EniGameplaysComponent},
+                    { path:'support', component : gameplayComponents.EniSupportComponent },
+                    { path:'poison', component : gameplayComponents.EniPoisonComponent }
                 ]
             },
-            { path:'ougi', component : GenericClassPageLayoutComponent,
+            { path:'ougi', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : OugiGameplaysComponent},
-                    { path:'melee', component : OugiMeleeComponent },
-                    { path:'poison', component : OugiPoisonComponent }
+                    { path:'', component : gameplayComponents.OugiGameplaysComponent},
+                    { path:'melee', component : gameplayComponents.OugiMeleeComponent },
+                    { path:'poison', component : gameplayComponents.OugiPoisonComponent }
                 ]
             },
-            { path:'panda', component : GenericClassPageLayoutComponent,
+            { path:'panda', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : PandaGameplaysComponent},
-                    { path:'tank', component : PandaTankComponent }
+                    { path:'', component : gameplayComponents.PandaGameplaysComponent},
+                    { path:'tank', component : gameplayComponents.PandaTankComponent }
                 ]
             },
-            { path:'roub', component : GenericClassPageLayoutComponent,
+            { path:'roub', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : RoubGameplaysComponent},
-                    { path:'default', component : RoubDefaultComponent},
+                    { path:'', component : gameplayComponents.RoubGameplaysComponent},
+                    { path:'default', component : gameplayComponents.RoubDefaultComponent},
                 ]
             },
-            { path:'sacri', component : GenericClassPageLayoutComponent,
+            { path:'sacri', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : SacriGameplaysComponent},
-                    { path:'melee', component : SacriMeleeComponent },
-                    { path:'tank', component : SacriTankComponent }
+                    { path:'', component : gameplayComponents.SacriGameplaysComponent},
+                    { path:'melee', component : gameplayComponents.SacriMeleeComponent },
+                    { path:'tank', component : gameplayComponents.SacriTankComponent }
                 ]
             },
-            { path:'sadi', component : GenericClassPageLayoutComponent,
+            { path:'sadi', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : SadiGameplaysComponent},
-                    { path:'dist', component : SadiDistComponent },
-                    { path:'poison', component : SadiPoisonComponent },
-                    { path:'support', component : SadiSupportComponent }
+                    { path:'', component : gameplayComponents.SadiGameplaysComponent},
+                    { path:'dist', component : gameplayComponents.SadiDistComponent },
+                    { path:'poison', component : gameplayComponents.SadiPoisonComponent },
+                    { path:'support', component : gameplayComponents.SadiSupportComponent }
 
                 ]
             },
-            { path:'sram', component : GenericClassPageLayoutComponent,
+            { path:'sram', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : SramGameplaysComponent},
-                    { path:'melee', component : SramMeleeComponent }
+                    { path:'', component : gameplayComponents.SramGameplaysComponent},
+                    { path:'melee', component : gameplayComponents.SramMeleeComponent }
                 ]
             },
-            { path:'xel', component : GenericClassPageLayoutComponent,
+            { path:'xel', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : XelorGameplaysComponent},
-                    { path:'dist', component : XelorDistFeuComponent },
-                    { path:'zone', component : XelorDistZoneComponent },
-                    { path:'support', component : XelorSupportComponent },
+                    { path:'', component : gameplayComponents.XelorGameplaysComponent},
+                    { path:'dist', component : gameplayComponents.XelorDistFeuComponent },
+                    { path:'zone', component : gameplayComponents.XelorDistZoneComponent },
+                    { path:'support', component : gameplayComponents.XelorSupportComponent },
                 ]
             },
-            { path:'zobal', component : GenericClassPageLayoutComponent,
+            { path:'zobal', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
-                    { path:'', component : ZobalGameplaysComponent},
-                    { path:'support', component : ZobalSupportComponent },
-                    { path:'melee', component : ZobalMeleeComponent },
-                    { path:'support', component : ZobalSupportComponent },
-                    { path:'dopou', component : ZobalDoPouComponent }
+                    { path:'', component : gameplayComponents.ZobalGameplaysComponent},
+                    { path:'support', component : gameplayComponents.ZobalSupportComponent },
+                    { path:'melee', component : gameplayComponents.ZobalMeleeComponent },
+                    { path:'support', component : gameplayComponents.ZobalSupportComponent },
+                    { path:'dopou', component : gameplayComponents.ZobalDoPouComponent }
                 ]
             }
         ] },
@@ -247,11 +191,11 @@ export const routes: Routes = [
     { path:'mimics', component : MimicsComponent },
     { path:'glossary', component : GlossaryComponent },
 
-    { path:'rift', component : RiftPageLayoutComponent, // todo : create layout with subnavar to navigate between rifts easily (like /stuff)
+    { path:'rift', component : RiftComponents.RiftPageLayoutComponent, // todo : create layout with subnavar to navigate between rifts easily (like /stuff) OR side bar
         children :[
-            { path:'', component : RiftOverviewComponent },
-            { path:'tainela', component : RiftTainelaComponent },
-            { path:'sufokia', component : RiftSufokiaComponent },
+            { path:'', component : RiftComponents.RiftOverviewComponent },
+            { path:'tainela', component : RiftComponents.RiftTainelaComponent },
+            { path:'sufokia', component : RiftComponents.RiftSufokiaComponent },
         ]},
 
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
