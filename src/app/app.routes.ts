@@ -78,6 +78,7 @@ import { ZobalGameplaysComponent } from './components/classes-gameplay/Zobal/zob
 import { ZobalSupportComponent } from './components/classes-gameplay/Zobal/zobal-support/zobal-support.component';
 import { ZobalMeleeComponent } from './components/classes-gameplay/Zobal/zobal-melee/zobal-melee.component';
 import { DungeonsComponent } from './components/dungeons/dungeons.component';
+import { MimicsComponent } from './components/mimics/mimics.component';
 
 export const routes: Routes = [
     { path:'home', component : HomeComponent },    
@@ -236,6 +237,7 @@ export const routes: Routes = [
     { path:'eldersWisdom', component : EldersWisdomComponent },
     { path:'kamas', component : KamasTipsComponent },
     { path:'enchant', component : EnchantementComponent },
+    { path:'mimics', component : MimicsComponent },
     { path:'glossary', component : GlossaryComponent },
 
     { path:'rift', component : RiftPageLayoutComponent, // todo : create layout with subnavar to navigate between rifts easily (like /stuff)

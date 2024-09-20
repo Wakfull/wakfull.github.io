@@ -1,0 +1,29 @@
+.mimic_desc_container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    outline: 1px rgb(0, 0, 0, 0.3) solid;
+    border-radius: 0.2rem;
+}
+.mimic-tile{
+    flex-direction: column;
+    align-items: center;
+    padding : 0.4rem;
+}
+
+.mimic-img-container{
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    max-width: 10rem;
+    max-height: 10rem;
+    min-width: 10rem;
+    min-height: 10rem;
+    
+}
+.mimic-img-label{
+    text-align: center;
+}
+
+.mimic-descr{
+    padding : 1rem;
+}
