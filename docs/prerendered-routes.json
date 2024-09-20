@@ -11,6 +11,7 @@
     "/gameplays/cra/classic",
     "/gameplays/eca",
     "/gameplays/eca/dist",
+    "/gameplays/eca/support",
     "/gameplays/elio",
     "/gameplays/elio/dist",
     "/gameplays/elio/melee",
@@ -49,18 +50,21 @@
     "/gameplays/sram/melee",
     "/gameplays/steam",
     "/gameplays/steam/support",
+    "/gameplays/steam/turret",
     "/gameplays/steam/zone",
     "/gameplays/xel",
     "/gameplays/xel/dist",
     "/gameplays/xel/support",
     "/gameplays/xel/zone",
     "/gameplays/zobal",
+    "/gameplays/zobal/dopou",
     "/gameplays/zobal/melee",
     "/gameplays/zobal/support",
     "/glossary",
     "/home",
     "/howToStream",
     "/kamas",
+    "/mimics",
     "/modulation",
     "/rift",
     "/rift/sufokia",
@@ -74,6 +78,7 @@
     "/stuff/230",
     "/stuff/50",
     "/stuff/80",
-    "/themes"
+    "/themes",
+    "/todo"
   ]
 }
