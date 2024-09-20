@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Les chantiers en cours</div>
+        <div class="textContent">
+                <p>
+                    Le site a encore pleins de sujets à aborder, pleins d'articles à rédiger pleins de donjons à expliquer !
+                    Les pages recensées ici sont des pages qui demandent encore du travail avant d'être mises en avant sur le site, mais si vous voulez une petite avant-première, libre à vous de regarder !
+                </p>
+        </div>
+    </div>
+    <div class="row">
+        <app-in-progress-preview class="col-md-4 mb-4"
+                *ngFor="let preview of previews"
+                    [title]="preview.title"
+                    [description]="preview.description"
+                    [link]="preview.link"
+                    [backgroundImage]="preview.backgroundImage"
+                >
+            </app-in-progress-preview>
+    </div>
+</div>

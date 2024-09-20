@@ -25,6 +25,7 @@ import { EldersWisdomComponent } from './components/elders-wisdom/elders-wisdom.
 import { KamasTipsComponent } from './components/kamas-tips/kamas-tips.component';
 import { EnchantementComponent } from './components/enchantement/enchantement.component';
 import { GlossaryComponent } from './components/glossary/glossary.component';
+import { InProgressComponent } from './components/in-progress/in-progress.component';
 
 
 export const routes: Routes = [
@@ -196,7 +197,9 @@ export const routes: Routes = [
             { path:'', component : RiftComponents.RiftOverviewComponent },
             { path:'tainela', component : RiftComponents.RiftTainelaComponent },
             { path:'sufokia', component : RiftComponents.RiftSufokiaComponent },
-        ]},
+        ]
+    },
+    { path:'todo', component : InProgressComponent },
 
     { path:'',   redirectTo: '/home', pathMatch: 'full' },
     { path:'**', component: PageNotFoundComponent }
