@@ -1,0 +1,36 @@
+
+<div class="container">
+    <h2> {{this.tierlistTitle}} </h2>
+
+    <div class="tierlist-container">
+        @for (row of rows; track row) {
+            <div class="row-container">
+                <div id={{row.guid}}
+                    cdkDropList [cdkDropListData]="row.items" [cdkDropListConnectedTo]="this.connectedDropLists()" cdkDropListOrientation="mixed" class="row-items" (cdkDropListDropped)="drop($event)">
+                    <h4>{{row.title}}</h4>
+                    @for (currentItem of row.items; track currentItem) {
+                        <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
+                            {{currentItem?.title}}
+                        </div>
+                    }
+                </div>
+                
+            </div>
+        }
+        <div class="buttons-conntainer"><button (click)="this.addNewRow()">Add new row</button> </div>
+        <div class="buttons-container"><button (click)="this.removeLastRow()">Remove last row</button> </div>
+
+        <div class="row-container">
+            <h4> {{itemsPool.title}}</h4>
+            <div id={{itemsPool.guid}} cdkDropList [cdkDropListData]="itemsPool.items" [cdkDropListConnectedTo]="this.connectedDropLists()" cdkDropListOrientation="mixed" class="row-items" (cdkDropListDropped)="drop($event)">            
+                @for (currentItem of itemsPool.items; track currentItem) {
+                    <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
+                        {{currentItem?.title}}
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    
+</div>

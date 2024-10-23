@@ -26,6 +26,7 @@ import { KamasTipsComponent } from './components/kamas-tips/kamas-tips.component
 import { EnchantementComponent } from './components/enchantement/enchantement.component';
 import { GlossaryComponent } from './components/glossary/glossary.component';
 import { InProgressComponent } from './components/in-progress/in-progress.component';
+import { TierlistMakerComponent } from './components/tierlist-maker/tierlist-maker.component';
 
 
 export const routes: Routes = [
@@ -199,6 +200,7 @@ export const routes: Routes = [
             { path:'sufokia', component : RiftComponents.RiftSufokiaComponent },
         ]
     },
+    { path:'tierlist', component : TierlistMakerComponent },
     { path:'todo', component : InProgressComponent },
 
     { path:'',   redirectTo: '/home', pathMatch: 'full' },

@@ -25,6 +25,7 @@ export class InProgressComponent {
       { title: "Mimiques", link: "/mimics"},
       { title: "Breche Tainela", link: "/rift/tainela"},
       { title: "Breche Sufokia", link: "/rift/sufokia"},
+      { title: "Tierlist maker", link: "/tierlist"},
     ]
   }
 }
