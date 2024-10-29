@@ -10,6 +10,7 @@
                     <h4>{{row.title}}</h4>
                     @for (currentItem of row.items; track currentItem) {
                         <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
+                            <img src={{currentItem?.imgUrl}} alt={{currentItem?.title}}> <br>
                             {{currentItem?.title}}
                         </div>
                     }
@@ -25,6 +26,7 @@
             <div id={{itemsPool.guid}} cdkDropList [cdkDropListData]="itemsPool.items" [cdkDropListConnectedTo]="this.connectedDropLists()" cdkDropListOrientation="mixed" class="row-items" (cdkDropListDropped)="drop($event)">            
                 @for (currentItem of itemsPool.items; track currentItem) {
                     <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
+                        <img src={{currentItem?.imgUrl}} alt={{currentItem?.title}}> <br>
                         {{currentItem?.title}}
                     </div>
                 }

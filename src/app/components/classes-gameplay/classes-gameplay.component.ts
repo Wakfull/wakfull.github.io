@@ -49,7 +49,7 @@ export class ClassesGameplayComponent {
   previews: PreviewItem[] = []
 
   constructor(private classesServ:ClassesService){
-    this.classesChibiIconsDic = classesServ.getChibiIconsDic();;
+    this.classesChibiIconsDic = classesServ.getChibiIconsDic();
     this.populateIconsUrls();
     this.populatePreviews();
   }

@@ -1,17 +1,19 @@
 import { Injectable } from '@angular/core';
+import { ChibiIconItem} from "../interfaces/iChibiIconItem";
+import { IconItem} from "../interfaces/iIconItem";
 
 interface IconDictionary {
-  [key: string]: {
-    maleImgUrl: string;
-    femaleImgUrl: string;
+  [key :string]: {
+    maleImgUrl :string;
+    femaleImgUrl :string;
   };
 };
 
-interface IconListItem {
-  className:string, 
+interface ChibiIconListItem {
+  className :string, 
   image: {
-    maleImgUrl:string, 
-    femaleImgUrl:string
+    maleImgUrl :string, 
+    femaleImgUrl :string
   }
 };
 
@@ -20,7 +22,7 @@ interface IconListItem {
 })
 export class ClassesService {
 
-  chibiIconDictionnary: IconDictionary = 
+  chibiIconDictionnary :IconDictionary = 
     {
       "Cra" :{
         maleImgUrl:"https://i.imgur.com/rTaOCuh.png",
@@ -97,9 +99,8 @@ export class ClassesService {
 
     };
 
-
   // Could be made into a service for each, to have something like " CraService.getChibiIcon() ", but would require a lot of boilerplate. Maybe later if website requirements demand it. Currently, it's doing the job, good enough.
-  chibiIconList: IconListItem[] = [
+  chibiIconList :ChibiIconItem[] = [
     { 
       className:"Cra", 
       image:{
@@ -211,17 +212,213 @@ export class ClassesService {
     },
   ]
 
+  iconsList :IconItem[] =[
+    { 
+      className:"Cra",
+      image:{
+        maleImgUrl:"https://i.imgur.com/TD7Wtd3.png",
+        femaleImgUrl:"https://i.imgur.com/Jjv4Zf3.png"
+      }
+    },
+    { className:"Ecaflip", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/W9cHTNT.png",
+        femaleImgUrl:"https://i.imgur.com/3vCZ3kB.png"
+      }
+    },
+    { className:"Eliotrope", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/kwT1HMV.png",
+        femaleImgUrl:"https://i.imgur.com/HtYxWMB.png"
+      }
+    },
+    { className:"Eniripsa", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/bl2bhJz.png",
+        femaleImgUrl:"https://i.imgur.com/lkGtQgJ.png"
+      }
+    },
+    { className:"Enutrof", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/eJqu2M2.png",
+        femaleImgUrl:"https://i.imgur.com/mLhCcrO.png"
+      }
+    },
+    { className:"Feca", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/HQOcGyc.png",
+        femaleImgUrl:"https://i.imgur.com/a1fAbRp.png"
+      }
+    },
+    { className:"Steamer", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/tEmOm9Z.png",
+        femaleImgUrl:"https://i.imgur.com/Cibgx04.png"
+      }
+    },
+    { className:"Huppermage", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/ZDM8m9p.png",
+        femaleImgUrl:"https://i.imgur.com/4JBzBeo.png"
+      }
+    },
+    { className:"Iop", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/k3xXGiG.png",
+        femaleImgUrl:"https://i.imgur.com/iwsSaTZ.png"
+      }
+    },
+    { className:"Osamodas", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/EGUSmoI.png",
+        femaleImgUrl:"https://i.imgur.com/9JnwysC.png"
+      }
+    },
+    { className:"Ouginak", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/BR27Suv.png",
+        femaleImgUrl:"https://i.imgur.com/y0DBUHa.png"
+      }
+    },
+    { className:"Pandawa", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/R0JTdLT.png",
+        femaleImgUrl:"https://i.imgur.com/n59wk1q.png"
+      }
+    },
+    { className:"Roublard", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/lD9FppM.png",
+        femaleImgUrl:"https://i.imgur.com/zao35Ws.png"
+      }
+    },
+    { className:"Sacrieur", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/btzMeDV.png",
+        femaleImgUrl:"https://i.imgur.com/kxoaGhh.png"
+      }
+    },
+    { className:"Sadida", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/U0j1PUR.png",
+        femaleImgUrl:"https://i.imgur.com/v3Fmbg8.png"
+      }
+    },
+    { className:"Sram", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/jDFWdPc.png",
+        femaleImgUrl:"https://i.imgur.com/f3oVbgq.png"
+      }
+    },
+    { className:"Xelor", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/K4UkNL5.png",
+        femaleImgUrl:"https://i.imgur.com/cIovN0L.png"
+      }
+    },
+    { className:"Zobal", 
+      image:{
+        maleImgUrl:"https://i.imgur.com/U7zQ3On.png",
+        femaleImgUrl:"https://i.imgur.com/KA7M1Us.png"
+      }
+    }
+  ];
+
+  iconsDic :IconDictionary ={
+      "Cra":{
+        maleImgUrl:"https://i.imgur.com/TD7Wtd3.png",
+        femaleImgUrl:"https://i.imgur.com/Jjv4Zf3.png"
+      },
+      "Ecaflip":{
+        maleImgUrl:"https://i.imgur.com/W9cHTNT.png",
+        femaleImgUrl:"https://i.imgur.com/3vCZ3kB.png"
+      },
+      "Eliotrope":{
+        maleImgUrl:"https://i.imgur.com/kwT1HMV.png",
+        femaleImgUrl:"https://i.imgur.com/HtYxWMB.png"
+      },
+      "Eniripsa":{
+        maleImgUrl:"https://i.imgur.com/bl2bhJz.png",
+        femaleImgUrl:"https://i.imgur.com/lkGtQgJ.png"
+      },
+      "Enutrof":{
+        maleImgUrl:"https://i.imgur.com/eJqu2M2.png",
+        femaleImgUrl:"https://i.imgur.com/mLhCcrO.png"
+      }, 
+    "Feca":{
+      maleImgUrl:"https://i.imgur.com/HQOcGyc.png",
+      femaleImgUrl:"https://i.imgur.com/a1fAbRp.png"
+    },
+      "Steamer":{
+        maleImgUrl:"https://i.imgur.com/tEmOm9Z.png",
+        femaleImgUrl:"https://i.imgur.com/Cibgx04.png"
+      },
+      "Huppermage":{
+        maleImgUrl:"https://i.imgur.com/ZDM8m9p.png",
+        femaleImgUrl:"https://i.imgur.com/4JBzBeo.png"
+      },
+      "Iop":{
+        maleImgUrl:"https://i.imgur.com/k3xXGiG.png",
+        femaleImgUrl:"https://i.imgur.com/iwsSaTZ.png"
+      },
+      "Osamodas":{
+        maleImgUrl:"https://i.imgur.com/EGUSmoI.png",
+        femaleImgUrl:"https://i.imgur.com/9JnwysC.png"
+      },
+    "Ouginak":{
+        maleImgUrl:"https://i.imgur.com/BR27Suv.png",
+        femaleImgUrl:"https://i.imgur.com/y0DBUHa.png"
+      },
+    "Pandawa":{
+        maleImgUrl:"https://i.imgur.com/R0JTdLT.png",
+        femaleImgUrl:"https://i.imgur.com/n59wk1q.png"
+      },
+    "Roublard":{
+        maleImgUrl:"https://i.imgur.com/lD9FppM.png",
+        femaleImgUrl:"https://i.imgur.com/zao35Ws.png"
+      },
+    "Sacrieur":{
+        maleImgUrl:"https://i.imgur.com/btzMeDV.png",
+        femaleImgUrl:"https://i.imgur.com/kxoaGhh.png"
+      },
+    "Sadida":{
+        maleImgUrl:"https://i.imgur.com/U0j1PUR.png",
+        femaleImgUrl:"https://i.imgur.com/v3Fmbg8.png"
+      },
+    "Sram":{
+        maleImgUrl:"https://i.imgur.com/jDFWdPc.png",
+        femaleImgUrl:"https://i.imgur.com/f3oVbgq.png"
+      },
+    "Xelor":{
+        maleImgUrl:"https://i.imgur.com/K4UkNL5.png",
+        femaleImgUrl:"https://i.imgur.com/cIovN0L.png"
+      },
+    "Zobal":{
+        maleImgUrl:"https://i.imgur.com/U7zQ3On.png",
+        femaleImgUrl:"https://i.imgur.com/KA7M1Us.png"
+      }
+    };
+
   constructor() {
 
   }
 
-  getChibiIconsList(): IconListItem[] {
+  getChibiIconsList() :ChibiIconListItem[] {
     return [...this.chibiIconList];
   }
 
-  getChibiIconsDic(): IconDictionary {
+  getChibiIconsDic() :IconDictionary {
     return {...this.chibiIconDictionnary};
   }
+
+  getClassesIcons(){
+    return{...this.iconsList}
+  }
+
+  getClassesIconsDic() :IconDictionary{
+    return{...this.iconsDic}
+  }
+
 }
 
 
