@@ -16,7 +16,7 @@ A terme il y aura des :
 - [x] stuffs20
 - [x] stuffs50
 - [x] stuffs80
-- [ ] stuffs110
+- [x] stuffs110
 
 - [x] liens vers les fansites utiles (Method, Zenith, ...)
 
@@ -55,7 +55,9 @@ A terme il y aura des :
     - [ ] Eni - Mecaniques et sorts de base
         - [ ] Eni Soin/Buff/Debuff
 
-- [ ] glossaire des termes et abréviations utilisés en jeu
+- [x] glossaire des termes et abréviations utilisés en jeu
 
 - [ ] Quêtes mercenaires
     - [ ] Amakna
+
+- [ ] Tierlist maker
