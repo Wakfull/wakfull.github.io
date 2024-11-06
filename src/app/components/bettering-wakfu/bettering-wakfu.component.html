@@ -1,0 +1,130 @@
+
+<div class="container">
+    <h2 class="text-center">QOL, problèmes, et suggestions en vrac</h2>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Préface</div>
+        <div class="textContent">
+            <p>
+                Tout ce qui est ici n'est que mon avis. Un avis plus informé que la moyenne certes, mais qui reste subjectif.
+            </p>
+            <p>
+                Il s'agit d'une liste de points frustrants selon moi; néanmoins il est bon de garder à l'esprit que si Ankama ne résoud pas tout, ce n'est pas (ou pas nécessairement) par manque de volonté ou de compétence.
+                Il n'y a pas un nombre illimité de devs, et le temps ce ceux-ci n'est pas non plus extensible à l'infini.
+                Le temps consacré à passer sur des choses "qui sont pas ouf mais qui fonctionnent", c'est du temps qui n'est pas passé à rework une classe, à créer une nouvelle extension, etc.
+                Gardez à l'esprit que même si dans le monde idéal on aimerait avoir à la fois un jeu clean, une interface parfaite, et du contenu à foison ... bah dans la réalité l'équipe de dev est forcées de faire des choix.
+                Et si ils passaient leur temps à refaire le jeu, on finirait comme Dofus qui a passé presque 2-3 ans sans vraie maj à attendre Unity.
+            </p>
+            <p>
+                Ceci étant dit, voici selon moi un ensemble de problématiques sur lesquelles se pencher.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Sommaire</div>
+        <div class="textContent">
+            <p>
+                Note : L'ordre n'a aucune importance, il s'agit juste de l'ordre dans lequel les notes ont été rédigées.
+            </p>
+            <ul>
+                <li><a [routerLink]="[]" fragment="infoBulles">InfoBulles glyphes en combat</a></li>
+                <li><a [routerLink]="[]" fragment="modeTactique">Problèmes du mode tactique actuel</a></li>
+                <li><a [routerLink]="[]" fragment="pathFindingCombat">Problèmes du pathfinding en combat</a></li>
+                <li><a [routerLink]="[]" fragment="popupsAuSurvol">Les "popups explicatifs" de glyphes (et autres mécaniques) au survol</a></li> 
+                <li><a [routerLink]="[]" fragment="antiOopsies">Brisage d'item anti-oopsies</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="infoBulles"></span>
+        <div class="textContentTitle">Les infobulles glyphes en combat</div>
+        <div class="textContent">
+            <pre>
+                Les infobulles des items ou ressources devraient toujours être "on top". "Comme dans Dofus".
+                Si le joueur a intentionnellement "épinglé" un item/une ressource, c'est pour garder l'information à l'écran.
+                Il est très frustrant d'épingler un objet, de cliquer par exemple sur l'HDV et ... à bah non, l'infobulle est "en dessous", il faut refermer l'hdv, déplacer l'infobulle à un endroit qui ne sera pas couvert par l'interface de l'hdv quand on l'ouvrira, et puis seulement re-ouvrir l'hdv.
+                
+                En d'autres termes, le système actuel s'intègre mal avec une utilisation normale de l'interface. Il faut que le joueur connaisse à l'avance où toutes les interface vont s'ouvrir dans le futur, et garde à l'esprit l'emplacement des popups afin d'éviter les conflits.
+            </pre>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="modeTactique"></span>
+        <div class="textContentTitle">Problèmes du mode tactique actuel</div>
+        <div class="textContent">
+                Les cases du modes tactique devraient indiquer visuellement si il est possible de taper à travers ou pas. "Comme dans Dofus".
+                Pour l'instant
+                <ul>
+                    <li> il y a des cases "vides" à travers lesquelles on ne peut pas taper </li>
+                    <li> il y a des cases "pleines" ou "semi-pleines" (quelle différence pour le joueur ? Ceci n'est pas évident) </li>
+                        <li>à travers ces cases, le comportement le plus commun est de ne pas pouvoir taper mais ... </li>
+                        <ul>
+                            <li> Parfois il est possible de cibler certaines cases derrière le mur. Mais pas nécessairement toutes. Parfois toutes les cases, mais pas directement les mobs.</li>
+                            <li> Parfois il est possible de taper à travers (c'est souvent le cas pour les demi-cases). Mais parfois pas </li>
+                        </ul>
+                </ul>
+                Le comportement de ces cases est nébuleux, et semble inconsistant du point de vue d'un joueur.
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="pathFindingCombat"></span>
+        <div class="textContentTitle">Problèmes du pathfinding en combat</div>
+        <div class="textContent">
+
+            <ol>
+                <li>La prévisualisation des déplacements est <i>relativement</i><b> lente</b> et laggy. Elle devrait être instantanée, mais ce n'est clairement pas le cas. Le ressenti qui en découle est ... meh.</li>
+                <li>La prévisualisation <b>tente de faire passer par les cases glyphes en priorité</b>, et ce <b>même quand un chemin alternatif de même longueur qui ne passe pas par un glyphe existe</b>. </li>
+            </ol>
+            <pre>
+                Aucun joueur ne va intentionnellement prendre le chemin de le moins bon.
+                Pour l'instant en pratique, tout ce que ça implique est que le jeu force le joueur à "couper en deux" son déplacement, en cliquant une première fois à mi-chemin, attendant que le perso se déplace (vu que la prévisu de déplacement ne s'update qu'une fois l'animation de déplacement finie), puis re-cliquer pour se déplacer à la destination à laquelle il souhaitait véritablement accéder.
+
+                Ceci rend le jeu pâteux sans raison.
+                J'ai bien conscience des différences, cependant à nouveau, Dofus gère ceci de façon bien plus fluide (et sensée).
+
+                Pour rappel, par défaut le pathfinding de dofus évite les glyphes/pièges visibles, et il faut que le joueur clique intentionnellement pour entrer dans ceux-ci.
+                Ceci crée un gameplay global plus fluide et moins frustrant. De cette façon, le joueur joue contre les mobs et les aléas du terrain (glyphes, etc.) et non contre le pathfinding.
+            </pre>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="popupsAuSurvol"></span>
+        <div class="textContentTitle">Les "popups explicatifs" de glyphes (et autres mécaniques) au survol</div>
+        <div class="textContent">
+            <pre>
+                Les différents glyphes qui abondent dans les combats sur Wakfu (cases de bord de terrain, glyphes mobs, glyphes feca, etc.) ont tous un "popup explicatif" qui s'affiche lorsque le joueur passe sa souris dessus.
+                Ce popup devient cependant gênant lorsque le joueur tente de cibler une cable adjacente, principalement visuellement au dessus. En effet, cliquer sur le popup "absorbe" le click. Ce qui cancel l'action du joueur, annule le sort, etc.
+                
+                Lors d'un gameplay normal, il n'est pas rare de se retrouver avec des joueurs ou mobs sur des glyphes, ou à côté de glyphes. Dès lors, il n'est pas rare non plus de passer sa souris par dessus ces cases-glyphes, d'activer ce popup, et de cliquer. A l'écrit on pourrait penser qu'il suffit de faire plus attention, mais en combat ceci se déroule en moins d'une seconde.
+                On lance le sort, on met sa souris sur le mob, on clique. Moins d'une seconde. Sauf que pas de bol, cette fois-ci un popup intempestif s'est invité juste avant de cliquer, et il faut tout recommencer.
+
+                Ceci entraine un problème de fluidité et/ou de frustration du point de vue d'un joueur.
+            </pre>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="antiOopsies"></span>
+        <div class="textContentTitle">QOL - Suggestion anti-oopsies</div>
+        <div class="textContent">
+            <p>
+                Lorsqu'on a activé "briser un objet", et qu'on brise des ressources/items dans l'inventaire, il serait intéressant d'ajouter une confirmation (la même que pour les items legendaire, reliques, 4C, etc.) à certains autres objets ou ressources spécifiques.
+	        </p>
+            <ul>
+                <li>Pour les sioupères</li>
+                <ul>
+                    <li> Il semble peu probable que quelqu'un décide sciemment de briser ses sioupères. Ceci évite les misclicks qui delete des stacks entiers de sioupères se situant par hasard au milieu d'objets verts droppés sans grand intérêts, comme il y en a tant.</li>
+                </ul>
+            </ul>
+
+        </div>
+    </div>
+
+</div>

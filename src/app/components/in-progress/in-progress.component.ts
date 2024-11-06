@@ -26,6 +26,7 @@ export class InProgressComponent {
       { title: "Breche Tainela", link: "/rift/tainela"},
       { title: "Breche Sufokia", link: "/rift/sufokia"},
       { title: "Tierlist maker", link: "/tierlist"},
+      { title: "Bettering Wakfu",link : "/bettering-wakfu", description :"Une page de notes de ce que je considère comme étant des problèmes de design ou d'améliorations à faire sur Wakfu. Ceci couvre UI, UX, gameplay ou autre qol. Ce n'est que mon avis."},
     ]
   }
 }

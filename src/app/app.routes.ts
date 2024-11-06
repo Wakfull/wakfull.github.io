@@ -27,6 +27,7 @@ import { EnchantementComponent } from './components/enchantement/enchantement.co
 import { GlossaryComponent } from './components/glossary/glossary.component';
 import { InProgressComponent } from './components/in-progress/in-progress.component';
 import { TierlistMakerComponent } from './components/tierlist-maker/tierlist-maker.component';
+import { BetteringWakfuComponent } from './components/bettering-wakfu/bettering-wakfu.component';
 
 
 export const routes: Routes = [
@@ -201,6 +202,7 @@ export const routes: Routes = [
         ]
     },
     { path:'tierlist', component : TierlistMakerComponent },
+    { path:'bettering-wakfu', component : BetteringWakfuComponent },
     { path:'todo', component : InProgressComponent },
 
     { path:'',   redirectTo: '/home', pathMatch: 'full' },

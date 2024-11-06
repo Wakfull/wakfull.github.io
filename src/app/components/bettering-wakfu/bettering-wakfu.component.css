@@ -1,0 +1,8 @@
+
+
+
+
+.textContent pre{
+    white-space: pre-wrap; /* Sinon les retours à la line ne fonctionne pas quand on affiche */
+    white-space-collapse: preserve-breaks;
+}
