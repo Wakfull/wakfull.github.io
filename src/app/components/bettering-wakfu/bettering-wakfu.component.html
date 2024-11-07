@@ -35,9 +35,10 @@
                 <li><a [routerLink]="[]" fragment="popupsAuSurvol">Les "popups explicatifs" de glyphes (et autres mécaniques) au survol</a></li> 
                 <li><a [routerLink]="[]" fragment="antiOopsies">Brisage d'item anti-oopsies</a></li>
                 <li><a [routerLink]="[]" fragment="ecologySystem">Système d'écologie</a></li>
-                <li><a [routerLink]="[]" fragment="minerFisherRareResources">Ressources rares mineur et pêcheur</a></li>
-
-
+                <li><a [routerLink]="[]" fragment="minerFisherRareResources">Ressources rares mineur et pêcheur</a></li> 
+                <li><a [routerLink]="[]" fragment="linksLinksLinks">Les liens dans les liens dans les liens</a></li>
+                <li><a [routerLink]="[]" fragment="formulationConstante">Formulation de certains bonus peu évidente</a></li>
+                <li><a [routerLink]="[]" fragment="decoNoPopup">Manque de popup de déco imminente</a></li>
             </ul>
         </div>
     </div>
@@ -167,8 +168,49 @@
                 Ceci pousserait les gens à faire repop eux-mêmes, au lieu d'être des <s>connards</s> vautours inciviques.</li>
             </ul>
         </div>
+    </div>
 
-        
+    <div class="textcontentContainer">
+        <span id="linksLinksLinks"></span>
+        <div class="textContentTitle">Les liens dans les liens dans les liens</div>
+        <div class="textContent">
+            <p>
+                Il y a énormément d'explications de sorts ou effet qui ne sont explicités uniquement en cliquant sur un lien. Lequel ouvre une nouvelle infobulle.
+                Laquelle a également potentiellement un ou des liens. Lesquels doivent être également cliqués pour faire apparaitre un nouveau popup.
+            </p>
+            <p>Un exemple de ceci est le Coeur de l'Hupper.</p>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="formulationConstante"></span>
+        <div class="textContentTitle">Formulation de certains bonus peu évidente</div>
+        <div class="textContent">
+            <pre>
+               Quelles sont les différences entre les lignes suivantes (il y en a) :
+               2PA
+               +2PA
+               Rend 2PA
+               2PA remboursés
+            </pre>
+            <p>
+                Il serait bien d'uniformiser ceci.
+            </p>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <span id="decoNoPopup"></span>
+        <div class="textContentTitle">Manque de popup de déco imminente</div>
+        <div class="textContent">
+            <p>
+                Il n'y a pas de "popup d'avertissement de déconnexion imminente" quand on est afk pendant trop longtemps.
+                C'est un QOL que la plmupart des MMO ont. Un simplement popup qui dit "attention tu es afk, tu as être déco dans :" avec un timer de genre 30s.
+            </p>
+            <p>
+                Aussi, ce n'est indiqué nulle part, mais on se fait déco après un délai beaucoup plus court si on se trouve dans une instance (comme un temple par exemple).
+            </p>
+        </div>
     </div>
 
 </div>
