@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { ClassesService } from '../../services/classes.service';
 import { IconItem } from '../../interfaces/iIconItem';
+import { FormsModule } from '@angular/forms';
 
 export class TierRow {
   guid : string
@@ -39,7 +40,7 @@ interface IconDictionary {
 @Component({
   selector: 'app-tierlist-maker',
   standalone: true,
-  imports: [CdkDropList, CdkDrag, CommonModule],
+  imports: [CdkDropList, CdkDrag, CommonModule, FormsModule],
   templateUrl: './tierlist-maker.component.html',
   styleUrl: './tierlist-maker.component.css'
 })
@@ -49,7 +50,7 @@ export class TierlistMakerComponent {
   rows :TierRow[] = [];
   itemsPool :TierRow = new TierRow();
   itemPoolTitle ="Entity pool";
-  tiersCount = 1;
+  // tiersCount = 1;
 
   craChibiIconUrl:string | undefined;
   elioChibiIconUrl:string | undefined;
@@ -75,6 +76,11 @@ export class TierlistMakerComponent {
 
   classesIconsDic: IconDictionary = {};
 
+  // New Properties for Editing
+  isEditMode = false;
+  isAddingRow = false;
+  newRowTitle = "";
+
   constructor(private classesServ :ClassesService){
     this.classesIconsDic = classesServ.getClassesIconsDic();
     this.populateAllIcons();
@@ -99,16 +105,31 @@ export class TierlistMakerComponent {
     this.rows.push(row);
   }
   addNewRow(){
-    this.rows.push(new TierRow("Tier " + this.tiersCount));
-    this.tiersCount ++;
+    this.rows.push(new TierRow("New tier"));
   }
 
   removeRow(guid:string){
+    const rowToRemove = this.rows.find(row => row.guid === guid);
+
+      // If the row exists and has items, add them back to the items pool
+    if (rowToRemove && rowToRemove.items.length > 0) {
+      this.itemsPool.items.push(...rowToRemove.items);
+    }
+
     this.rows = this.rows.filter(x=> x.guid != guid);
   }
   removeLastRow(){
-    this.rows.pop();
-    this.tiersCount = Math.max(1, this.tiersCount - 1); // To prevent going negative. oops.
+
+    if (this.rows.length == 0){ // To prevent going negative. Also, makes no sense to delete a row if there is no row.
+      return;
+    }
+    const removedRow = this.rows.pop();
+
+    // If the row exists and has items, add them back to the items pool
+    if (removedRow && removedRow.items.length > 0) {
+      this.itemsPool.items.push(...removedRow.items);
+    }
+    // this.tiersCount = Math.max(1, this.tiersCount - 1); // To prevent going negative. oops. // Shouldn't be an issue anymore cause we check if rows.length==0 now
   }
 
   addItemByRowGuid(itemToAdd:TierItem, rowGuid:string) :any{
@@ -159,7 +180,28 @@ export class TierlistMakerComponent {
     this.addItemToBaseItemPool(new TierItem("Sram", this.classesIconsDic["Sram"]?.femaleImgUrl));
 
     this.addItemToBaseItemPool(new TierItem("Xelor", this.classesIconsDic["Xelor"]?.femaleImgUrl));
-    this.addItemToBaseItemPool(new TierItem("Zobal", this.classesIconsDic["Zobal"]?.femaleImgUrl));
+    this.addItemToBaseItemPool(new TierItem("Zobal", this.classesIconsDic["Zobal"]?.femaleImgUrl)); // 
+    this.addItemToBaseItemPool(new TierItem("Casque mort brulé", "https://i.imgur.com/YFBNhZa.png"));
+  }
+
+  toggleEditMode() {
+    this.isEditMode = !this.isEditMode;
+    if (!this.isEditMode) {
+      this.saveChanges();
+    }
+  }
+
+  // Show input for adding a new row
+  showAddRowInput() {
+    this.isAddingRow = true;
+  }
+  cancelAddRow() {
+    this.isAddingRow = false;
+    this.newRowTitle = "";
+  }
+
+  saveChanges() {
+    // For later, if need to actually call a service to save to a db or local or smthg.
   }
 
 }
