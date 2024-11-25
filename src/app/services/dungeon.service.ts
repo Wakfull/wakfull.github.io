@@ -33,7 +33,7 @@ export class DungeonService {
       },
       {
         name:"Pâturages des Bouftous",
-        level:9,
+        level:12,
         nbr_rooms:3,
         nbr_players:6,
         is_UB:false,
