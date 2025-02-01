@@ -29,6 +29,7 @@ export class ElioGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases de l'elio", link: "./base", backgroundImage : this.elioFChibiIconUrl},
       { title: "Elio mêlée", link: "./melee", backgroundImage : this.elioMChibiIconUrl},
       { title: "Elio Distance", link: "./dist", backgroundImage : this.elioFChibiIconUrl},
     ]

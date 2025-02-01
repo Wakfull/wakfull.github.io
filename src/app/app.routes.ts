@@ -54,6 +54,7 @@ export const routes: Routes = [
             { path:'elio', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.ElioGameplaysComponent },
+                    { path:'base', component : gameplayComponents.ElioBasicComponent},
                     { path:'melee', component : gameplayComponents.ElioMeleeComponent },
                     { path:'dist', component : gameplayComponents.ElioDistComponent },
                 ]
