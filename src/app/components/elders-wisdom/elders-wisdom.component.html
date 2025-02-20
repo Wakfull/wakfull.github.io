@@ -18,7 +18,8 @@
                 <li><a [routerLink]="[]" fragment="degatsPos">Dégats positionnels</a></li>
                 <li><a [routerLink]="[]" fragment="brisageItem">Brisez vos items et ressources</a></li>
                 <li><a [routerLink]="[]" fragment="almanax">Almanax</a></li>
-                <li><a [routerLink]="[]" fragment="pointsCaracts">Points de caractéristiques</a></li>
+                <li><a [routerLink]="[]" fragment="pointsCaracts">Répartition des points de caractéristiques à chaque montée de niveau</a></li>
+                <li><a [routerLink]="[]" fragment="calculDegatsMaitrise">A quoi correspond la maitrise elementaire/crit/dist/etc.</a></li>
             </ul>
         </div>
     </div>
@@ -150,7 +151,7 @@
 
     <div class="textcontentContainer">
         <span id="pointsCaracts"></span>
-        <div class="textContentTitle">Points de caractéristiques</div>
+        <div class="textContentTitle">Répartition des points de caractéristiques à chaque montée de niveau</div>
         <div class="textContent">
             Jusqu'au niveau 80 (voire 110), tous les persos tapent. Il n'est pas nécessaire de se spécialiser dès le début (et si vous jouez tank en solo, vous allez galérer).
             Si vous ne savez pas comment attribuer vos points de caractéristiques au début de votre aventure, vous pouvez suivre ceci :
@@ -229,5 +230,63 @@
             </ul>
         </div>
     </div>
+
+    <div class="textcontentContainer">
+        <span id="calculDegatsMaitrise"></span>
+        <div class="textContentTitle">A quoi correspond la maitrise elementaire/crit/dist/etc.</div>
+        <div class="textContent">
+            Les différentes maitrises (élémentaires, distance, mêlée, crit, berzerk, etc.) influent sur les dégats que vos sorts infligent. Mais comment est-ce calculé ? Comment les maitrises s'applique-t-elles ?
+
+            <h5>1. Le calcul des dégats</h5>
+            <p>
+                La façon de base dont les dégats sont calculés est simple : 1 point de maitrise donne 1% de dégats de base en plus. Donc 1 de maitrise = 1% de dégat, 10 de maitrise, 10% de dégats, 50 de maitrise = 50% de dégats, etc.
+                En pratique ça veut dire :
+            </p>
+            <ul>
+                <li> Si vous lancez un sort qui fait <div class="baseDmgBorder">10 dégats de base </div> </li>
+                <li> Et que vous avez <div class="masteryBonusDmg">50 de maitrise</div> </li>
+                <li> Alors votre sort infligera : 
+                    <ul>
+                        <li> 10 dégats de base</li>
+                        <li> + <div class="masteryBonusDmg">5 dégats de maitrise </div> (<div class="masteryBonusDmg">50%</div> * <div class="baseDmgBorder"> 10 </div> = 5)</li>
+                        <li> = 15 dégats</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Maintenant concernant les maitrises, vous aurez remarqué qu'il y en a de plusieurs types, dont les principaux sont : 
+            </p>
+            <ul>
+                <li>Elementaire (ne s'applique que sur un sort du même élément)</li>
+                <li>Distance (ne s'applique que si le sort est lancé à 3 cases ou +) </li>
+                <li>Mêlée (ne s'applique que si le sort est lancé à 1 ou 2 cases) </li>
+                <li>Critique (ne s'applique que si le sort fait un coup critique)</li>
+                <li>Berzerk (ne s'applique que si votre personnage est en dessous de 50% de vie)</li>
+                <li>Soin (ne s'applique que sur les sorts de soin) </li>
+            </ul>
+            <p>
+                Pour répondre à une question réccurente :
+            </p>
+            <p>
+                <b>
+                    Tous les points de maitrises ont la même valeur, 1 point de maitrise élémentaire donne le même bonus aux dégats que 1 point d'une autre maitrise. Elles sont toutes pareilles.
+                </b>
+            </p>
+            <p>
+                La question suivante qui suit logiquement est généralement "Mais alors, pourquoi jouer un gameplay "avec des conditions" comme distance ou mêlée, si toutes les maitrises se valent ?"
+            </p>
+            <p>
+                Très bonne question, et la réponse se trouve dans <b>la façon dont les items sont équilibrés</b>. Passé les les premiers niveaux du jeu (càd environ vers lv80), 
+                vous remarquerez que les items avec de la maitrise "spécialisée" (par exemple "distance") donnent plus de maitrise que des items plus génériques qui ne donnent que de la maitrise élémentaire.
+                Vous avez donc un choix à faire :
+            </p>
+            <ul>
+                <li>taper +, en vous spécialisant (vous ne tapez que à distance, ou que en mêlée, mais pas les deux)</li>
+                OU
+                <li>taper moins mais être + flexible</li>
+            </ul>
+        </div>
+    </div>
+    
 
 </div>
