@@ -52,6 +52,8 @@ export class GlossaryService {
       { word:"Dist", definition: "\"Distance\". Il s'agit soit du type de maitrise d'un DPT (ex : un elio distance), soit il s'agit du positionnement des personnages en combat, à + de 2 cases des mobs." },
       { word:"HS", definition: "\"Havre-Sac\"." },
       { word:"PS", definition: "\"Points de Stasis\". Il s'agit de la ressource spécifique à la classe Steamer. Un peu comme une autre sorte de PW ou de BQ, mais que pour les steamers." },
+      { word:"Carac", definition: "\"Caractéristiques\"." },
+      { word:"Res", definition: "\"Résistance\"." },
     ];
 
   constructor() {
