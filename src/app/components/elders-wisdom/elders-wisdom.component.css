@@ -1,0 +1,15 @@
+.masteryBonusDmg{
+    background-color: lightblue;
+    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.baseDmgBorder{
+    background-color: lightgray;
+    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.totalDmg{
+    font-weight: bold;
+}

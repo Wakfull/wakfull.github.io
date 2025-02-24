@@ -181,7 +181,7 @@ export class TierlistMakerComponent {
 
     this.addItemToBaseItemPool(new TierItem("Xelor", this.classesIconsDic["Xelor"]?.femaleImgUrl));
     this.addItemToBaseItemPool(new TierItem("Zobal", this.classesIconsDic["Zobal"]?.femaleImgUrl));
-    this.addItemToBaseItemPool(new TierItem("Surpuissante", "https://i.imgur.com/VSsXSf4.gif")); 
+    this.addItemToBaseItemPool(new TierItem("Surpuissante", "https://i.imgur.com/4q49mJy.png")); 
     // this.addItemToBaseItemPool(new TierItem("Casque mort brulé", "https://i.imgur.com/YFBNhZa.png")); // test max dimensions
   }
 
