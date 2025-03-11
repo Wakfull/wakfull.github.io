@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PreviewComponent } from './preview/preview.component';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,8 @@ import { PreviewComponent } from './preview/preview.component';
 })
 export class HomeComponent {
   
+  siteName = environment.websiteName;
+
   thinkingElio = "https://i.imgur.com/WoWn4Bn.png";
   
   bouftouRoyalUrl = "https://i.imgur.com/CUl0FDk.png";
