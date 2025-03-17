@@ -1,0 +1,100 @@
+
+<div class="container">
+    <h2 class="text-center"> Les bases du Cra</h2>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle"> Mécaniques spécifiques de la classe </div>
+        <div class="textContent">
+            <p>
+                Il existe une mécanique de classes principale :
+            </p>
+            <ul>
+                <li> Les balises </li>
+            </ul>
+            Ainsi que deux mécaniques secondaires : 
+            <ul>
+                <li> La jauge de "Précision"</li>
+                <li> La jauge d' "Affutage"</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Les balises </div>
+        <div class="textContent">
+            <p>
+                Les balises sont des invocations qui ne bougent pas que le cra peut poser sur le terrain.
+                Si le cra lance des sorts qui touchent les balises, alors celles-ci infligent également des dégats dans une zone qui dépend du type de la balise.
+            </p>
+            <ul>
+                <li>La balise de <b>destruction</b> (la balise "rouge") inflige des dégats sur les cases à 1 et 2 de portée de celle-ci.</li>
+                
+                <li>La balise d'<b>alignement</b> (la balise "verte") inflige des dégats en ligne autours d'elle de 1 à 5 cases.</li>
+
+                <li>La balise de <b>contact</b> (la balise "mauve") inflige des dégats en mêlée autours d'elle (aux 4 cases adjacentes)</li>
+            </ul>
+            <div class="balises_tiles">
+                <div class="balise_tile_container">
+                    <img class="tile_balise" src="https://i.imgur.com/paVc9JN.png" alt="balise_destruction_cra">
+                    <div class="balise_name"> Balise de destruction</div>
+                </div>
+                
+                <div class="balise_tile_container">
+                    <img class="tile_balise" src="https://i.imgur.com/Vtk4OR4.png" alt="balise_alignement_cra">
+                    <div class="balise_name"> Balise d'alignement</div>
+                </div>
+
+                <div class="balise_tile_container">
+                    <img class="tile_balise" src="https://i.imgur.com/HghmUBp.png" alt="balise_contact_cra">
+                    <div class="balise_name"> Balise de contact</div>
+                </div>
+            </div>
+            <p>
+                A noter que bien que les balises aient des couleurs d'éléments différents, les dégats qu'elles infligent sont toujours du même élément que le sort que vous avez utilisé pour les déclencher.
+                Donc si j'utilise un sort feu (par exemple la flêche explosive), alors les dégats des balises seront également des dégats feu.
+            </p>
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle"> Précision </div>
+        <div class="textContent">
+            <p>
+                La jauge de précision est représentée par un état, que vous pouvez consulter dans votre barre d'états en combat (en haut à droite).
+                Celle-ci augmente toute seule lorsque vous lancez des sorts. Plus le sort coûte en PA et PW, plus cela donne de précison, jusqu'à un maximum de 300 points de précision.
+            </p>
+            <p>
+                Lorsque vous avez suffisamment de précision, vous pouvez utiliser le sort "Tir Précis" afin d'améliorer les effets de vos sorts. Le nombre de points de précision dont chaque sort à besoin pour être amélioré est indiqué dans la description du sort en question.
+                Par exemple, si vous avez suffisamment de précision :
+            </p>
+            <ul>
+                <li>La "flèche explosive" inflige + de dégats </li>
+                <li>La "flèche de recul" pousse de 6 cases au lieu de 3</li>
+                <li>La "flèche perçante" rebondit 5 fois au lieu de 3</li>
+                <li>etc. </li>
+            </ul> 
+            
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle"> Affutage </div>
+        <div class="textContent">
+            <p>
+                L'affutage est une jague assez similaire à celle de précision, qui monte également en fonction des sorts que vous lancez. Cependant elle fonctionne différemment, en effet :
+            </p>
+            <p>Elle peut atteindre un maximum de 100, et à ce moment la jauge est automatiquement consomée et a les effet suivants :</p>
+            <ol>
+                <li> Le cra regagne 1PW </li>
+                <li> Le prochain sort lancé gagne un gros bonus de dégats (40%) </li>
+                <li> La jauge revient à 0</li>
+            </ol>
+            <p>
+               Il s'agit donc de votre mécanique de régénération de PW principale.
+            </p>
+
+            
+        </div>
+    </div>
+
+</div>

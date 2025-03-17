@@ -29,6 +29,7 @@ export class CraGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du cra", link: "./base", backgroundImage : this.craMChibiIconUrl},
       { title: "Cra classique", link: "./classic", backgroundImage : this.craMChibiIconUrl}
     ]
   }

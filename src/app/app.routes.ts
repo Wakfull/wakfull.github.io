@@ -70,6 +70,7 @@ export const routes: Routes = [
             { path:'cra', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.CraGameplaysComponent},
+                    { path:'base', component : gameplayComponents.CraBasicComponent},
                     { path:'classic', component : gameplayComponents.CraDistClassicComponent }
                 ]
             },
