@@ -87,7 +87,7 @@ export class ClassesGameplayComponent {
       { title: "Enu", link: "./enu", backgroundImage : this.enuChibiIconUrl},
       
       { title: "Feca", link: "./feca", backgroundImage : this.fecaChibiIconUrl},
-      { title: "Steamer", link: "./steam", backgroundImage : this.steamChibiIconUrl},
+      { title: "Steamer", link: "./steamer", backgroundImage : this.steamChibiIconUrl},
       { title: "Huppermage", link: "./hupper", backgroundImage : this.hupperChibiIconUrl},
       { title: "Iop", link: "./iop", backgroundImage : this.iopChibiIconUrl},
       { title: "Eniripsa", link: "./eni", backgroundImage : this.eniChibiIconUrl},

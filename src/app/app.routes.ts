@@ -77,6 +77,7 @@ export const routes: Routes = [
             { path:'eca', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.EcaGameplaysComponent},
+                    { path:'base', component : gameplayComponents.EcaBasicComponent},
                     { path:'dist', component : gameplayComponents.EcaDistComponent},
                     { path:'support', component : gameplayComponents.EcaSupportComponent},
                 ]
@@ -95,7 +96,7 @@ export const routes: Routes = [
                     { path:'glyph', component : gameplayComponents.FecaGlypheComponent},
                 ]
             },
-            { path:'steam', component : gameplayComponents.GenericClassPageLayoutComponent,
+            { path:'steamer', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.SteamGameplaysComponent},
                     { path:'support', component : gameplayComponents.SteamSupportComponent },

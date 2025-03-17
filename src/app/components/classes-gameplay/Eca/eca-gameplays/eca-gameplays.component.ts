@@ -29,7 +29,9 @@ export class EcaGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
-      { title: "Eca dist", link: "./dist", backgroundImage : this.ecaMChibiIconUrl}
+      { title: "Les bases de l'eca", link: "./base", backgroundImage : this.ecaMChibiIconUrl},
+      { title: "Eca dist", link: "./dist", backgroundImage : this.ecaMChibiIconUrl},
+      { title: "Eca support", link: "./support", backgroundImage : this.ecaMChibiIconUrl}
     ]
   }
 
