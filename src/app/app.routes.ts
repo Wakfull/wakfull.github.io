@@ -62,6 +62,7 @@ export const routes: Routes = [
             { path:'osa', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.OsaGameplaysComponent},
+                    { path:'base', component : gameplayComponents.OsaBasicComponent },
                     { path:'support', component : gameplayComponents.OsaSupportComponent },
                     { path:'melee', component :gameplayComponents. OsaDragonComponent },
                 ]

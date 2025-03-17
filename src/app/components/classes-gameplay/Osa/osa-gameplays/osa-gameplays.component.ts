@@ -29,6 +29,7 @@ export class OsaGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases de l'Osa", link: "./base", backgroundImage : this.osaMChibiIconUrl},
       { title: "Osa support", link: "./support", backgroundImage : this.osaMChibiIconUrl},
       { title: "Osa mêlée", link: "./melee", backgroundImage : this.osaFChibiIconUrl},
     ]
