@@ -55,7 +55,7 @@ J'utilise Angular SSG et SSR pour générer le siet sur base des sources. Ce rep
 
 Le site est généré en utilisant `ng build`.
 A noter qu'il faut ensuite remonter le code généré d'un directory.
-(mv * .. )
+(mv /docs/browser/* .. )
 
 
 ## Pourquoi est ce que X et Y ne sont pas consistants ? Pourquoi parfois hardcodé ? Pourquoi parfois service ? Il y a des \<br\> dans certains de tes html ???
