@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class ElioMeleeComponent {
 
+  copyToClipboard(textToCopy = "No text to copy."){
+		navigator.clipboard.writeText(textToCopy); 
+	}
+  
 }
