@@ -54,6 +54,7 @@ export class GlossaryService {
       { word:"PS", definition: "\"Points de Stasis\". Il s'agit de la ressource spécifique à la classe Steamer. Un peu comme une autre sorte de PW ou de BQ, mais que pour les steamers." },
       { word:"Carac", definition: "\"Caractéristiques\"." },
       { word:"Res", definition: "\"Résistance\"." },
+      { word:"AOE", definition: "\"Are Of Effect\". Ce sont les sorts de zone, tous les sorts qui tapent sur plusieurs cases en même temps. Par exemple la flêche explosive du cra." },
     ];
 
   constructor() {
