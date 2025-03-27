@@ -1,6 +1,7 @@
 
 <div class="container">
     <h2 class="text-center"> Les bases de l'Eni </h2>
+    
     <div class="difficulty-container">
         <div class="difficulty-tile text-center">
             <div class="difficulty-tile-title"> Prise en main ("Skill floor") </div>
@@ -26,7 +27,6 @@
                 <div class="difficulty-written"> (1/5) facile </div>
             </div> 
         </div>
-
     </div>
     
 
@@ -39,6 +39,7 @@
             </p>
             <ul>
                 <li> La gestion du passif "Propagateur" </li>
+                <li> L'état de Grâce </li>
                 <li> L'état contre-nature </li>
             </ul>
             Et les mécaniques secondaires : 
@@ -54,21 +55,58 @@
     <div class="textcontentContainer">
         <div class="textContentTitle"> Le Propagateur </div>
         <div class="textContent">
+            <p>
+                L'eni possède une "jauge" d'un état qu'on appelle "Propagateur".
+                Cette jauge se remplit un peu à chaque fois que l'eni soigne un de ses aliés (lui-même inclu).
+                Si l'eni a du propagateur, sa prochaine attaque <b>monocible</b> sur un ennemi consomera tous les stacks de propagateur accumulés pour faire des dégats bonus.
+            </p>
+            <p>
+                Le gameplay consiste donc à soigner ses aliés (par exemple avec des sorts en zone) pour obtenir/monter ses stacks de propagateur, puis par la suite à lancer un sort monocible sur un ennemi afin de consomer ces stacks.
+            </p>
+            <p>
+                Note :
+            </p>
+            <ul>
+                <li>Lancer un sort de soin sur quelque qui a déjà tout ses PV ne compte pas comme soigner. Il faut "vraiment soigner" pour monter son propagateur.</li>
+                <li>Les stacks de propagateurs restent jusqu'à ce que vous les utilisiez. Ils ne disparaissent pas en fin de tour. Vous pouvez donc stacker sur plusieurs tours si vous le souhaitez.</li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="textcontentContainer">
+        <div class="textContentTitle"> L'état de Grâce </div>
+        <div class="textContent">
+            <p> A la fin de chaque tour, s'il n'est pas en état "contre-nature", l'eni gagne passivement +10% de maitrise soin, jusqu'à un maximum de 50%. </p>
+            <p> Si l'eni finit en état "contre-nature", il perd alors 10% de ce bonus. </p>
         </div>
     </div>
 
     <div class="textcontentContainer">
         <div class="textContentTitle"> Etat contre-nature </div>
         <div class="textContent">
-
+            <p>
+                L'eni possède un sort en troisième barre de sort appellé "Contre-nature". L'utiliser vous permet d'obtenir l'état ... contre-nature !
+                Sous cet état, l'eni transforme sa maitrise soin et ses % maitre soin en dégats.
+            </p>
+            <ul>
+                <li>Maitrise soin => Maitrise élémentaire</li>
+                <li>% maitrise soin => % dégats infligés</li>
+            </ul>
+            <p> Note : cette conversion prend aussi en compte le bonus de l'état de grâce </p>
         </div>
     </div>
 
     <div class="textcontentContainer">
         <div class="textContentTitle"> Le lapino </div>
         <div class="textContent">
-
+            <p> Le Lapino est l'invocation de l'eniripsa. En fonction de l'état dans lequel l'eni est au moment de l'invocation ("normal" ou "contre-nature"), le lapino aura des sorts différents</p>
+                
+            <ul>
+                En mode "normal" le lapino possède :
+                <li> un sort de soin</li>
+                En mode "contre-nature" le lapino possède
+                <li> un sort de retrait de résistances</li>
+            </ul>
         </div>
     </div>
 
