@@ -25,6 +25,11 @@
     --mauve : #460960;
     --violet : #9a6fb1;
     --red : #c03b44;
+
+    /* Classes gameplay difficulties */
+    --difficulty-font-size : 1.5rem;
+    --difficulty-star-full-color : gold;
+    --difficulty-star-empty-color : white;
 }
 
 html, body{
@@ -86,3 +91,51 @@ img {
     height: auto;
   }
   
+  .difficulty-container{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.difficulty-tile{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondaryBgColor) ;
+    color: var(--secondaryTextcolor);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.difficulty-tile-title{
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.difficulty-rating{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.star-full{
+    display: flex;
+    font-size: var(--difficulty-font-size);
+    color: var(--difficulty-star-full-color);
+    height: fit-content;
+}
+
+.star-empty{
+    display: flex;
+    font-size: var(--difficulty-font-size);
+    color: var(--difficulty-star-empty-color );
+    height: fit-content;
+}
+
+.difficulty-written{
+    font-size: var(--difficulty-font-size);
+}

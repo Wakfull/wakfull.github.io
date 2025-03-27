@@ -28,6 +28,7 @@ export class EniGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases de l'eni", link: "./base", backgroundImage : this.eniMChibiIconUrl},
       { title: "Eni support", link: "./support", backgroundImage : this.eniMChibiIconUrl},
       { title: "Eni poison", link: "./poison", backgroundImage : this.eniMChibiIconUrl}
     ]

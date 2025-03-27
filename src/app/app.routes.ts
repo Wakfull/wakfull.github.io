@@ -120,6 +120,7 @@ export const routes: Routes = [
             { path:'eni', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.EniGameplaysComponent},
+                    { path:'base', component : gameplayComponents.EniBasicComponent },
                     { path:'support', component : gameplayComponents.EniSupportComponent },
                     { path:'poison', component : gameplayComponents.EniPoisonComponent }
                 ]
