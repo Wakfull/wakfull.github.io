@@ -29,6 +29,7 @@ export class XelorGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du Xelor", link: "./base", backgroundImage : this.xelMChibiIconUrl},
       { title: "Xelor dist feu", link: "./dist", backgroundImage : this.xelMChibiIconUrl},
       { title: "Xelor dist zone", link: "./zone", backgroundImage : this.xelFChibiIconUrl},
       { title: "Xelor support", link: "./support", backgroundImage : this.xelMChibiIconUrl}

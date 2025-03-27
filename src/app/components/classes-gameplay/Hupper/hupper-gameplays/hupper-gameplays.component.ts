@@ -28,6 +28,7 @@ export class HupperGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases de l'hupper", link: "./base", backgroundImage : this.hupperMChibiIconUrl},
       { title: "Hupper terre mêlée", link: "./melee", backgroundImage : this.hupperMChibiIconUrl},
       { title: "Hupper full elem", link: "./elem", backgroundImage : this.hupperFChibiIconUrl}
     ]

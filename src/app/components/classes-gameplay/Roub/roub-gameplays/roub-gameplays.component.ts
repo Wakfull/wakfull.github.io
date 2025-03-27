@@ -28,6 +28,7 @@ export class RoubGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du Roublard", link: "./base", backgroundImage : this.roubMChibiIconUrl},
       { title: "Roublard ?", link: "./default", backgroundImage : this.roubMChibiIconUrl},
     ]
   }

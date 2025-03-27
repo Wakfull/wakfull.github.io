@@ -29,6 +29,7 @@ export class IopGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du iop", link: "./base", backgroundImage : this.iopMChibiIconUrl},
       { title: "Iop mêlée", link: "./melee", backgroundImage : this.iopMChibiIconUrl}
     ]
   }

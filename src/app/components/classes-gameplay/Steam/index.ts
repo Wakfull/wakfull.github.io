@@ -2,3 +2,4 @@ export { SteamGameplaysComponent } from './steam-gameplays/steam-gameplays.compo
 export { SteamSupportComponent } from './steam-support/steam-support.component';
 export { SteamDptZoneComponent } from './steam-dpt-zone/steam-dpt-zone.component';
 export { SteamTourelleComponent } from './steam-tourelle/steam-tourelle.component';
+export { SteamBasicComponent} from './steam-basic/steam-basic.component';

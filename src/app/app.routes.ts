@@ -85,6 +85,7 @@ export const routes: Routes = [
             { path:'enu', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.EnuGameplaysComponent},
+                    { path:'base', component : gameplayComponents.EnuBasicComponent },
                     { path:'melee', component : gameplayComponents.EnuMeleeComponent},
                     { path:'support', component : gameplayComponents.EnuSupportComponent},
                 ]
@@ -92,6 +93,7 @@ export const routes: Routes = [
             { path:'feca', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.FecaGameplaysComponent},
+                    { path:'base', component : gameplayComponents.FecaBasicComponent },
                     { path:'support', component : gameplayComponents.FecaSupportComponent},
                     { path:'glyph', component : gameplayComponents.FecaGlypheComponent},
                 ]
@@ -99,6 +101,7 @@ export const routes: Routes = [
             { path:'steamer', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.SteamGameplaysComponent},
+                    { path:'base', component : gameplayComponents.SteamBasicComponent },
                     { path:'support', component : gameplayComponents.SteamSupportComponent },
                     { path:'zone', component : gameplayComponents.SteamDptZoneComponent },
                     { path:'turret', component : gameplayComponents.SteamTourelleComponent }
@@ -107,6 +110,7 @@ export const routes: Routes = [
             { path:'hupper', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.HupperGameplaysComponent},
+                    { path:'base', component : gameplayComponents.HupperBasicComponent},
                     { path:'melee', component : gameplayComponents.HupperMeleeTerreComponent },
                     { path:'elem', component : gameplayComponents.HupperFullElemComponent },
                 ]
@@ -114,6 +118,7 @@ export const routes: Routes = [
             { path:'iop', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.IopGameplaysComponent},
+                    { path:'base', component : gameplayComponents.IopBasicComponent},
                     { path:'melee', component : gameplayComponents.IopMeleeComponent }
                 ]
             },
@@ -128,6 +133,7 @@ export const routes: Routes = [
             { path:'ougi', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.OugiGameplaysComponent},
+                    { path:'base', component : gameplayComponents.OugiBasicComponent},
                     { path:'melee', component : gameplayComponents.OugiMeleeComponent },
                     { path:'poison', component : gameplayComponents.OugiPoisonComponent }
                 ]
@@ -135,18 +141,21 @@ export const routes: Routes = [
             { path:'panda', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.PandaGameplaysComponent},
+                    { path:'base', component : gameplayComponents.PandaBasicComponent},
                     { path:'tank', component : gameplayComponents.PandaTankComponent }
                 ]
             },
             { path:'roub', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.RoubGameplaysComponent},
+                    { path:'base', component : gameplayComponents.RoubBasicComponent},
                     { path:'default', component : gameplayComponents.RoubDefaultComponent},
                 ]
             },
             { path:'sacri', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.SacriGameplaysComponent},
+                    { path:'base', component : gameplayComponents.SacriBasicComponent},
                     { path:'melee', component : gameplayComponents.SacriMeleeComponent },
                     { path:'tank', component : gameplayComponents.SacriTankComponent }
                 ]
@@ -154,6 +163,7 @@ export const routes: Routes = [
             { path:'sadi', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.SadiGameplaysComponent},
+                    { path:'base', component : gameplayComponents.SadiBasicComponent},
                     { path:'dist', component : gameplayComponents.SadiDistComponent },
                     { path:'poison', component : gameplayComponents.SadiPoisonComponent },
                     { path:'support', component : gameplayComponents.SadiSupportComponent }
@@ -163,12 +173,14 @@ export const routes: Routes = [
             { path:'sram', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.SramGameplaysComponent},
+                    { path:'base', component : gameplayComponents.SramBasicComponent},
                     { path:'melee', component : gameplayComponents.SramMeleeComponent }
                 ]
             },
             { path:'xel', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.XelorGameplaysComponent},
+                    { path:'base', component : gameplayComponents.XelorBasicComponent},
                     { path:'dist', component : gameplayComponents.XelorDistFeuComponent },
                     { path:'zone', component : gameplayComponents.XelorDistZoneComponent },
                     { path:'support', component : gameplayComponents.XelorSupportComponent },
@@ -177,6 +189,7 @@ export const routes: Routes = [
             { path:'zobal', component : gameplayComponents.GenericClassPageLayoutComponent,
                 children :[
                     { path:'', component : gameplayComponents.ZobalGameplaysComponent},
+                    { path:'base', component : gameplayComponents.ZobalBasicComponent},
                     { path:'support', component : gameplayComponents.ZobalSupportComponent },
                     { path:'melee', component : gameplayComponents.ZobalMeleeComponent },
                     { path:'support', component : gameplayComponents.ZobalSupportComponent },

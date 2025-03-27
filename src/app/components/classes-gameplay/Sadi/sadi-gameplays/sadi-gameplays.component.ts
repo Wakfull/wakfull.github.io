@@ -29,6 +29,7 @@ export class SadiGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du sadi", link: "./base", backgroundImage : this.sadiFChibiIconUrl},
       { title: "Sadi support", link: "./support", backgroundImage : this.sadiFChibiIconUrl},
       { title: "Sadi dpt dist", link: "./dist", backgroundImage : this.sadiMChibiIconUrl},
       { title: "Sadi dpt poison", link: "./poison", backgroundImage : this.sadiFChibiIconUrl},

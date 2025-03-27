@@ -29,6 +29,7 @@ export class PandaGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du Panda", link: "./base", backgroundImage : this.pandaMChibiIconUrl},
       { title: "Panda support tank", link: "./tank", backgroundImage : this.pandaMChibiIconUrl},
     ]
   }

@@ -28,6 +28,7 @@ export class SacriGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du Sacri", link: "./base", backgroundImage : this.sacriMChibiIconUrl},
       { title: "Sacrieur dtp mêlée", link: "./melee", backgroundImage : this.sacriMChibiIconUrl},
       { title: "Sacrieur tank", link: "./tank", backgroundImage : this.sacriMChibiIconUrl},
     ]

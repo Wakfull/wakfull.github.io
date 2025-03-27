@@ -28,6 +28,7 @@ export class ZobalGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du Zobal", link: "./base", backgroundImage : this.zobalMChibiIconUrl},
       { title: "Zobal support", link: "./support", backgroundImage : this.zobalMChibiIconUrl},
       { title: "Zobal melee", link: "./melee", backgroundImage : this.zobalFChibiIconUrl},
     ]

@@ -29,6 +29,7 @@ export class FecaGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du feca", link: "./base", backgroundImage : this.fecaMChibiIconUrl},
       { title: "Feca support", link: "./support", backgroundImage : this.fecaMChibiIconUrl},
       { title: "Feca glyphe", link: "./glyph", backgroundImage : this.fecaFChibiIconUrl}
     ]

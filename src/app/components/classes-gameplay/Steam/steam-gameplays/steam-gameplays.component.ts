@@ -29,6 +29,7 @@ export class SteamGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du steamer", link: "./base", backgroundImage : this.steamMChibiIconUrl},
       { title: "Steam support", link: "./support", backgroundImage : this.steamMChibiIconUrl},
       { title: "Steam DPT zone", link: "./zone", backgroundImage : this.steamFChibiIconUrl}
     ]

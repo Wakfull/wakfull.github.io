@@ -28,6 +28,7 @@ export class EnuGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases de l'enu", link: "./base", backgroundImage : this.enuMChibiIconUrl},
       { title: "Enu mêlee", link: "./melee", backgroundImage : this.enuMChibiIconUrl},
       { title: "Enu support", link: "./support", backgroundImage : this.enuFChibiIconUrl}
     ]

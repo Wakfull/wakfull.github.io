@@ -28,6 +28,7 @@ export class OugiGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases de l'ougi", link: "./base", backgroundImage : this.ougiMChibiIconUrl},
       { title: "Ougi mêlée", link: "./melee", backgroundImage : this.ougiMChibiIconUrl},
       { title: "Ougi poison", link: "./poison", backgroundImage : this.ougiMChibiIconUrl}
     ]

@@ -29,6 +29,7 @@ export class SramGameplaysComponent {
 
   populatePreviews(){
     this.previews = [
+      { title: "Les bases du sram", link: "./base", backgroundImage : this.sramMChibiIconUrl},
       { title: "Sram dtp mêlée", link: "./melee", backgroundImage : this.sramMChibiIconUrl}
     ]
   }
