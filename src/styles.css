@@ -48,6 +48,27 @@ app-root {
     min-height: 100vh;
 }
 
+.info{
+    border: 1px solid darkgreen;
+    background-color: #ddffdd;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.warning{
+    border: 1px solid goldenrod;
+    background-color: #ffffcc;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.danger{
+    border: darkred;
+    background-color: lightcoral;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
 .content {
     flex: 1;
     padding-bottom: 2rem;
@@ -89,9 +110,9 @@ app-root {
 img {
     max-width: 100%;
     height: auto;
-  }
+}
   
-  .difficulty-container{
+.difficulty-container{
     display: flex;
     width: 100%;
     gap: 1rem;
