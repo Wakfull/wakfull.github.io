@@ -35,7 +35,10 @@
     cursor: pointer;
 }
 
+
 .link-styling{
     display: flex;
-    justify-self: center;
+    justify-self: center; /* works in chrome but not firefox (cause we're not in a flex parent)*/
+    width: fit-content;
+    margin: auto; /* to center self, works in firefox */
 }
