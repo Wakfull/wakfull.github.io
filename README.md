@@ -13,10 +13,10 @@ Un accent est mis sur l'explication aux nouveaux joueurs, pour leur permettre d'
 
 # FAQ Générale
 ### Est ce que le site est mis à jour ?
-Oui, je mets à jour le site semi-régulièrement. Le rythme n'est pas le plus soutenu, mais je rappelle qu'il s'agit d'un perso perso sur mon temps libre.
+Oui, je mets à jour le site semi-régulièrement. Le rythme n'est pas le plus soutenu, mais je rappelle qu'il s'agit d'un projet perso mené sur mon temps libre.
 
 ### Est ce que le site est en plusieurs langues ?
-Pour l'instant non. A termes il sera en Français et en Anglais.
+Pour l'instant non. A termes il est prévu qu'il soit en Français et en Anglais.
 
 ### Est ce que je peux proposer un changement / écrire un article / ...
 Oui, je t'invite à rejoindre le [Discord](https://discord.com/invite/49EaCMrYsY) et à me faire part de tes idées !
@@ -29,7 +29,7 @@ Les thèmes sombres sont jolis, mais se prêtent assez mal à la lecture.
 Aussi, les thèmes sombres ont tendance à être moins accessibles aux gens ayant des problèmes de vison. De ce fait, tant que le site ne supporte qu'un seul thème, le choix se porte sur un thème accessible.
 
 ### Le site manque d'images / illustrations / mise en page
-Oui, je suis au courrant. Je n'ai malheureusement pas la fibre artistique.
+Oui, je suis au courant. Je n'ai malheureusement pas la fibre artistique.
 C'est également un problème venant de la façon très wikipedia que j'utilise pour les articles. A terme j'ai l'intention de changer la présentation des diverses parties d'articles, ce qui devrait rendre la navigation moins écrasante.
 
 # FAQ Devs
@@ -42,6 +42,7 @@ Prérequis :
     - `git clone https://github.com/Wakfull/wakfull.github.io.git`
 
 Cheatsheet pour ceux qui ne sont pas familiers avec Angular :
+- (npm install)
 - Le site se lance en local  avec : `ng serve`  
 - Le build peut être généré avec : `ng build`
 
@@ -55,7 +56,7 @@ J'utilise Angular SSG et SSR pour générer le siet sur base des sources. Ce rep
 
 Le site est généré en utilisant `ng build`.
 A noter qu'il faut ensuite remonter le code généré d'un directory.
-(mv /docs/browser/* .. )
+(mv /docs/browser/* /docs/ )
 
 
 ## Pourquoi est ce que X et Y ne sont pas consistants ? Pourquoi parfois hardcodé ? Pourquoi parfois service ? Il y a des \<br\> dans certains de tes html ???
