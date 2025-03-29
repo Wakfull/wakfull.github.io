@@ -1,0 +1,16 @@
+
+.stuff-zenith-preview{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: fit-content;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.link-styling{
+    display: flex;
+    width: fit-content;
+    margin: auto; /* to center the link div area, to avoid having blank space that's clickable on the sides. Works in Firefox */
+}

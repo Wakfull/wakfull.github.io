@@ -8,9 +8,13 @@ import { Component, Input } from '@angular/core';
   styleUrl: './alternative-item.component.css'
 })
 export class AlternativeItemComponent {
+
+  placeholder_image = "/assets/images/placeholder_512.jpg";
+  missing_image_text = "Image not available";
+
   @Input() itemName?: string;
-  @Input() imageUrl: string = "/assets/images/placeholder_512.jpg";
-  @Input() imageAlt: string= "Image not available";
+  @Input() imageUrl?: string;
+  @Input() imageAlt?: string;
   @Input() itemDesc?: string;
 }
 
