@@ -181,17 +181,18 @@ img {
     flex-wrap: nowrap;
     overflow-x:auto;
     gap : 0.5rem;
+    justify-content: center;
 }
 
 .dg_mini{
     background-color: rgba(138, 109, 109, 0.1);
     border: 1px solid lightgrey;
     border-radius: 0.5rem;
-    flex :1;
+    max-height: 4.5rem;
     min-width: 0.5rem; /* To allow images to shrink properly. Why is this even a thing ? css/10 */
+
 }
 
 .dg_mini img {
-    object-fit: contain;
-    width: auto;
+    /* object-fit: contain;*/ 
 }
