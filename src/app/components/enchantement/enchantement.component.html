@@ -6,7 +6,10 @@
         <div class="textContentTitle">Ce que c'est</div>
         <div class="textContent">
             <p>
-                L'enchantement est un système permettant d'une part d'ajouter des caractéristiques à un item. Cela rend donc les items plus puissants.
+                L'enchantement est un système permettant d'une part d'ajouter des caractéristiques à un item, et de l'autre d'ajout des effets divers.
+            </p>
+            <p>
+                En simple : cela rend les items + puissants.
             </p>
         </div>
     </div>
@@ -14,66 +17,81 @@
     <div class="textcontentContainer">
         <div class="textContentTitle">Les runes (aussi appelées "chasses")</div>
         <div class="textContent">
-            <p>
-                Un item peut avoir jusqu'à 4 runes. Lors de la création de l'item, celui-ci aura aléatoirement entre 1 et 4 runes.
-                Si votre item n'a pas 4 runes, il est possible d'en ajouter jusqu'a en avoir 4.
-            </p>
-            <p>
-                Chaque rune peut être d'1 couleur parmis 4 :
-            </p>
-                <ul>
-                    <li>Rouge</li>
-                    <li>Bleu</li>
-                    <li>Vert</li>
-                    <li>Jaune</li>
-                </ul>
-            <p>
-                Chaque couleur possède certaines caractéristiques qu'elles seules peuvent donner.
-            </p>
-            <p>
-                Les runes rouges ont tendance à octroyer des statitistiques offensives :
-            </p>
+
             <ul>
-                <li>Maitrise mêlée</li>
-                <li>Maitrise Distance</li>
-                <li>Maitrise Berserk</li>
-                <li>Résistance Terre</li> 
+                <li>Un item peut avoir jusqu'à 4 runes.</li>
             </ul>
+            <ul> 
+                Lors de la création de l'item, celui-ci aura aléatoirement entre 1 et 4 runes.
+                Si votre item n'a pas 4 runes, il est possible d'en ajouter jusqu'a en avoir 4 en sacrifiant (détruisant) un item de même nom et de même rareté à un autel d'enchantement.
+            </ul>
+            <ul>
+                <li> Chaque rune peut être d'une couleur parmis 4. </li>
+                <li> Chaque couleur permet d'ajouter certaines caractéristiques que seule cette couleur peut donner. </li>
+            </ul>
+            <div class="runesContainer">
+                <div class="rune rune-red">
+                    <div class="rune-title"> Rouge </div>
+                    <span class="rune-visual"> <img src={{rune_red}} alt="red rune"> </span>
+                    <div class="rune-descr">
+                        <ul>
+                            <li>Maitrise mêlée</li>
+                            <li>Maitrise Distance</li>
+                            <li>Maitrise Berserk</li>
+                            <li>Résistance Terre</li> 
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rune rune-blue">
+                    <div class="rune-title"> Bleue </div>
+                    <span class="rune-visual"> <img src={{rune_blue}} alt="blue rune"></span>
+                    <div class="rune-descr">
+                        <ul>
+                            <li>Tacle</li>
+                            <li>Resistance Eau</li>
+                            <li>Résistance Air</li>
+                            <li>Vie</li>
+                            <li>Maitrise Soin</li>
+                            <li>Maitrise elementaire</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rune rune-green">
+                    <div class="rune-title"> Verte </div>
+                    <span class="rune-visual"> <img src={{rune_green}} alt="green rune"></span>
+                    <div class="rune-descr">
+                        <ul>
+                            <li>Maitrise Critique</li>
+                            <li>Maitrise Dos</li>
+                            <li>Esquive</li>
+                            <li>Initiative</li>
+                            <li>Resistance Feu</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rune rune-yellow">
+                    <div class="rune-title"> Jaune </div>
+                    <span class="rune-visual"> <img src={{rune_yellow}} alt="yellow rune"></span>
+                    <div class="rune-descr">
+                        <ul>
+                            <li>Toutes les stats des autres runes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
             <p>
-                Les runes bleues ont tendance à octroyer des statitistiques défensives ou génériques :
-            </p>
-            <ul>
-                <li>Tacle</li>
-                <li>Resistance Eau</li>
-                <li>Résistance Air</li>
-                <li>Vie</li>
-                <li>Maitrise Soin</li>
-                <li>Maitrise elementaire</li>
-            </ul>
-
-            <p>
-                Les runes vertes donnent :
-            </p>
-            <ul>
-                <li>Maitrise Critique</li>
-                <li>Maitrise Dos</li>
-                <li>Esquive</li>
-                <li>Initiative</li>
-                <li>Resistance Feu</li>
-            </ul>
-
-            <p>
-                Il existe également une 4eme couleur de rune : la rune jaune. Cette rune est plus rare, et est une rune "Joker", en ce sens que vous pouvez mettre n'importe quelle statistique avec cette rune.
+                La rune <span > <img src={{rune_yellow}} style="max-width: 2rem;" alt="yellow rune"></span>  jaune est un peu spéciale et est plus rare que les autres; en effet, il s'agit d'une rune "Joker", pouvant utiliser n'importe quelle statistique des autres runes.
             </p>
             <p>
-                Lorsque les joueurs parlent des runes, il utilisent souvent des abréviations. Par exemple, un item qui aurait, dans l'ordre, des chasses "rouge, rouge, jaune, bleue" serait décrit comme un item "RRJB"
+                Lorsque les joueurs parlent des runes, il utilisent souvent des abréviations. Par exemple, un item qui aurait, dans l'ordre, des chasses "rouge, rouge, jaune, bleue" serait décrit comme étant un item "RRJB"
             </p>
             <ul>
-                <li>R => rouge</li>
-                <li>B => bleue</li>
-                <li>V => vert</li>
-                <li>J => jaune</li>
+                <li><span > <img src={{rune_red}} style="max-width: 2rem;" alt="red rune"></span> R => rouge </li>
+                <li><span > <img src={{rune_blue}} style="max-width: 2rem;" alt="blue rune"></span> B => bleue </li>
+                <li><span > <img src={{rune_green}} style="max-width: 2rem;" alt="green rune"></span> V => vert </li>
+                <li><span > <img src={{rune_yellow}} style="max-width: 2rem;" alt="yellow rune"></span> J => jaune </li>
             </ul>
         </div>
     </div>
@@ -133,7 +151,15 @@
                 Voilà, vous êtes a présent propriétaire de votre bel item enchanté !
             </p>
             
-            <img src={{imgExLardanteUrl}} alt ="example enchant">
+            <div class="container-alternative-items">
+                <app-alternative-item
+                    itemName="Exemple"
+                    imageUrl="{{imgExLardanteUrl}}"
+                    imageAlt="enchanting example"
+                    itemDesc="Le plastron a 49 stats de base, et 56 (4x14) stats bonus d'enchantement. On a doublé ses stats !">
+                </app-alternative-item>
+            </div>
+
         </div>
     </div>
 

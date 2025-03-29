@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AlternativeItemComponent } from '../../../reusables/alternative-item/alternative-item.component';
-import { AlternativeItem } from '../../../interfaces/iAlternativeItem';
 
 @Component({
   selector: 'app-before-gearing-up',

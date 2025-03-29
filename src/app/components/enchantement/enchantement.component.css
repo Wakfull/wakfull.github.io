@@ -1,0 +1,53 @@
+.runesContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    gap : 2rem;
+    flex-wrap: wrap;
+}
+
+.rune{
+    display: flex;
+    flex-direction: column;
+    border: 0.25rem solid black;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    height: fit-content;
+    max-width: 13rem;
+}
+
+.rune-red{
+    border-color: darkred;
+    background-color: lightpink;
+}
+
+.rune-blue{
+    border-color: darkblue;
+    background-color: lightblue;
+}
+
+.rune-green{
+    border-color: darkgreen;
+    background-color: lightgreen;
+}
+
+.rune-yellow{
+    border-color: var(--yellow);
+    background-color: lightgoldenrodyellow;
+}
+
+.rune-title{
+    margin: auto;
+    font-weight: bold;
+}
+
+.rune-visual{
+    align-self: center;
+    height: auto;
+}
+
+.rune-descr{
+
+}
