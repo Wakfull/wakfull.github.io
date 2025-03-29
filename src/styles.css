@@ -82,10 +82,10 @@ app-root {
 }
 
 .textcontentContainer{
-  background-color: white;
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.5rem;
-  overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .textContent {
@@ -159,4 +159,51 @@ img {
 
 .difficulty-written{
     font-size: var(--difficulty-font-size);
+}
+
+.container-alternative-items{
+    display: flex;
+    flex-direction: row;
+    gap : 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+.alternative-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgrey;
+}
+
+.show-hover:hover{
+    width: fit-content;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.dgMinisContainer{
+    display:flex;
+    flex-wrap: nowrap;
+    overflow-x:auto;
+    gap : 0.5rem;
+}
+
+.dg_mini{
+    background-color: rgba(138, 109, 109, 0.1);
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+    flex :1;
+    min-width: 0.5rem; /* To allow images to shrink properly. Why is this even a thing ? css/10 */
+}
+
+.dg_mini img {
+    object-fit: contain;
+    width: auto;
 }

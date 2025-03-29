@@ -3,6 +3,12 @@
     <h2 class="text-center"> Lv 50 </h2>
     <h5 class="text-center"> Tout le monde est toujours un dpt </h5>
 
+    <div class="dgMinisContainer">
+    @for (dungeon of dungeons_50; track dungeon) {
+        <img class="dg_mini" [src]="dungeon.backgroundImage">
+    }
+    </div>
+
     <div class="textcontentContainer">
         <div class="textContentTitle">Préface</div>
         <div class="textContent">
@@ -44,23 +50,23 @@
             <p class="text-center"> Lien ZenithWakfu : <a href ="https://www.zenithwakfu.com/builder/bfe16" target="_blank" rel="noopener noreferrer"> Build générique avec PO</a> </p>
 
             <h5>Coiffes alternatives</h5>
-            <div class="container-helm-alternatives">
-                <div class="item-alternatives">
-                    <span> <b>Maitrise + PO</b></span>
+            <div class="container-alternative-items">
+                <div class="alternative-item">
+                    <div class="alt-item-name"> Coiffe Moogr Impériale </div>
                     <img  class="stuff-zenith-preview" src="https://i.imgur.com/h47OKJp.png" alt="coiffe moogr imperiale">
-                    <span> Coiffe Moogr Impériale </span>
+                    <div class="alt-item-desc">Maitrise + PO</div>
                 </div>
 
-                <div class="item-alternatives">
-                    <span> <b>Distance sans PO</b></span>
+                <div class="alternative-item">
+                    <div class="alt-item-name">Casque de Mort-brulé </div>
                     <img  class="stuff-zenith-preview" src="https://i.imgur.com/JfpMetH.png" alt="coiffe mort-brulés">
-                    <span> Casque de Mort-brulé </span>
+                    <div class="alt-item-desc">Distance sans PO</div>
                 </div>
 
-                <div class="item-alternatives">
-                    <span> <b>Mêlée</b></span>
+                <div class="alternative-item">
+                    <div class="alt-item-name">Casque craquelé </div>
                     <img  class="stuff-zenith-preview" src="https://i.imgur.com/zItTOCR.png" alt="casque craquelé">
-                    <span> Casque craquelé </span>
+                    <div class="alt-item-desc">Mêlée</div>
                 </div>
             </div>
         </div>
