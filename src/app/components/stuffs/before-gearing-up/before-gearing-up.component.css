@@ -1,0 +1,42 @@
+
+.rarities{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: center;
+    gap : 2rem;
+    flex-wrap: wrap;
+}
+
+.rarity{
+    border: 0.25rem solid black;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.rarity-rare{
+    border-color: var(--green);
+    background-color: lightgreen;
+}
+
+.rarity-mythic{
+    border-color: var(--orange);
+    background-color: wheat;
+}
+
+.rarity-legendary{
+    border-color: var(--yellow);
+    background-color: lightgoldenrodyellow;
+}
+
+.rarity-epic{
+    border-color: var(--violet);
+    background-color: thistle;
+}
+
+.rarity-relic{
+    border-color: var(--mauve);
+    background-color: plum;
+}

@@ -6,40 +6,67 @@
     <div class="textcontentContainer">
         <div class="textContentTitle">Système de rareté</div>
         <div class="textContent">
-                Les items de base ont un système de rareté, où la rareté correspond directement à la quantité de stats que l'objet possède. Listés dans l'ordre de rareté croissante :
-                <ul>
-                    <li style="color:var(--green)"> Vert (rare) </li>
-                    <li style="color:var(--orange)"> Orange (mythique) </li>
-                    <li style="color:var(--yellow)"> Jaune (légendaire) </li>
-                </ul>
-                Ainsi deux objets du même nom, mais qui ont une rareté différente donneront des stats du même nom, mais dans des quantitées différentes.
-                Par exemple, si j'ai mon item "Anneau du bourrin" qui donne de la vita et de la maitrise elem, alors dans les différentes raretés, il donnera quelque chose comme 
-                <ul>
-                    <li style="color:var(--green)"> Vert : 10 vita, 5 elem </li>
-                    <li style="color:var(--orange)"> Orange : 12 vita, 7 elem </li>
-                    <li style="color:var(--yellow)"> Jaune : 15 vita, 9 elem </li>
-                </ul>
+                <p> Les items de base ont un système de rareté, où la rareté correspond directement à la quantité de stats que l'objet possède. Listés dans l'ordre de rareté croissante : </p>
+                <div class="rarities">
+                    <div class="rarity rarity-rare">
+                        <span > Rare </span> 
+                    </div>
+                    <div class="rarity rarity-mythic">
+                        <span> Mythique </span>
+                    </div>
+                    <div class="rarity rarity-legendary">
+                        <span> Légendaire</span>
+                    </div>
+                </div>
+                <p>
+                    Ainsi deux objets du même nom, mais qui ont une rareté différente donneront des stats du même nom, mais dans des quantitées différentes.
+                    Par exemple, si j'ai mon item "Anneau du bourrin" qui donne de la vita et de la maitrise elem, alors dans les différentes raretés, il donnera quelque chose comme :
+                </p>
+                <div class="rarities">
+                    <div class="rarity rarity-rare">
+                        <span > 10 vita, 5 elem </span> 
+                    </div>
+                    <div class="rarity rarity-mythic">
+                        <span> 12 vita, 7 elem </span>
+                    </div>
+                    <div class="rarity rarity-legendary">
+                        <span> 15 vita, 9 elem </span>
+                    </div>
+                </div>
 
-                Ainsi que deux raretés à part :
-                <ul>
-                    <li style="color:var(--violet)"> Violet (Epique)</li>
-                    <li style="color:var(--mauve)"> Mauve (Relique)</li>
-                </ul>
-                Un même item en vert est donc plus faible que sa version en orange, qui est elle-même plus faible que sa version en jaune.
-                <br>
-                Ce faisant, les items jaunes opti sont souvent très chers par rapport à leurs contreparties oranges par exemple. Notez que souvent, la différence de stats entre un item orange et jaune n'est pas si énorme que ça, mais pourtant l'item orange pourra être trouvé en hdv à seulement une fraction du prix du jaune. Ce qui nous mêne au point suivant.
+                <p> Ainsi que deux raretés à part : </p>
+                <div class="rarities">
+                    <div class="rarity rarity-epic">
+                        <span > Epique </span> 
+                    </div>
+                    <div class="rarity rarity-relic">
+                        <span> Relique </span>
+                    </div>
+                </div>
+                <p> Un même item en vert est donc plus faible que sa version en orange, qui est elle-même plus faible que sa version en jaune. </p>
+                <p> 
+                    Ce faisant, les items jaunes opti sont souvent très chers par rapport à leurs contreparties oranges par exemple.
+                    Notez que souvent, la différence de stats entre un item orange et jaune n'est pas si énorme que ça, mais pourtant l'item orange pourra être trouvé en hdv à seulement une fraction du prix du jaune. Ce qui nous mêne au point suivant.
+                </p>
         </div>
     </div>
     
     <div class="textcontentContainer">
         <div class="textContentTitle">Enchantement</div>
         <div class="textContent">
-            
-                Les stats totales d'un build ne proviennent qu'en partie des items en eux-mêmes. Facilement la moité de vos stats proviennent de l'enchantement. Avoir 4 bonnes runes sur son item permet d'ajouter énormément de stats, parfois doublant même les stats de l'item.
-                Dès lors, un stuff entier en items verts enchantés avec 4 bonnes chasses sur chaque item sera toujours meilleur qu'un stuff full légendaire non enchanté, ou enchanté avec de mauvaises chasses.
-                Et vous vous en doutez bien, enchanter ses items oranges pas cher c'est facile, mais par contre enchanter ses items légendaires qui coûtent un bras, ça demande un bien plus grand investissement.
-                <br>
-                <img src={{imgExLardanteUrl}} alt ="example enchant">
+                <p>
+                    Les stats totales d'un build ne proviennent qu'en partie des items en eux-mêmes. Facilement la moité de vos stats proviennent de l'enchantement. Avoir 4 bonnes runes sur son item permet d'ajouter énormément de stats, parfois doublant même les stats de l'item.
+                    Dès lors, <b> un stuff entier en items oranges enchantés avec 4 bonnes chasses sur chaque item sera toujours meilleur qu'un stuff full légendaire non enchanté</b>, ou enchanté avec de mauvaises chasses.
+                    Et vous vous en doutez bien, enchanter ses items oranges pas cher c'est facile, mais par contre enchanter ses items légendaires qui coûtent un bras, ça demande un bien plus grand investissement.
+                </p>
+                <div class="container-alternative-items">
+                    <app-alternative-item
+                        itemName="Exemple"
+                        imageUrl="{{imgExLardanteUrl}}"
+                        imageAlt="enchanting example"
+                        itemDesc="Le plastron a 49 stats de base, et 56 (4x14) stats bonus d'enchantement. On a doublé ses stats !">
+                    </app-alternative-item>
+                </div>
         </div>
     </div>
 
