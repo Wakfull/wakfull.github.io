@@ -1,0 +1,10 @@
+<div class="alternative-item">
+    
+    @if( itemName ){
+        <div class="alt-item-name"> {{ itemName}}  </div>
+    }
+    <img class="item-preview" [src]="imageUrl" [alt]="imageAlt" />
+    @if( itemDesc ){
+        <div class="alt-item-desc"> {{ itemDesc }} </div>
+    }
+  </div>

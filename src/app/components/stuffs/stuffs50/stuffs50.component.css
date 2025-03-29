@@ -11,15 +11,6 @@
 
 .link-styling{
     display: flex;
-    justify-self: center; /* works in chrome but not firefox (cause we're not in a flex parent)*/
     width: fit-content;
-    margin: auto; /* to center self, works in firefox */
-}
-
-.alt-item-name{
-    font-weight: bold;
-}
-
-.alt-item-desc{
-    font-style: italic;
+    margin: auto; /* to center the link div area, to avoid having blank space that's clickable on the sides. Works in Firefox */
 }

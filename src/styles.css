@@ -164,22 +164,10 @@ img {
 .container-alternative-items{
     display: flex;
     flex-direction: row;
-    gap : 3rem;
+    gap : 2rem;
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 1rem;
-}
-
-.alternative-item{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-radius: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid lightgrey;
 }
 
 .show-hover:hover{

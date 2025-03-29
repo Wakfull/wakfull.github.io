@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { environment } from '../environments/environment';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,14 @@ import { FooterComponent } from './components/footer/footer.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'AekamiGitHubPageStatic';
+export class AppComponent implements OnInit{
+  siteName = environment.websiteName;
+
+  constructor(private titleService: Title){
+
+  }
+
+  ngOnInit(): void {
+    this.titleService.setTitle(this.siteName);
+  }
 }

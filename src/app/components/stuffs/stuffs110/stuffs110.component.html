@@ -3,6 +3,16 @@
     <h2 class="text-center"> Lv 110 </h2>
     <h5 class="text-center"> Tout le monde se spécialise : DPT mêlée/distance, Tank placement, Support Heal/Shield, etc. </h5>
 
+    <div class="dgMinisContainer">
+        @for (dungeon of dungeons_110; track dungeon) {
+            @if(!dungeon.is_UB){
+                <img class="dg_mini" [src]="dungeon.backgroundImage">
+            } @else {
+                <img class="dg_mini" style="border: 4px solid goldenrod" [src]="dungeon.backgroundImage">
+            }
+        }
+    </div>
+
     <div class="textcontentContainer">
         <div class="textContentTitle">Préface</div>
         <div class="textContent">

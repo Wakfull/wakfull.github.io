@@ -1,0 +1,35 @@
+
+.alternative-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgrey;
+    
+    min-width: 2rem;
+    max-width: 23rem;
+
+    min-height: 2rem;
+    max-height: 50rem;
+    overflow: hidden;
+}
+
+.alt-item-name{
+    font-weight: bold;
+}
+
+.alt-item-desc{
+    font-style: italic;
+}
+
+.item-preview{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: fit-content;
+    border-radius: 0.5rem;
+}

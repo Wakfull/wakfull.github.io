@@ -50,24 +50,16 @@
             <p class="text-center"> Lien ZenithWakfu : <a href ="https://www.zenithwakfu.com/builder/bfe16" target="_blank" rel="noopener noreferrer"> Build générique avec PO</a> </p>
 
             <h5>Coiffes alternatives</h5>
+
             <div class="container-alternative-items">
-                <div class="alternative-item">
-                    <div class="alt-item-name"> Coiffe Moogr Impériale </div>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/h47OKJp.png" alt="coiffe moogr imperiale">
-                    <div class="alt-item-desc">Maitrise + PO</div>
-                </div>
-
-                <div class="alternative-item">
-                    <div class="alt-item-name">Casque de Mort-brulé </div>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/JfpMetH.png" alt="coiffe mort-brulés">
-                    <div class="alt-item-desc">Distance sans PO</div>
-                </div>
-
-                <div class="alternative-item">
-                    <div class="alt-item-name">Casque craquelé </div>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/zItTOCR.png" alt="casque craquelé">
-                    <div class="alt-item-desc">Mêlée</div>
-                </div>
+                @for (item of altItemsHelms; track item) {
+                    <app-alternative-item
+                        itemName="{{ item.itemName }}"
+                        imageUrl="{{ item.imageUrl }}"
+                        imageAlt="{{ item.imageAlt }}"
+                        itemDesc="{{ item.itemDesc }}">
+                    </app-alternative-item>
+                }
             </div>
         </div>
     </div>
@@ -83,20 +75,16 @@
             </ul>
 
             <div class="container-alternative-items">
-
-                <div class="alternative-item">
-                    <span> <b></b></span>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/rev57GT.png" alt="la coquille">
-                    <span> La coquille </span>
-                </div>
-
-                <div class="alternative-item">
-                    <span> <b></b></span>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/mti2DY0.png" alt="la kyou aux ailes">
-                    <span>La Kyou aux ailes </span>
-                </div>
-
+                @for (item of altEpics; track item) {
+                    <app-alternative-item
+                        itemName="{{ item.itemName }}"
+                        imageUrl="{{ item.imageUrl }}"
+                        imageAlt="{{ item.imageAlt }}"
+                        itemDesc="{{ item.itemDesc }}">
+                    </app-alternative-item>
+                }
             </div>
+
 
             <p>Concernant les items <span style="color:var(--mauve)"><b>Reliques</b></span> </p>
 
@@ -108,18 +96,16 @@
 
             <div class="container-alternative-items">
 
-                <div class="alternative-item">
-                    <span> <b>Bottes</b></span>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/j9B2UUb.png" alt="les bottes de Koko">
-                    <span> Les bottes de Koko </span>
+                <div class="container-alternative-items">
+                    @for (item of altRelics; track item) {
+                        <app-alternative-item
+                            itemName="{{ item.itemName }}"
+                            imageUrl="{{ item.imageUrl }}"
+                            imageAlt="{{ item.imageAlt }}"
+                            itemDesc="{{ item.itemDesc }}">
+                        </app-alternative-item>
+                    }
                 </div>
-
-                <div class="alternative-item">
-                    <span> <b>Casque</b></span>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/GYLkJ0O.png" alt="la Perruque de Goultard">
-                    <span>La Perruque de Goultard </span>
-                </div>
-
             </div>
 
             <div class="info"> <b>NOTE</b> Si vous n'avez pas énormément de kamas, n'hésitez pas à garder votre <span style="color:var(--violet)">Anneau de satisfaction</span> du niveau 20, cela reste un excellent choix lowcost. </div>

@@ -2,6 +2,12 @@
 <div class="container">
     <h2 class="text-center"> Lv 20 </h2>
     <h5 class="text-center"> Tout le monde est un dpt </h5>
+
+    <div class="dgMinisContainer">
+        @for (dungeon of dungeons_20; track dungeon) {
+            <img class="dg_mini" [src]="dungeon.backgroundImage">
+        }
+    </div>
     
     <div class="textcontentContainer">
         <div class="textContentTitle">Préface</div>
@@ -115,25 +121,17 @@
             </p>
 
             <div class="container-alternative-items">
-
-                <div class="alternative-item">
-                    <span> <b>Main gauche</b></span>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/63MY5lO.png" alt="les lames en table">
-                    <span> Les lames en table </span>
-                </div>
-
-                <div class="alternative-item">
-                    <span> <b>Main droite</b></span>
-                    <img  class="stuff-zenith-preview" src="https://i.imgur.com/PxMCG3b.png" alt="la queue">
-                    <span> La queue </span>
-                </div>
-
+                @for (item of optiItems; track item) {
+                    <app-alternative-item
+                        itemName="{{ item.itemName }}"
+                        imageUrl="{{ item.imageUrl }}"
+                        imageAlt="{{ item.imageAlt }}"
+                        itemDesc="{{ item.itemDesc }}">
+                    </app-alternative-item>
+                }
             </div>
 
             <ul>
-                <li>
-                    La dague "Lames en table" est un drop rare sur l'archimonstre larve qui spawn parfois dans les égouts.
-                </li>
                 <li>
                     L'épée "La Queue" est un objet craftable, mais pour pouvoir la fabriquer il faut au préalable avoir appris la recette. Vous pouvez donc l'obtenir :
                     <ul>
@@ -180,12 +178,14 @@
                 <li>(bottes) <span style="color:var(--violet)">Les Bottes de satisfaction</span> - N'y touchez pas. Des bottes +1PM et assez bien de PV pour le niveau. Cet item existe de façon niche pour les tryhardeur stasis. Oubliez le pour le moment. </li>
 
                 <div class="container-alternative-items">
-                    <div class="alternative-item">
-                        <span> <b>Anneau</b></span>
-                        <img  class="stuff-zenith-preview" src="https://i.imgur.com/WE3XImw.png" alt="anneau de satisfaction">
-                        <span> Anneau de satisfaction </span>
-                    </div>
-    
+                    @for (item of epicItems; track item) {
+                        <app-alternative-item
+                            itemName="{{ item.itemName }}"
+                            imageUrl="{{ item.imageUrl }}"
+                            imageAlt="{{ item.imageAlt }}"
+                            itemDesc="{{ item.itemDesc }}">
+                        </app-alternative-item>
+                    }
                 </div>
             </ul>
         </div>
