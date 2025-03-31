@@ -1,0 +1,15 @@
+
+<div class="textcontentContainer">
+
+        <div class="titleContainer">
+            <button (click)="toggleContent()">
+                <span class="icon" [class.rotated]="isOpen">&#9650;</span>
+            </button>
+            <span> {{ title }} </span>
+        </div>
+
+        <div class="textContent content-hidden" [class.content-hidden]="!isOpen">
+            <div [innerHTML]="content"></div>
+        </div>
+    
+</div>

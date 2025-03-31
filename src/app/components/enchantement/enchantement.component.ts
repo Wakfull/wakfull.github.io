@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { AlternativeItemComponent } from '../../reusables/alternative-item/alternative-item.component';
+import { GenericArticleComponent } from '../../reusables/generic-article/generic-article.component';
 
 @Component({
   selector: 'app-enchantement',
   standalone: true,
-  imports: [AlternativeItemComponent],
+  imports: [AlternativeItemComponent, GenericArticleComponent],
   templateUrl: './enchantement.component.html',
   styleUrl: './enchantement.component.css'
 })
@@ -15,4 +16,5 @@ export class EnchantementComponent {
   rune_red = "https://i.imgur.com/BgBfeOz.png";
   rune_green ="https://i.imgur.com/fvj6nMG.png";
   rune_yellow ="https://i.imgur.com/dHwNhWQ.png";
+
 }
