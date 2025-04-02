@@ -28,6 +28,7 @@ import { GlossaryComponent } from './components/glossary/glossary.component';
 import { InProgressComponent } from './components/in-progress/in-progress.component';
 import { TierlistMakerComponent } from './components/tierlist-maker/tierlist-maker.component';
 import { BetteringWakfuComponent } from './components/bettering-wakfu/bettering-wakfu.component';
+import { GameOnLinuxComponent } from './components/game-on-linux/game-on-linux.component';
 
 
 export const routes: Routes = [
@@ -211,6 +212,7 @@ export const routes: Routes = [
     { path:'enchant', component : EnchantementComponent },
     { path:'mimics', component : MimicsComponent },
     { path:'glossary', component : GlossaryComponent },
+    { path:'linux', component : GameOnLinuxComponent },
 
     { path:'rift', component : RiftComponents.RiftPageLayoutComponent, // todo : create layout with subnavar to navigate between rifts easily (like /stuff) OR side bar
         children :[

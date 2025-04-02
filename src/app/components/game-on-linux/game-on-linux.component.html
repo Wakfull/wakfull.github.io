@@ -1,0 +1,112 @@
+
+<div class="container">
+    <h2 class="text-center"> Jouer sous Linux </h2>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Preface</div>
+        <div class="textContent">
+            <p>
+                Il est tout à fait possible de jouer à Dofus ou Wakfu sous Linux, et ce assez facilement. En effet, Ankama met à disposition des fichers "AppImage", lesquels vous pouvez considérer un peu comme des executables sur Windows (en vérité c'est pas du tout la même chose, mais dans le cadre de ce tuto peu importe).
+            </p>
+            <p> 
+                Ce tutoriel est rédigé sous Ubuntu LTS (Actuellement v24), mais devrait fonctionner pour toutes les distros supportant le format AppImage.
+            </p>
+        </div>
+    </div>
+   
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Installation</div>
+        <div class="textContent">
+            <p>
+                Rendez-vous sur l'un des sites officiels d'Ankama :
+            </p>
+            <ul>
+                <li> <a href="https://www.dofus.com" target="_blank" rel="noopener noreferrer">https://www.dofus.com</a> </li>
+                <li> <a href="https://www.wakfu.com" target="_blank" rel="noopener noreferrer">https://www.wakfu.com</a> </li>
+            </ul>
+            <p> Et rendez-vous sur la page de download (ou cliquez "Jouer" en haut à droite)</p>
+            <ul>
+                <li> <a href="https://www.dofus.com/fr/mmorpg/telecharger" target="_blank" rel="noopener noreferrer">https://www.dofus.com/fr/mmorpg/telecharger</a> </li>
+                <li> <a href="https://www.wakfu.com/fr/mmorpg/telecharger" target="_blank" rel="noopener noreferrer">https://www.wakfu.com/fr/mmorpg/telecharger</a> </li>
+            </ul>
+            <div class="info"> 
+                <b>NOTE -</b> Peu importe lequel vous téléchargez, les deux font la même chose : ils permettent d'installer l'Ankama Launcher.
+            </div>
+            <p>
+                Selon lequel vous avez téléchargé, vous avez maintenant un ficher finissant par "<b>.AppImage</b>" .
+            </p>
+            <ul>
+                <li>"Dofus 3.0-Setup-x86_64.AppImage" si vous avez suivi le lien de Dofus</li>
+                <li>"Wakfu-Setup-x86_64.AppImage" si vous avez suivi le lien de Wakfu</li>
+            </ul>
+            <p> Malgré leurs différences de nom, il s'agit en réalité des mêmes fichiers, qui font la même chose : installer l'Ankama launcher.</p>
+            <p> Vous avez maintenant votre fichier. Mais comme Linux a tendance à être + sécurisé que Windows, il faut faire une denière chose : </p>
+            <ul>
+                <li> Click droit sur le fichier -> Propriétés -> Autoriser l'exécution du fichier comme un programme</li>
+            </ul>
+            <div class="container-alternative-items">
+                <div class="container-alternative-items">
+                    @for (item of altEpics; track item) {
+                        <app-alternative-item
+                            itemName="{{ item.itemName }}"
+                            imageUrl="{{ item.imageUrl }}"
+                            imageAlt="{{ item.imageAlt }}"
+                            itemDesc="{{ item.itemDesc }}">
+                        </app-alternative-item>
+                    }
+                </div>
+            </div>
+            <p> Voilà, vous pouvez maintenant simplement double-click le fichier pour lancer l'Ankama launcher ! Là, c'est comme d'habitude : sélectionnez le jeu de votre choix, et cliquez sur installer. </p>     
+        </div>
+    </div>
+
+    <div class="textcontentContainer">
+        <div class="textContentTitle">Tips et tricks additionels</div>
+        <div class="textContent">
+            <p>
+                Lancer en double-cliquant fonctionne, mais on peut gagner un peu de confort au quotidient.
+            </p>
+            <ul>
+                <li>en permettant d'accèder via le menu des applications</li>
+                <ul>
+                    <li> ce qui permet aussi de chercher rapidement (touche <i>super</i> puis taper le nom de l'app) </li>
+                </ul>
+                <li>en ajoutant le launcher dans le dock (le pin au dock)</li>
+            </ul>
+            <p> 
+                Ca tombe bien, les deux sont liés, et je vous propose ma solution !
+            </p>
+            <p> D'abord par facilité je vais renomer le fichier en AnkamaLauncher.AppImage . Comme ça c'est plus simple et plus parlant. </p>
+            <p>
+                Ensuite pour m'y retrouver facilement, je vais bouger le fichier AppImage dans un dossier dédié (laisser trainer des fichiers dans downloads, c'est pas ouf). 
+                Peu importe où vous le mettez, tant que vous savez où vous l'avez mis.
+            </p>
+            <p> Maintenant, notez le path entier (absolu) de votre AppImage quelque part, on va en avoir besoin. (c'est celui qui est indiqué dans la barre du haut, suivi par le nom de votre fichier).</p>
+            <ul>
+                Par exemple si mon utilisateur s'appelle Aekami et que j'ai mis mon AppImage dans un dossier "Ankama_things":
+                <li>'/home/aekami/Workspace/Ankama_things/AnkamaLauncher.AppImage' </li>
+            </ul>
+            <p> Allez dans votre fichier '/home/[VotreNomDUtilisateur]/.local/share/applications' et créez un nouveau fichier que vous nommez "AnkamaLauncher.desktop" .</p>
+            <p> Ouvrez le fichier, et ajoutez ceci, en modifiant selon l'emplacement des différents fichiers chez vous : </p>
+            <div style="display:flex; flex-direction: column; background-color: rgba(0, 0, 0, 0.1);;border: 1px dotted grey; border-radius: 0.5rem; width: fit-content;padding: 1rem;margin: auto;">
+                <div> [Desktop Entry] </div>
+                <div> Name=Ankama Launcher Custom </div>
+                <div> Exec=<span> <b>/home/aekami/Workspace/Ankama_things/AnkamaLauncher.AppImage</b></span> --no-sandbox </div>
+                <div> Icon=<span> <b>/home/aekami/Workspace/Ankama_things/zaap.png </b></span> </div>
+                <div> Type=Application </div>
+                <div> Comment=Ankama portal and game launcher </div>
+                <div> Categories=Game; </div>
+            </div>
+            <p>
+                Pour la ligne <b>exec=</b>, remplacez le path en gras par celui de votre AppImage. (Celui qu'on a noté à l'étape juste avant).
+            </p>
+            <p> Pour la ligne <b>Icon=</b>, vous pouvez soit la retirer, soit mettre le path d'une icone, qui sera affiché pour votre app.</p>
+            <p>
+                Par facilité, vous pouvez utiliser celle du launcher Ankama : <span > <img src="https://i.imgur.com/K2M6UeQ.png" style="max-width: 4rem;" alt="ankama launcher icon"></span>
+            </p>
+            <p> Voilà, maintenant vous devriez pouvoir trouver votre raccourci en le cherchant parmi vos apps (touche <i>super</i>, puis tapez "Ankama"), vous trouverez votre "Ankama Launcher Custom". Vous pouvez le click-droit -> pin pour l'ajouter au Dock.</p>
+
+        </div>
+    </div>
+
+</div>
