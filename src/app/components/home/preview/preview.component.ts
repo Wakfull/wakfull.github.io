@@ -15,8 +15,8 @@ export class PreviewComponent {
   @Input() link?: string;
   @Input() backgroundImage?:string;
 
-  defaultTitle:string = "Sram stole this title, but we're sure it used to be great!";
-  defaultDescription:string = "My crumpets, then this description ?! This bloody Sram god can't keep getting away stealing everything ! ";
+  defaultTitle:string = "";
+  defaultDescription:string = "";
   defaultLink:string = "/404";
   defaultImage:string = ""; // TODO : Preferably a local image.
 }

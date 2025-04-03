@@ -27,7 +27,7 @@ export class HomeComponent {
   hupperGodImageUrl = "https://i.imgur.com/bkOWLDW.png";
   stylishEnuGlassesImageUrl = "https://i.imgur.com/Lmff0D8.png";
   featherImageUrl = "https://i.imgur.com/N9ESgdN.png";
-
+  eliaCubeImageUrl = "https://i.imgur.com/LaZi8B5.png";
 
   previews: {title?:string,description?:string, link?:string, backgroundImage?:string}[] = [
     { title: "Bien débuter", description: "Tout ce que j'aurais aimé savoir quand j'ai commencé en vrac !", link: "/eldersWisdom",backgroundImage: this.elioGodImageUrl },
@@ -41,7 +41,7 @@ export class HomeComponent {
     { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes", backgroundImage: this.stylishEnuGlassesImageUrl},
     { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
     { title: "L'enchantement", description: "Les bases de l'enchantement !", link: "/enchant", backgroundImage: this.hupperGodImageUrl},
-    { title: "Jouer sous Linux", description: "Plutot facile !", link: "/linux"},
+    { title: "Jouer sous Linux", description: "", link: "/linux", backgroundImage: this.eliaCubeImageUrl},
 
     // { title: "Guide des gameplays", description: "Découvrez et apprenez à jouer votre classe", link: "/gameplays"},
     // { title: "Guide des donjons", description: "Besoin d'explications pour un donjon ? C'est ici que ça se passe !", link: "/dungeons"},
