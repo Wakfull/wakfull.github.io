@@ -4,23 +4,28 @@
         <div class="textContentTitle">About me</div>
         <div class="textContent">
             <p>
-                Dev et streamer amateur ! (Normalement seulement un des deux, même si on dirait pas)
+                Je suis Aekami, dev et streamer amateur ! (Normalement seulement un des deux, même si on dirait pas)
             </p>
             <p>
-                Si le site t'a aidé n'hésite pas à passer dire bonjour sur le live sur <a href="https://www.twitch.tv/aekami"> Twitch </a> !
-            </p>
-
-            <p>
-                Si tu as des suggestions, remarques, ou questions, n'hésite pas à passer sur le <a href="https://discord.gg/49EaCMrYsY"> Discord </a> !
+                J'ai créé le site pour avoir un endroit destiné aux nouveaux (et moins nouveaux) joueurs, avec pour but d'expliquer et de rendre plus accessible le jeu Wakfu !
+                Ceci passe par l'explication de mécaniques que jeu, de conseils en vracs, ou encore de recommendations de stuffs !
             </p>
             <p>
                 Le site étant un projet sur le côté quand j'ai le temps, je ne peux malheureusement pas garantir de tout faire (ou de faire rapidement).
-                Si tu es dev et que tu souhaites contribuer, tu peux m'en parler sur Discord !
-                Si tu es un joueur expérimenté et souhaites contribuer avec un article ou stuff, même chose, on peut en discuter sur Discord !
             </p>
-            <p>
-                Le site est open-source : <a href="https://github.com/Wakfull/wakfull.github.io"> Lien github</a>
-            </p>
+
+            <div class="container-alternative-items">
+                @for (item of mediaItems; track item) {
+                    <app-item-tile-clickable
+                        url= "{{ item.url }}"
+                        itemName="{{ item.itemName }}"
+                        imageUrl="{{ item.imageUrl }}"
+                        imageAlt="{{ item.imageAlt }}"
+                        itemDesc="{{ item.itemDesc }}">
+                    </app-item-tile-clickable>
+                }
+            </div>
+            
         </div>
     </div>
 </div>

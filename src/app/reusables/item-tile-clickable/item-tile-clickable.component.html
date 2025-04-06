@@ -1,0 +1,13 @@
+<div class="alternative-item">
+   
+        @if( itemName ){
+            <div class="alt-item-name"> {{ itemName}}  </div>
+        }
+        <a href = '{{ url }}' target="_blank" rel="noopener noreferrer">
+            <img class="item-preview" [src]="imageUrl" [alt]="imageAlt" />
+        </a>
+        @if( itemDesc ){
+            <div class="alt-item-desc"> {{ itemDesc }} </div>
+        }
+    
+  </div>

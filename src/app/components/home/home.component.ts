@@ -29,6 +29,7 @@ export class HomeComponent {
   featherImageUrl = "https://i.imgur.com/N9ESgdN.png";
   eliaCubeImageUrl = "https://i.imgur.com/LaZi8B5.png";
 
+  /* Note : Le lien est un lien géré par le router Angular, les liens externes / absolus ne fonctionneront donc pas */
   previews: {title?:string,description?:string, link?:string, backgroundImage?:string}[] = [
     { title: "Bien débuter", description: "Tout ce que j'aurais aimé savoir quand j'ai commencé en vrac !", link: "/eldersWisdom",backgroundImage: this.elioGodImageUrl },
     { title: "Astuces kamas", description: "Des astuces kamas en vrac !", link: "/kamas", backgroundImage: this.kamasSymbolImageUrl },
@@ -42,6 +43,7 @@ export class HomeComponent {
     { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
     { title: "L'enchantement", description: "Les bases de l'enchantement !", link: "/enchant", backgroundImage: this.hupperGodImageUrl},
     { title: "Jouer sous Linux", description: "", link: "/linux", backgroundImage: this.eliaCubeImageUrl},
+    { title: "Discord & Twitch", description: "", link: "/about", backgroundImage: this.eliaCubeImageUrl},
 
     // { title: "Guide des gameplays", description: "Découvrez et apprenez à jouer votre classe", link: "/gameplays"},
     // { title: "Guide des donjons", description: "Besoin d'explications pour un donjon ? C'est ici que ça se passe !", link: "/dungeons"},
