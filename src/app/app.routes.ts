@@ -225,7 +225,7 @@ export const routes: Routes = [
     { path:'bettering-wakfu', component : BetteringWakfuComponent },
     { path:'todo', component : InProgressComponent },
 
-    { path:'', component : HomeComponent },
+    { path:'', component : HomeComponent , pathMatch: 'full'},
     /* { path:'',   redirectTo: '/home', pathMatch: 'full' },*/ 
     { path:'**', component: PageNotFoundComponent }
 ];
