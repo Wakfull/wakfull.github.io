@@ -43,7 +43,7 @@ export class HomeComponent {
     { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
     { title: "L'enchantement", description: "Les bases de l'enchantement !", link: "/enchant", backgroundImage: this.hupperGodImageUrl},
     { title: "Jouer sous Linux", description: "", link: "/linux", backgroundImage: this.eliaCubeImageUrl},
-    { title: "Discord & Twitch", description: "", link: "/about", backgroundImage: this.eliaCubeImageUrl},
+    { title: "Discord & Twitch", description: "", link: "/about", backgroundImage: this.thinkingElio},
 
     // { title: "Guide des gameplays", description: "Découvrez et apprenez à jouer votre classe", link: "/gameplays"},
     // { title: "Guide des donjons", description: "Besoin d'explications pour un donjon ? C'est ici que ça se passe !", link: "/dungeons"},
