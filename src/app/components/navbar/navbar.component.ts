@@ -10,6 +10,6 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
 
-  aekIconUrl = "https://i.imgur.com/VePAzK3.png";
+  aekIconUrl = "https://i.imgur.com/ynRo8lH.png"; // old : "https://i.imgur.com/VePAzK3.png";
 
 }
