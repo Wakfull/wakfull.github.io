@@ -1,5 +1,6 @@
 {
   "routes": [
+    "/",
     "/about",
     "/beforeGearing",
     "/bettering-wakfu",
