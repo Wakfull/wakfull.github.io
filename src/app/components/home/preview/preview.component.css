@@ -44,7 +44,7 @@
 .card-text{
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
+    display: -webkit-box; /* https://stackoverflow.com/a/77362956/8529723 */
     -webkit-box-orient: vertical;
     line-clamp: 5;
     -webkit-line-clamp: 5;
