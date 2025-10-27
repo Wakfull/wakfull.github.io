@@ -34,13 +34,13 @@ export class Stuffs20Component implements OnInit{
       itemName: "Lames en table",
       imageUrl: "https://i.imgur.com/63MY5lO.png",
       imageAlt: "Lames en table",
-      itemDesc: "Obtention : cf ci-dessous.",
+      itemDesc: "Obtention : drop rare sur l'archimonstre larve qui spawn parfois dans les égouts.",
     },
     {
       itemName: "La queue",
       imageUrl: "https://i.imgur.com/PxMCG3b.png",
       imageAlt: "La queue",
-      itemDesc: "Obtention : drop rare sur l'archimonstre larve qui spawn parfois dans les égouts",
+      itemDesc: "Obtention : cf ci-dessous.",
     },
   ];
 
