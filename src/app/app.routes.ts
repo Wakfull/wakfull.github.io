@@ -29,6 +29,7 @@ import { InProgressComponent } from './components/in-progress/in-progress.compon
 import { TierlistMakerComponent } from './components/tierlist-maker/tierlist-maker.component';
 import { BetteringWakfuComponent } from './components/bettering-wakfu/bettering-wakfu.component';
 import { GameOnLinuxComponent } from './components/game-on-linux/game-on-linux.component';
+import { AdventureGuideComponent } from './components/adventure-guide/adventure-guide.component';
 
 
 export const routes: Routes = [
@@ -199,6 +200,7 @@ export const routes: Routes = [
             }
         ] },
 
+    { path:'guide-global', component : AdventureGuideComponent },
     { path:'dungeons', component : DungeonsComponent },
 
     { path:'themes', component : ThemesComponent },

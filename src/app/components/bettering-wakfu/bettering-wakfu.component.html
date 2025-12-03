@@ -83,7 +83,7 @@
         <div class="textContent">
 
             <ol>
-                <li>La prévisualisation des déplacements est <i>relativement</i><b> lente</b> et laggy. Elle devrait être instantanée, mais ce n'est clairement pas le cas. Le ressenti qui en découle est ... meh.</li>
+                <li>La prévisualisation des déplacements est <i>relativement</i><b> lente</b> et laggy. Elle devrait être instantanée, mais ce n'est clairement pas le cas. Le ressenti qui en découle est pâteux.</li>
                 <li>La prévisualisation <b>tente de faire passer par les cases glyphes en priorité</b>, et ce <b>même quand un chemin alternatif de même longueur qui ne passe pas par un glyphe existe</b>. </li>
             </ol>
             <pre>
@@ -91,7 +91,7 @@
                 Pour l'instant en pratique, tout ce que ça implique est que le jeu force le joueur à "couper en deux" son déplacement, en cliquant une première fois à mi-chemin, attendant que le perso se déplace (vu que la prévisu de déplacement ne s'update qu'une fois l'animation de déplacement finie), puis re-cliquer pour se déplacer à la destination à laquelle il souhaitait véritablement accéder.
 
                 Ceci rend le jeu pâteux sans raison.
-                J'ai bien conscience des différences, cependant à nouveau, Dofus gère ceci de façon bien plus fluide (et sensée).
+                J'ai bien conscience des différences, cependant à nouveau, Dofus gère ceci de façon bien plus fluide.
 
                 Pour rappel, par défaut le pathfinding de dofus évite les glyphes/pièges visibles, et il faut que le joueur clique intentionnellement pour entrer dans ceux-ci.
                 Ceci crée un gameplay global plus fluide et moins frustrant. De cette façon, le joueur joue contre les mobs et les aléas du terrain (glyphes, etc.) et non contre le pathfinding.
@@ -137,17 +137,16 @@
         <div class="textContentTitle">Système d'écologie</div>
         <div class="textContent">
             <p>
-                Outre le fait que le système actuel est nul et devrait être simplement retiré du jeu (non, Wakfu n'est pas un "mmo écologique", personne n'a jamais joué à Wakfu pour ça xd. La feature de pouvoir "planter des mobs" et "gèrer les plantations" est sympa, mais ce qui a été créé autour est juste mauvais.).
+                Outre le fait que le système actuel est nul et devrait être simplement retiré du jeu (non, Wakfu n'est pas un "mmo écologique", soyons honnêtes personne n'a jamais joué à Wakfu pour ça). La feature de pouvoir "planter des mobs" et "gèrer les plantations" est sympa, mais ce qui a été créé autours a besoin d'un rework en profondeur.
             </p>
             <ul>
                 <li>
-                    Lorsqu'on plante 20 graines de XYZ dans une zone, il doit être possible de récolter ses 10 arbres de XYZ.
-                    Pour l'instant si on est dans une zone équilibrée, qu'on plante nos 10 ressources et récolte nos 10 ressources, en respectant l'équilibre du jeu, etc., rien n'empêche un autre joueur qui n'en a rien à faire de tout ça de raser la zone, et au final la personne qui se retrouve sans les ressources, c'est vous.
-                    C'est quoi ce système qui récompense les gens qui ne le respectent pas, et qui pénalise ceux qui le respecte ?
-                    Un gros travail de GD doit être fait là dessus.
+                    Lorsqu'un joueur plante 20 graines de XYZ dans une zone, il doit être possible <b> pour ce même joueur </b> de récolter ses 10 arbres de XYZ.
+                    Pour l'instant si on est dans une zone équilibrée, qu'on plante nos 10 ressources et récolte nos 10 ressources, en respectant l'équilibre du jeu, etc., rien n'empêche un autre joueur qui n'en a rien à faire de tout ça de raser la zone, et au final la personne qui se retrouve sans les ressources, c'est le joueur qui respectait les règles du jeu.
+                    Il s'agit d'un système qui récompense les gens qui ne le respectent pas, et qui pénalise ceux qui le respectent, ce qui n'a aucun sens.
                 </li>
                 <ul>
-                    <li>Imo, la perte de points de citoyenneté devrait être désactivé jusqu'à un potentiel rework de la feature.</li>
+                    <li>Egalement, étant donné tous les problèmes, sources de frustration (et bugs), il est de mon avis que la perte de points de citoyenneté devrait être désactivé jusqu'au rework de la feature.</li>
                 </ul>
 	        </ul>
         </div>
@@ -161,12 +160,13 @@
                 Les ressources rares pour les mineurs et pêcheurs sont récoltables par tout le monde. Elles devraient avoir un temps "réservé" pour la personne qui les a fait respawn, similaire au temps réservé déjà existant sur les ressources paysan/herboriste/bucheron.
                 Il n'est pas normal qu'un joueur fasse tout le boulot de miner des minerais sans valeurs pour faire respawn les minerais rares, tout ça pour qu'un vautour reste à côté en permanence pour les voler.
             </p>
+            <p> Le système actuel incite aux comportements inciviques.</p>
             <p>
                 Le joueur qui fait l'effort de farm doit être celui obtient la ressource.
             </p>
             <ul> 
                <li>Et non, il n'y aurait pas "de monopole", les ressources normales resteraient en free-for-all. Si vous voulez farm les ressources rares, vous vous battez pour farm les ressources normales comme tout le monde.
-                Ceci pousserait les gens à faire repop eux-mêmes, au lieu d'être des <s>connards</s> vautours inciviques.</li>
+                Ceci pousserait les gens à faire repop eux-mêmes, au lieu d'être des vautours inciviques.</li>
             </ul>
         </div>
     </div>
@@ -176,10 +176,10 @@
         <div class="textContentTitle">Les liens dans les liens dans les liens</div>
         <div class="textContent">
             <p>
-                Il y a énormément d'explications de sorts ou effet qui ne sont explicités uniquement en cliquant sur un lien. Lequel ouvre une nouvelle infobulle.
+                Il y a énormément d'explications de sorts ou effets qui ne sont explicités uniquement en cliquant sur un lien. Lequel ouvre une nouvelle infobulle.
                 Laquelle a également potentiellement un ou des liens. Lesquels doivent être également cliqués pour faire apparaitre un nouveau popup.
             </p>
-            <p>Un exemple de ceci est le Coeur de l'Hupper.</p>
+            <p>Un exemple de ceci est le Coeur de l'Hupper, ou le passif des iops avec ses combos.</p>
         </div>
     </div>
 
@@ -206,10 +206,10 @@
         <div class="textContent">
             <p>
                 Il n'y a pas de "popup d'avertissement de déconnexion imminente" quand on est afk pendant trop longtemps.
-                C'est un QOL que la plmupart des MMO ont. Un simplement popup qui dit "attention tu es afk, tu as être déco dans :" avec un timer de genre 30s.
+                C'est un QOL que la plmupart des MMO ont. Un simplement popup qui dit "attention tu es afk, tu as être déco dans :" avec un timer.
             </p>
             <p>
-                Aussi, ce n'est indiqué nulle part, mais on se fait déco après un délai beaucoup plus court si on se trouve dans une instance (comme un temple par exemple).
+                Aussi, ce n'est indiqué nulle part, mais on se fait déco après un délai beaucoup plus court si on se trouve dans une instance (comme un temple par exemple), ou un havre-sac.
             </p>
         </div>
     </div>

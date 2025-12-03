@@ -33,16 +33,17 @@ export class HomeComponent {
   previews: {title?:string,description?:string, link?:string, backgroundImage?:string}[] = [
     { title: "Bien débuter", description: "Tout ce que j'aurais aimé savoir quand j'ai commencé en vrac !", link: "/eldersWisdom",backgroundImage: this.elioGodImageUrl },
     { title: "Astuces kamas", description: "Des astuces kamas en vrac !", link: "/kamas", backgroundImage: this.kamasSymbolImageUrl },
-    { title: "Glossaire", description: "Mot ou abréviation inconnue au bataillon ? Plus maintenant !", link: "/glossary", backgroundImage : this.featherImageUrl},
+    { title: "Guide débutants", description: "Un guide concis pour les aventuriers en herbes perdus;-) ", link: "/guide-global", backgroundImage: this.stylishEnuGlassesImageUrl },
 
     { title: "Stuffs 20", description: "Besoin de stuffs pour débuter, reprendre ou tryhard ? Commence  ici !", link: "/stuff/20", backgroundImage: this.bouftouRoyalUrl },
     { title: "Stuffs 50", description: "Le donjon Moogr et la tour minérale n'attendent que toi !", link: "/stuff/50", backgroundImage: this.royalMoogrUrl },
     { title: "Stuffs 110", description: "Pour aborder sereinement les BU et les super-vilains !", link: "/stuff/110", backgroundImage: this.magmogImageUrl },
     
-    { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes", backgroundImage: this.stylishEnuGlassesImageUrl},
-    { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
-    { title: "L'enchantement", description: "Les bases de l'enchantement !", link: "/enchant", backgroundImage: this.hupperGodImageUrl},
     { title: "Jouer sous Linux", description: "", link: "/linux", backgroundImage: this.eliaCubeImageUrl},
+    // { title: "Les thèmes d'interface", description: "Améliorez votre interface !", link: "/themes", backgroundImage: this.stylishEnuGlassesImageUrl},
+    // { title: "La Modulation", description: "La modulation : quoi, pourquoi et comment.", link: "/modulation", backgroundImage: this.xelorGodImageUrl },
+    { title: "Glossaire", description: "Mot ou abréviation inconnue au bataillon ? Plus maintenant !", link: "/glossary", backgroundImage : this.featherImageUrl},
+    { title: "L'enchantement", description: "Les bases de l'enchantement !", link: "/enchant", backgroundImage: this.hupperGodImageUrl},
     { title: "Discord & Twitch", description: "", link: "/about", backgroundImage: this.thinkingElio},
 
     // { title: "Guide des gameplays", description: "Découvrez et apprenez à jouer votre classe", link: "/gameplays"},
