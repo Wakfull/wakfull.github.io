@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-cra-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './cra-gameplays.component.html',
-  styleUrl: './cra-gameplays.component.css'
+    selector: 'app-cra-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './cra-gameplays.component.html',
+    styleUrl: './cra-gameplays.component.css'
 })
 export class CraGameplaysComponent {
 

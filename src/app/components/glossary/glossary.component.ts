@@ -5,11 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { GlossaryService } from './glossary.service';
 
 @Component({
-  selector: 'app-glossary',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './glossary.component.html',
-  styleUrl: './glossary.component.css'
+    selector: 'app-glossary',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './glossary.component.html',
+    styleUrl: './glossary.component.css'
 })
 export class GlossaryComponent {
 

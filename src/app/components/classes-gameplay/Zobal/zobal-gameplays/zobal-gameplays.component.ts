@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-zobal-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './zobal-gameplays.component.html',
-  styleUrl: './zobal-gameplays.component.css'
+    selector: 'app-zobal-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './zobal-gameplays.component.html',
+    styleUrl: './zobal-gameplays.component.css'
 })
 export class ZobalGameplaysComponent {
   previews: PreviewItem[] = []

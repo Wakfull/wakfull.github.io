@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-hupper-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './hupper-gameplays.component.html',
-  styleUrl: './hupper-gameplays.component.css'
+    selector: 'app-hupper-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './hupper-gameplays.component.html',
+    styleUrl: './hupper-gameplays.component.css'
 })
 export class HupperGameplaysComponent {
   previews: PreviewItem[] = []

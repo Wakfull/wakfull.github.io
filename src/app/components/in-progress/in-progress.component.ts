@@ -6,11 +6,10 @@ import { PreviewItem } from '../../interfaces/iPreviewItem';
 import { InProgressPreviewComponent } from './in-progress-preview/in-progress-preview.component';
 
 @Component({
-  selector: 'app-in-progress',
-  standalone: true,
-  imports: [RouterModule, CommonModule, InProgressPreviewComponent],
-  templateUrl: './in-progress.component.html',
-  styleUrl: './in-progress.component.css'
+    selector: 'app-in-progress',
+    imports: [RouterModule, CommonModule, InProgressPreviewComponent],
+    templateUrl: './in-progress.component.html',
+    styleUrl: './in-progress.component.css'
 })
 export class InProgressComponent {
 

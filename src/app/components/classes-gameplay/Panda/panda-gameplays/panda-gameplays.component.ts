@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-panda-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './panda-gameplays.component.html',
-  styleUrl: './panda-gameplays.component.css'
+    selector: 'app-panda-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './panda-gameplays.component.html',
+    styleUrl: './panda-gameplays.component.css'
 })
 export class PandaGameplaysComponent {
 

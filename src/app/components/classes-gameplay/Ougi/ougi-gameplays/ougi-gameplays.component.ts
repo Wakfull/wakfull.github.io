@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
-  selector: 'app-ougi-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './ougi-gameplays.component.html',
-  styleUrl: './ougi-gameplays.component.css'
+    selector: 'app-ougi-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './ougi-gameplays.component.html',
+    styleUrl: './ougi-gameplays.component.css'
 })
 export class OugiGameplaysComponent {
   previews: PreviewItem[] = []

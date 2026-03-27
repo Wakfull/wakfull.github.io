@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
-  selector: 'app-sacri-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './sacri-gameplays.component.html',
-  styleUrl: './sacri-gameplays.component.css'
+    selector: 'app-sacri-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './sacri-gameplays.component.html',
+    styleUrl: './sacri-gameplays.component.css'
 })
 export class SacriGameplaysComponent {
   previews: PreviewItem[] = []

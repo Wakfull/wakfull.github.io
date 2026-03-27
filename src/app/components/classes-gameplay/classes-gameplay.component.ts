@@ -13,11 +13,10 @@ interface IconDictionary {
 };
 
 @Component({
-  selector: 'app-classes-gameplay',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './classes-gameplay.component.html',
-  styleUrl: './classes-gameplay.component.css'
+    selector: 'app-classes-gameplay',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './classes-gameplay.component.html',
+    styleUrl: './classes-gameplay.component.css'
 })
 export class ClassesGameplayComponent {
 

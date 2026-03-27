@@ -6,11 +6,10 @@ import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.c
 import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
 
 @Component({
-  selector: 'app-osa-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './osa-gameplays.component.html',
-  styleUrl: './osa-gameplays.component.css'
+    selector: 'app-osa-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './osa-gameplays.component.html',
+    styleUrl: './osa-gameplays.component.css'
 })
 export class OsaGameplaysComponent {
 

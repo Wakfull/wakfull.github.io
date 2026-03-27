@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-eca-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './eca-gameplays.component.html',
-  styleUrl: './eca-gameplays.component.css'
+    selector: 'app-eca-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './eca-gameplays.component.html',
+    styleUrl: './eca-gameplays.component.css'
 })
 export class EcaGameplaysComponent {
 

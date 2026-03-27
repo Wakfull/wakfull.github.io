@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
-  selector: 'app-sram-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './sram-gameplays.component.html',
-  styleUrl: './sram-gameplays.component.css'
+    selector: 'app-sram-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './sram-gameplays.component.html',
+    styleUrl: './sram-gameplays.component.css'
 })
 export class SramGameplaysComponent {
 

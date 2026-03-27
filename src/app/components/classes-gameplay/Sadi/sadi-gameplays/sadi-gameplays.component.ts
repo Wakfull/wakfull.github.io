@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-sadi-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './sadi-gameplays.component.html',
-  styleUrl: './sadi-gameplays.component.css'
+    selector: 'app-sadi-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './sadi-gameplays.component.html',
+    styleUrl: './sadi-gameplays.component.css'
 })
 export class SadiGameplaysComponent {
 

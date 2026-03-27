@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
-  selector: 'app-roub-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './roub-gameplays.component.html',
-  styleUrl: './roub-gameplays.component.css'
+    selector: 'app-roub-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './roub-gameplays.component.html',
+    styleUrl: './roub-gameplays.component.css'
 })
 export class RoubGameplaysComponent {
   previews: PreviewItem[] = []

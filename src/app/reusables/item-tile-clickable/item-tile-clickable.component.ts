@@ -1,11 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-item-tile-clickable',
-  standalone: true,
-  imports: [],
-  templateUrl: './item-tile-clickable.component.html',
-  styleUrl: './item-tile-clickable.component.css'
+    selector: 'app-item-tile-clickable',
+    imports: [],
+    templateUrl: './item-tile-clickable.component.html',
+    styleUrl: './item-tile-clickable.component.css'
 })
 export class ItemTileClickableComponent {
 

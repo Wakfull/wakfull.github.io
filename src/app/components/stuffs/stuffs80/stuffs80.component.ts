@@ -5,11 +5,10 @@ import { AlternativeItem } from '../../../interfaces/iAlternativeItem';
 import { AlternativeItemComponent } from '../../../reusables/alternative-item/alternative-item.component';
 
 @Component({
-  selector: 'app-stuffs80',
-  standalone: true,
-  imports: [AlternativeItemComponent],
-  templateUrl: './stuffs80.component.html',
-  styleUrl: './stuffs80.component.css'
+    selector: 'app-stuffs80',
+    imports: [AlternativeItemComponent],
+    templateUrl: './stuffs80.component.html',
+    styleUrl: './stuffs80.component.css'
 })
 export class Stuffs80Component implements OnInit{
 

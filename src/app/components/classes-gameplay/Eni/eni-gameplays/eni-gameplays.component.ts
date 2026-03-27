@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-eni-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './eni-gameplays.component.html',
-  styleUrl: './eni-gameplays.component.css'
+    selector: 'app-eni-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './eni-gameplays.component.html',
+    styleUrl: './eni-gameplays.component.css'
 })
 export class EniGameplaysComponent {
   previews: PreviewItem[] = []

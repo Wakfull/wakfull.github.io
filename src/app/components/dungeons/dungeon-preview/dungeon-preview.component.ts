@@ -3,11 +3,10 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-dungeon-preview',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
-  templateUrl: './dungeon-preview.component.html',
-  styleUrl: './dungeon-preview.component.css'
+    selector: 'app-dungeon-preview',
+    imports: [RouterModule, CommonModule],
+    templateUrl: './dungeon-preview.component.html',
+    styleUrl: './dungeon-preview.component.css'
 })
 export class DungeonPreviewComponent {
 

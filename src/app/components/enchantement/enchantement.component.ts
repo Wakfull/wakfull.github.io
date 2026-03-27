@@ -3,11 +3,10 @@ import { AlternativeItemComponent } from '../../reusables/alternative-item/alter
 import { GenericArticleComponent } from '../../reusables/generic-article/generic-article.component';
 
 @Component({
-  selector: 'app-enchantement',
-  standalone: true,
-  imports: [AlternativeItemComponent, GenericArticleComponent],
-  templateUrl: './enchantement.component.html',
-  styleUrl: './enchantement.component.css'
+    selector: 'app-enchantement',
+    imports: [AlternativeItemComponent, GenericArticleComponent],
+    templateUrl: './enchantement.component.html',
+    styleUrl: './enchantement.component.css'
 })
 export class EnchantementComponent {
 

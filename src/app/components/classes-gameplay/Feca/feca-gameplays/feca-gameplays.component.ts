@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
-  selector: 'app-feca-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './feca-gameplays.component.html',
-  styleUrl: './feca-gameplays.component.css'
+    selector: 'app-feca-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './feca-gameplays.component.html',
+    styleUrl: './feca-gameplays.component.css'
 })
 export class FecaGameplaysComponent {
 

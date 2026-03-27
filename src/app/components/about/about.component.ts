@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { ItemTileClickableComponent } from '../../reusables/item-tile-clickable/item-tile-clickable.component';
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [ItemTileClickableComponent],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+    selector: 'app-about',
+    imports: [ItemTileClickableComponent],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.css'
 })
 export class AboutComponent {
 

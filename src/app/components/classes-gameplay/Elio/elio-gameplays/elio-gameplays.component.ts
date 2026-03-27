@@ -6,11 +6,10 @@ import { ClassesService } from '../../../../services/classes.service';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
 
 @Component({
-  selector: 'app-elio-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './elio-gameplays.component.html',
-  styleUrl: './elio-gameplays.component.css'
+    selector: 'app-elio-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './elio-gameplays.component.html',
+    styleUrl: './elio-gameplays.component.css'
 })
 export class ElioGameplaysComponent {
 

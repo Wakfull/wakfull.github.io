@@ -1,11 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-alternative-item',
-  standalone: true,
-  imports: [],
-  templateUrl: './alternative-item.component.html',
-  styleUrl: './alternative-item.component.css'
+    selector: 'app-alternative-item',
+    imports: [],
+    templateUrl: './alternative-item.component.html',
+    styleUrl: './alternative-item.component.css'
 })
 export class AlternativeItemComponent {
 

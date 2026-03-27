@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-enu-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './enu-gameplays.component.html',
-  styleUrl: './enu-gameplays.component.css'
+    selector: 'app-enu-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './enu-gameplays.component.html',
+    styleUrl: './enu-gameplays.component.css'
 })
 export class EnuGameplaysComponent {
   previews: PreviewItem[] = []

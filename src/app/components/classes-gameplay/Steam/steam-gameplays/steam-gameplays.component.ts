@@ -6,11 +6,10 @@ import { CommonModule } from '@angular/common';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
-  selector: 'app-steam-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './steam-gameplays.component.html',
-  styleUrl: './steam-gameplays.component.css'
+    selector: 'app-steam-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './steam-gameplays.component.html',
+    styleUrl: './steam-gameplays.component.css'
 })
 export class SteamGameplaysComponent {
 

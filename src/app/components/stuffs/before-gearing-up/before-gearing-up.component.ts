@@ -2,11 +2,10 @@ import { Component } from '@angular/core';
 import { AlternativeItemComponent } from '../../../reusables/alternative-item/alternative-item.component';
 
 @Component({
-  selector: 'app-before-gearing-up',
-  standalone: true,
-  imports: [AlternativeItemComponent],
-  templateUrl: './before-gearing-up.component.html',
-  styleUrl: './before-gearing-up.component.css'
+    selector: 'app-before-gearing-up',
+    imports: [AlternativeItemComponent],
+    templateUrl: './before-gearing-up.component.html',
+    styleUrl: './before-gearing-up.component.css'
 })
 export class BeforeGearingUpComponent {
 

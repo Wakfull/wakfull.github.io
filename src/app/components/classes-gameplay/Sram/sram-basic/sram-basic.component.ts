@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-sram-basic',
-  standalone: true,
-  imports: [],
-  templateUrl: './sram-basic.component.html',
-  styleUrl: './sram-basic.component.css'
+    selector: 'app-sram-basic',
+    imports: [],
+    templateUrl: './sram-basic.component.html',
+    styleUrl: './sram-basic.component.css'
 })
 export class SramBasicComponent {
 

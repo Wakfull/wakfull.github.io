@@ -9,11 +9,10 @@ import { AlternativeItem } from '../../../interfaces/iAlternativeItem';
 import { DungeonItem } from '../../../interfaces/iDungeonItem';
 
 @Component({
-  selector: 'app-stuffs20',
-  standalone: true,
-  imports: [AlternativeItemComponent],
-  templateUrl: './stuffs20.component.html',
-  styleUrl: './stuffs20.component.css'
+    selector: 'app-stuffs20',
+    imports: [AlternativeItemComponent],
+    templateUrl: './stuffs20.component.html',
+    styleUrl: './stuffs20.component.css'
 })
 export class Stuffs20Component implements OnInit{
 

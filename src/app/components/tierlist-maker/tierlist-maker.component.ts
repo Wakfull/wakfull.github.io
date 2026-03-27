@@ -38,11 +38,10 @@ interface IconDictionary {
 };
 
 @Component({
-  selector: 'app-tierlist-maker',
-  standalone: true,
-  imports: [CdkDropList, CdkDrag, CommonModule, FormsModule],
-  templateUrl: './tierlist-maker.component.html',
-  styleUrl: './tierlist-maker.component.css'
+    selector: 'app-tierlist-maker',
+    imports: [CdkDropList, CdkDrag, CommonModule, FormsModule],
+    templateUrl: './tierlist-maker.component.html',
+    styleUrl: './tierlist-maker.component.css'
 })
 export class TierlistMakerComponent {
 

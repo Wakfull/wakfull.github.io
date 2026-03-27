@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
-  selector: 'app-xelor-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './xelor-gameplays.component.html',
-  styleUrl: './xelor-gameplays.component.css'
+    selector: 'app-xelor-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './xelor-gameplays.component.html',
+    styleUrl: './xelor-gameplays.component.css'
 })
 export class XelorGameplaysComponent {
 

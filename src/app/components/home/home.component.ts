@@ -5,11 +5,10 @@ import { PreviewComponent } from './preview/preview.component';
 import { environment } from '../../../environments/environment';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [RouterModule, CommonModule, PreviewComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [RouterModule, CommonModule, PreviewComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
   

@@ -17,11 +17,10 @@ interface PreviewDungeonItem {
 }
 
 @Component({
-  selector: 'app-dungeons',
-  standalone: true,
-  imports: [RouterModule, CommonModule, DungeonPreviewComponent, FormsModule],
-  templateUrl: './dungeons.component.html',
-  styleUrl: './dungeons.component.css'
+    selector: 'app-dungeons',
+    imports: [RouterModule, CommonModule, DungeonPreviewComponent, FormsModule],
+    templateUrl: './dungeons.component.html',
+    styleUrl: './dungeons.component.css'
 })
 export class DungeonsComponent {
 

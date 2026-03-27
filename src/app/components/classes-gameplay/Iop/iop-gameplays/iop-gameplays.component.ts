@@ -6,11 +6,10 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
-  selector: 'app-iop-gameplays',
-  standalone: true,
-  imports: [RouterModule, CommonModule, ClassesPreviewComponent],
-  templateUrl: './iop-gameplays.component.html',
-  styleUrl: './iop-gameplays.component.css'
+    selector: 'app-iop-gameplays',
+    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    templateUrl: './iop-gameplays.component.html',
+    styleUrl: './iop-gameplays.component.css'
 })
 export class IopGameplaysComponent {
 

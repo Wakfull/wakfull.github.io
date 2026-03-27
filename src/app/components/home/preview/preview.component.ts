@@ -3,11 +3,10 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-preview',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
-  templateUrl: './preview.component.html',
-  styleUrl: './preview.component.css'
+    selector: 'app-preview',
+    imports: [RouterModule, CommonModule],
+    templateUrl: './preview.component.html',
+    styleUrl: './preview.component.css'
 })
 export class PreviewComponent {
   @Input() title?:string;

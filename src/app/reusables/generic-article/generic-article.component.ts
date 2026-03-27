@@ -1,11 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-generic-article',
-  standalone: true,
-  imports: [],
-  templateUrl: './generic-article.component.html',
-  styleUrl: './generic-article.component.css'
+    selector: 'app-generic-article',
+    imports: [],
+    templateUrl: './generic-article.component.html',
+    styleUrl: './generic-article.component.css'
 })
 export class GenericArticleComponent {
 

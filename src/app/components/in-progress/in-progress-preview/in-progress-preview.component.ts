@@ -3,11 +3,10 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-in-progress-preview',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
-  templateUrl: './in-progress-preview.component.html',
-  styleUrl: './in-progress-preview.component.css'
+    selector: 'app-in-progress-preview',
+    imports: [RouterModule, CommonModule],
+    templateUrl: './in-progress-preview.component.html',
+    styleUrl: './in-progress-preview.component.css'
 })
 export class InProgressPreviewComponent {
   @Input() title?:string;

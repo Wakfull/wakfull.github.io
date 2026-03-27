@@ -18,11 +18,10 @@ interface PreviewItem {
 }
 
 @Component({
-  selector: 'app-gameplays-navbar',
-  standalone: true,
-  imports: [RouterModule,CommonModule],
-  templateUrl: './gameplays-navbar.component.html',
-  styleUrl: './gameplays-navbar.component.css'
+    selector: 'app-gameplays-navbar',
+    imports: [RouterModule, CommonModule],
+    templateUrl: './gameplays-navbar.component.html',
+    styleUrl: './gameplays-navbar.component.css'
 })
 export class GameplaysNavbarComponent {
 

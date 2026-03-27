@@ -3,11 +3,10 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-classes-preview',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
-  templateUrl: './classes-preview.component.html',
-  styleUrl: './classes-preview.component.css'
+    selector: 'app-classes-preview',
+    imports: [RouterModule, CommonModule],
+    templateUrl: './classes-preview.component.html',
+    styleUrl: './classes-preview.component.css'
 })
 export class ClassesPreviewComponent {
   @Input() title?:string;

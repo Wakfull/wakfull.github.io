@@ -5,11 +5,10 @@ import { AlternativeItemComponent } from '../../reusables/alternative-item/alter
 import { AlternativeItem } from '../../interfaces/iAlternativeItem';
 
 @Component({
-  selector: 'app-game-on-linux',
-  standalone: true,
-  imports: [AlternativeItemComponent],
-  templateUrl: './game-on-linux.component.html',
-  styleUrl: './game-on-linux.component.css'
+    selector: 'app-game-on-linux',
+    imports: [AlternativeItemComponent],
+    templateUrl: './game-on-linux.component.html',
+    styleUrl: './game-on-linux.component.css'
 })
 export class GameOnLinuxComponent {
 
