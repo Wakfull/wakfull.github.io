@@ -12,7 +12,7 @@ export class TierRow {
   items :TierItem[];
 
   constructor(title ?:string, items ?:TierItem[]){ 
-    this.guid = self.crypto.randomUUID();
+    this.guid = crypto.randomUUID();
     this.title = title ||"";
     this.items = items || [];
   }
@@ -24,7 +24,7 @@ export class TierItem {
   imgUrl?: string;
 
   constructor(title ?:string, imgUrl ?:string){
-    this.guid = self.crypto.randomUUID();
+    this.guid = crypto.randomUUID();
     this.title = title || "";
     this.imgUrl = imgUrl;
   }
