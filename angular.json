@@ -15,7 +15,7 @@
           "options": {
             "outputPath": {
               "base":"docs",
-              "browser":""
+              "browser":"browser"
             },
             "baseHref": "/",
             "index": {
@@ -37,7 +37,8 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "prerender": false,
+            "server": "src/main.server.ts",
+            "prerender": true,
             "ssr": false
           },
           "configurations": {
@@ -55,14 +56,14 @@
                 }
               ],
               "outputHashing": "all",
-              "prerender": false
+              "prerender": true
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true,
               "ssr": false,
-              "prerender": false,
+              "prerender": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
