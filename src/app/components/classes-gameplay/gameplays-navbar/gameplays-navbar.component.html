@@ -1,19 +1,21 @@
 <nav class="navbar navbar-expand-lg navbar-light">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavGameplays" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarNavGameplays">
-      <ul class="navbar-nav">
-        <li class="nav-item">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavGameplays" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavGameplays">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link"
+        routerLink="/gameplays">Tous</a>
+      </li>
+      @for (navIconLink of linksImagesList; track navIconLink) {
+        <li class="nav-item" >
           <a class="nav-link"
-              routerLink="/gameplays">Tous</a>
+          routerLink={{navIconLink.link}} [ngStyle]="{'background-image': 'url(' + navIconLink.imageUrl +')'}"></a>
         </li>
-        <li class="nav-item"  *ngFor="let navIconLink of linksImagesList">
-          <a class="nav-link"
-              routerLink={{navIconLink.link}} [ngStyle]="{'background-image': 'url(' + navIconLink.imageUrl +')'}"></a>
-        </li>
-      
-      </ul>
-    </div>
-  </nav>
+      }
+
+    </ul>
+  </div>
+</nav>

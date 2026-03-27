@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
@@ -7,7 +7,7 @@ import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
     selector: 'app-feca-gameplays',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './feca-gameplays.component.html',
     styleUrl: './feca-gameplays.component.css'
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 import { ClassesService } from '../../../../services/classes.service';
@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-cra-gameplays',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './cra-gameplays.component.html',
     styleUrl: './cra-gameplays.component.css'
 })

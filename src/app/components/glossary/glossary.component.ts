@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { GlossaryService } from './glossary.service';
 
 @Component({
     selector: 'app-glossary',
-    imports: [CommonModule, FormsModule],
+    imports: [FormsModule],
     templateUrl: './glossary.component.html',
     styleUrl: './glossary.component.css'
 })

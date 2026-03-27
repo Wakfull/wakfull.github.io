@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
@@ -7,7 +7,7 @@ import { ClassesService } from '../../../../services/classes.service';
 
 @Component({
     selector: 'app-sram-gameplays',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './sram-gameplays.component.html',
     styleUrl: './sram-gameplays.component.css'
 })

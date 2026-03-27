@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { ClassesService } from '../../../../services/classes.service';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
     selector: 'app-eca-gameplays',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './eca-gameplays.component.html',
     styleUrl: './eca-gameplays.component.css'
 })

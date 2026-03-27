@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -7,7 +7,7 @@ import { InProgressPreviewComponent } from './in-progress-preview/in-progress-pr
 
 @Component({
     selector: 'app-in-progress',
-    imports: [RouterModule, CommonModule, InProgressPreviewComponent],
+    imports: [RouterModule, InProgressPreviewComponent],
     templateUrl: './in-progress.component.html',
     styleUrl: './in-progress.component.css'
 })

@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { ClassesService } from '../../../../services/classes.service';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
     selector: 'app-steam-gameplays',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './steam-gameplays.component.html',
     styleUrl: './steam-gameplays.component.css'
 })

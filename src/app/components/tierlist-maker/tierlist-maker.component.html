@@ -1,68 +1,76 @@
 
 <div class="container">
 
-    <div class="title-bar">
-        <div *ngIf="!isEditMode" class="tierlist-title" > {{this.tierlistTitle}} </div>
-        <div *ngIf="isEditMode">
-            <input class="title-input" [(ngModel)]="tierlistTitle" placeholder="Enter tierlist title" />
-        </div>
-        
-        <div class="title-bar-right">
-            <button (click)="toggleEditMode()">
-                {{ isEditMode ? 'Save Changes' : 'Edit Tierlist' }}
-            </button>
-        </div>
+  <div class="title-bar">
+    @if (!isEditMode) {
+      <div class="tierlist-title" > {{this.tierlistTitle}} </div>
+    }
+    @if (isEditMode) {
+      <div>
+        <input class="title-input" [(ngModel)]="tierlistTitle" placeholder="Enter tierlist title" />
+      </div>
+    }
+
+    <div class="title-bar-right">
+      <button (click)="toggleEditMode()">
+        {{ isEditMode ? 'Save Changes' : 'Edit Tierlist' }}
+      </button>
     </div>
-    
-    <div class="tierlist-container">
-        @for (row of rows; track row) {
-            <div class="row-container">
-                <div class="row-title-container">
-                    <div *ngIf="isEditMode">
-                        <textarea [(ngModel)]="row.title" class="row-title-textarea-input" placeholder={{row.title}}> </textarea>
-                        <button (click)="removeRow(row.guid)">Delete Row</button>
-                    </div>
-                    <div *ngIf="!isEditMode" class="row-title">
-                        {{row.title}}
-                    </div>
-                </div>
-                <div id={{row.guid}} cdkDropList [cdkDropListData]="row.items" [cdkDropListConnectedTo]="this.connectedDropLists()" cdkDropListOrientation="mixed" 
-                    class="row-items" (cdkDropListDropped)="drop($event)">
-                            @for (currentItem of row.items; track currentItem) {
-                            <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
-                                <div class="item-tierlist-image">
-                                    <img src={{currentItem?.imgUrl}} alt={{currentItem?.title}}>
-                                </div>
-                                {{currentItem?.title}}
-                            </div>
-                        }
+  </div>
 
-                    
-                </div>
+  <div class="tierlist-container">
+    @for (row of rows; track row) {
+      <div class="row-container">
+        <div class="row-title-container">
+          @if (isEditMode) {
+            <div>
+              <textarea [(ngModel)]="row.title" class="row-title-textarea-input" placeholder={{row.title}}> </textarea>
+              <button (click)="removeRow(row.guid)">Delete Row</button>
             </div>
-        }
-        
-        
-        <div class="buttons-container">
-            <button (click)="this.addNewRow()">+ row</button>
-            <!-- button (click)="this.removeLastRow()">Quick delete last row</button> -->
-            <!-- <button (click)="showAddRowInput()">Add new row</button> -->
+          }
+          @if (!isEditMode) {
+            <div class="row-title">
+              {{row.title}}
+            </div>
+          }
         </div>
+        <div id={{row.guid}} cdkDropList [cdkDropListData]="row.items" [cdkDropListConnectedTo]="this.connectedDropLists()" cdkDropListOrientation="mixed"
+          class="row-items" (cdkDropListDropped)="drop($event)">
+          @for (currentItem of row.items; track currentItem) {
+            <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
+              <div class="item-tierlist-image">
+                <img src={{currentItem?.imgUrl}} alt={{currentItem?.title}}>
+              </div>
+              {{currentItem?.title}}
+            </div>
+          }
 
-        <div class="row-container">
-            <h4> {{itemsPool.title}}</h4>
-            <div id={{itemsPool.guid}} cdkDropList [cdkDropListData]="itemsPool.items" [cdkDropListConnectedTo]="this.connectedDropLists()" cdkDropListOrientation="mixed" class="row-items" (cdkDropListDropped)="drop($event)">            
-                @for (currentItem of itemsPool.items; track currentItem) {
-                    <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
-                        <div class="item-tierlist-image">
-                            <img src={{currentItem?.imgUrl}} alt={{currentItem?.title}}>
-                        </div>
-                        {{currentItem?.title}}
-                    </div>
-                }
-            </div>
+
         </div>
+      </div>
+    }
+
+
+    <div class="buttons-container">
+      <button (click)="this.addNewRow()">+ row</button>
+    <!-- button (click)="this.removeLastRow()">Quick delete last row</button> -->
+    <!-- <button (click)="showAddRowInput()">Add new row</button> -->
+  </div>
+
+  <div class="row-container">
+    <h4> {{itemsPool.title}}</h4>
+    <div id={{itemsPool.guid}} cdkDropList [cdkDropListData]="itemsPool.items" [cdkDropListConnectedTo]="this.connectedDropLists()" cdkDropListOrientation="mixed" class="row-items" (cdkDropListDropped)="drop($event)">
+      @for (currentItem of itemsPool.items; track currentItem) {
+        <div class="item-tierlist" [cdkDragData]="currentItem" cdkDrag>
+          <div class="item-tierlist-image">
+            <img src={{currentItem?.imgUrl}} alt={{currentItem?.title}}>
+          </div>
+          {{currentItem?.title}}
+        </div>
+      }
     </div>
+  </div>
+</div>
 
-    
+
 </div>

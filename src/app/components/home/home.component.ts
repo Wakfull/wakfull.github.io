@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PreviewComponent } from './preview/preview.component';
@@ -6,7 +6,7 @@ import { environment } from '../../../environments/environment';
 
 @Component({
     selector: 'app-home',
-    imports: [RouterModule, CommonModule, PreviewComponent],
+    imports: [RouterModule, PreviewComponent],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css'
 })

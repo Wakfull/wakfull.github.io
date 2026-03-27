@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {CdkDragDrop, CdkDrag, CdkDropList, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
-import { CommonModule } from '@angular/common';
+
 
 import { ClassesService } from '../../services/classes.service';
 import { IconItem } from '../../interfaces/iIconItem';
@@ -39,7 +39,7 @@ interface IconDictionary {
 
 @Component({
     selector: 'app-tierlist-maker',
-    imports: [CdkDropList, CdkDrag, CommonModule, FormsModule],
+    imports: [CdkDropList, CdkDrag, FormsModule],
     templateUrl: './tierlist-maker.component.html',
     styleUrl: './tierlist-maker.component.css'
 })

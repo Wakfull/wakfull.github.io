@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { ClassesService } from '../../../../services/classes.service';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
 
 @Component({
     selector: 'app-osa-gameplays',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './osa-gameplays.component.html',
     styleUrl: './osa-gameplays.component.css'
 })

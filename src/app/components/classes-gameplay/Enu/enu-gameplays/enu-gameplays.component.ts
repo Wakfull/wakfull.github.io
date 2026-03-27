@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 
 @Component({
     selector: 'app-enu-gameplays',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './enu-gameplays.component.html',
     styleUrl: './enu-gameplays.component.css'
 })

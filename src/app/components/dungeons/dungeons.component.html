@@ -1,35 +1,36 @@
 
 <div class="container">
-    <div class="content">
-        <div class="text-center">
-            <h2> Guide des donjons </h2>
-        </div>
-        <div class="searchInput text-center">
-            Chercher un donjon : <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (ngModelChange)="filterList()" />
-        </div>
-        <div class="pager text-center">
-            <button [disabled]="currentPage === 1" (click)="previousPage()">Precedent</button>
-            <span class="page-count">Page {{ currentPage }} sur {{totalPagesSorted}}</span>
-            <button [disabled]="currentPage === totalPagesSorted" (click)="nextPage()">suivant</button>
-        </div>
-        <div class="row">
-            <app-dungeon-preview class="col-md-4 mb-4"
-                    *ngFor="let preview of sortedPreviews | slice:(currentPage-1) * pageSize:currentPage * pageSize"
-                        [name]="preview.name"
-                        [level]="preview.level"
-                        [nbr_rooms]="preview.nbr_rooms"
-                        [nbr_players]="preview.nbr_players"
-                        [is_UB]="preview.is_UB"
-                        [description]="preview.description"
-                        [siteUrl]="preview.siteUrl"
-                        [backgroundImage]="preview.backgroundImage"
-                    >
-                </app-dungeon-preview>
-        </div>
-        <div class="pager text-center">
-            <button [disabled]="currentPage === 1" (click)="previousPage()">Precedent</button>
-            <span class="page-count">Page {{ currentPage }} of {{totalPagesSorted}}</span>
-            <button [disabled]="currentPage === totalPagesSorted" (click)="nextPage()">Suivant</button>
-        </div>
+  <div class="content">
+    <div class="text-center">
+      <h2> Guide des donjons </h2>
     </div>
+    <div class="searchInput text-center">
+      Chercher un donjon : <input type="text" placeholder="Search..." [(ngModel)]="searchTerm" (ngModelChange)="filterList()" />
+    </div>
+    <div class="pager text-center">
+      <button [disabled]="currentPage === 1" (click)="previousPage()">Precedent</button>
+      <span class="page-count">Page {{ currentPage }} sur {{totalPagesSorted}}</span>
+      <button [disabled]="currentPage === totalPagesSorted" (click)="nextPage()">suivant</button>
+    </div>
+    <div class="row">
+      @for (preview of sortedPreviews | slice:(currentPage-1) * pageSize:currentPage * pageSize; track preview) {
+        <app-dungeon-preview class="col-md-4 mb-4"
+          [name]="preview.name"
+          [level]="preview.level"
+          [nbr_rooms]="preview.nbr_rooms"
+          [nbr_players]="preview.nbr_players"
+          [is_UB]="preview.is_UB"
+          [description]="preview.description"
+          [siteUrl]="preview.siteUrl"
+          [backgroundImage]="preview.backgroundImage"
+          >
+        </app-dungeon-preview>
+      }
+    </div>
+    <div class="pager text-center">
+      <button [disabled]="currentPage === 1" (click)="previousPage()">Precedent</button>
+      <span class="page-count">Page {{ currentPage }} of {{totalPagesSorted}}</span>
+      <button [disabled]="currentPage === totalPagesSorted" (click)="nextPage()">Suivant</button>
+    </div>
+  </div>
 </div>

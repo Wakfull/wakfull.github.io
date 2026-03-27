@@ -1,19 +1,20 @@
 
 <div class="container">
-    <div class="content">
-        <div class="text-center">
-            <h2> Guides Pandawa </h2>
-        </div>
-
-        <div class="row">
-            <app-classes-preview class="col-md-4 mb-4"
-                    *ngFor="let preview of previews"
-                        [title]="preview.title"
-                        [description]="preview.description"
-                        [link]="preview.link"
-                        [backgroundImage]="preview.backgroundImage"
-                    >
-                </app-classes-preview>
-        </div>
+  <div class="content">
+    <div class="text-center">
+      <h2> Guides Pandawa </h2>
     </div>
+
+    <div class="row">
+      @for (preview of previews; track preview) {
+        <app-classes-preview class="col-md-4 mb-4"
+          [title]="preview.title"
+          [description]="preview.description"
+          [link]="preview.link"
+          [backgroundImage]="preview.backgroundImage"
+          >
+        </app-classes-preview>
+      }
+    </div>
+  </div>
 </div>

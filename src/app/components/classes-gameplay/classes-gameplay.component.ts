@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from './classes-preview/classes-preview.component';
@@ -14,7 +14,7 @@ interface IconDictionary {
 
 @Component({
     selector: 'app-classes-gameplay',
-    imports: [RouterModule, CommonModule, ClassesPreviewComponent],
+    imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './classes-gameplay.component.html',
     styleUrl: './classes-gameplay.component.css'
 })
