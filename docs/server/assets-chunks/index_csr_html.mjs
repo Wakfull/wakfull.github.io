@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+export default `<!doctype html>
+<html lang="en" data-beasties-container="">
 <head>
   <meta charset="utf-8">
   <title>Havre-sac</title>
@@ -17,11 +17,11 @@
   <link rel="icon" href="./favicon.ico">
   <link defer="" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   
-<link rel="stylesheet" href="styles-Q5UUTVMW.css"></head>
-<body><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
-</script>
+<style>:root{--bgColor:#faf9f6;--secondaryBgColor:rgb(33, 37, 41);--mainTextColor:black;--secondaryTextcolor:rgba(255, 255, 255, .8);--mainHighlightColor:#1e53a1 ;--secondaryHighlightColor:#272727;--baseFont:"Times New Roman", Times, serif;--impactFont:Impact, "Times New Roman", Times, serif;--white:#ffffff;--green:#37a823;--orange:#e69d00;--yellow:#ffd438;--mauve:#460960;--violet:#9a6fb1;--red:#c03b44;--difficulty-font-size:1.5rem;--difficulty-star-full-color:gold;--difficulty-star-empty-color:white}html,body{height:100%;margin:0}body{display:flex;flex-direction:column;background-color:#fefcf5}app-root{display:flex;flex-direction:column;min-height:100vh}</style><link rel="stylesheet" href="styles-Q5UUTVMW.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-Q5UUTVMW.css"></noscript></head>
+<body ngcm="">
   <app-root></app-root>
 
   <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-FLT7EE7V.js" type="module"></script></body>
 </html>
+`;
