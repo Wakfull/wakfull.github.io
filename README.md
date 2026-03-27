@@ -1,4 +1,4 @@
-# [Havre-Sac.fr](https://havre-sac.fr/home) (Anciennement "wakfull.github.io") by Aekami
+# [Havre-Sac.fr](https://havre-sac.fr) (Anciennement "wakfull.github.io") by Aekami
 
 ## But du site
 Un petit site de référence concernant l'univers du jeu Wakfu, ayant pour but de répondre aux questions récurrentes des joueurs.
