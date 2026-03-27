@@ -44,29 +44,22 @@ Prérequis :
 Cheatsheet pour ceux qui ne sont pas familiers avec Angular :
 - (npm install)
 - Le site se lance en local  avec : `ng serve`  
-- Le build peut être généré avec : `ng build`
+- Le build peut être généré avec : `npm run build`
 
-Testé  avec Angular CLI 18 et Node 22.  
-/!\\ Ne fonctionne pas avec Angular < 17  
+Testé  avec Angular CLI 21 et Node 24.
 
 ## Comment est ce que le code est généré ?
-J'utilise Angular SSG et SSR pour générer le siet sur base des sources. Ce repo peut être vu comme étant divisé en deux parties :
-- `/docs` qui contient le code généré. Aka, c'est celui qui est véritablement montré lorsqu'on navigue vers le site.
+J'utilise Angular SSG pour générer le site sur base des sources(/src). Ce repo peut être vu comme étant divisé en deux parties :
+- `/docs` qui contient le code généré. Aka, c'est ce qui est montré lorsqu'on navigue vers le site.
 - `/` et `/src` qui contiennent les sources du projet. Aka, c'est le code "de base".
 
-Le site est généré en utilisant `ng build`.
-A noter qu'il faut ensuite remonter le code généré d'un directory.
-(mv /docs/browser/* /docs/ )
-
+Le site est généré en utilisant `npm run build`.
 
 ## Pourquoi est ce que X et Y ne sont pas consistants ? Pourquoi parfois hardcodé ? Pourquoi parfois service ? Il y a des \<br\> dans certains de tes html ???
 Malgré sa petite taille, le site souffre légèrement de legacy code.
 
 Le site a en réalité commencé sous la forme de mes notes (des documents markdown [Obsidian pour ceux qui connaissent]) que j'avais mises à disposition et adaptées en html "vite fait" pour répondre aux questions récurrentes sur le stream. Ca avait l'avantage d'être "quick and easy".
-
-Puis j'ai commencé à ajouter du contenu au site. Et encore. Et encore. Et nous voilà à aujourd'hui, à prouver encore une fois l'adage:
-
-"Il n'y a rien de plus permanent qu'une solution temporaire"
+Puis j'ai commencé à ajouter du contenu au site. Et encore. Et encore.
 
 De ceci découle :
 - Le CSS du site est +- global. Le problème étant que certains éléments de certains composants ont été stylisés en se disant que le site a les couleurs qu'il a. Ce qui fait par exemple qu'un thème sombre cacherait visuellement certains éléments.
@@ -77,5 +70,5 @@ De ceci découle :
     - Les articles plus récents utilisent soit \<p\> soit des \<div\> appropriées.
 
 - Les articles sont écrits directement dans l'htlm.
-    - Ici, il s'agit plutot d'une contrainte technique; à savoir qu'il n'existe pas de serveur backend. Les datas doivent donc vivre quelque part. Le mieux serait probablement dans des .json / .xml / .yaml / .toml ou autre séparés, lesquels seraient importés dans des services, lesquels seraient appelés par les composants, et finalement displayed. Ca fait beaucoup de complexité pour quelque chose qui peut simplement être écrit dans l'html. Vu ce qui est attendu du site, je pense que sur-complexifier n'a pas de sens. Le jour où je refais "proprement" le site avec un vrai serveur backend, je devrais de toute façon affectuer un refactor global.
+    - Ici, il s'agit plutot d'une contrainte technique; à savoir qu'il n'existe pas de serveur backend. Les data doivent donc vivre quelque part. Le mieux serait probablement dans des .json / .xml / .yaml / .toml ou autre séparés, lesquels seraient importés dans des services, lesquels seraient appelés par les composants, et finalement displayed. Ca fait beaucoup de complexité pour quelque chose qui peut simplement être écrit dans l'html. Vu ce qui est attendu du site, je pense que sur-complexifier n'a pas de sens. Le jour où je refais "proprement" le site avec un vrai serveur backend, je devrai de toute façon affectuer un refactor global.
 

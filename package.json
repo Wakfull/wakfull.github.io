@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && node scripts/post-build.mjs",
+    "build": "ng build",
+    "postbuild":"node scripts/post-build.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:AekamiGitHubPageStatic": "node dist/aekami-git-hub-page-static/server/server.mjs"
