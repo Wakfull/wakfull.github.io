@@ -7,8 +7,8 @@
     padding-left: 2rem;
     padding-right: 2rem;
     border-radius: 0.25rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid lightgrey;
+    background-color: var(--overlay);
+    border: 1px solid var(--borderColor);
     
     min-width: 2rem;
     max-width: 23rem;

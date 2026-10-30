@@ -2,11 +2,12 @@
 :root{
     /* Background colors*/
     --bgColor : #faf9f6;/* #1e293d; */
-    --secondaryBgColor : rgb(33, 37, 41); /* #3e425e;*/ 
+    --secondaryBgColor : rgb(33, 37, 41); /* #3e425e;*/
 
     /* Text colors */
     --mainTextColor : black;
     --secondaryTextcolor : rgba(255, 255, 255, 0.8);
+    --mutedTextColor : #6c757d;
 
     /* Highlight colors */
     --mainHighlightColor : #1e53a1 ;/* #F1F1F1*/
@@ -16,6 +17,24 @@
     --baseFont : "Times New Roman", Times, serif;
     --impactFont : Impact, "Times New Roman", Times, serif;
 
+    /* Surfaces & lines (theme aware) */
+    --cardBg : white;
+    --overlay : rgba(0, 0, 0, 0.1);
+    --overlayStrong : rgba(0, 0, 0, 0.2);
+    --overlayStronger : rgba(0, 0, 0, 0.3);
+    --overlaySoft : rgba(0, 0, 0, 0.08);
+    --borderColor : lightgrey;
+    --strongBorder : black;
+    --neutralBg : lightgray;
+    --successBg : lightgreen;
+    --warningBg : lightgoldenrodyellow;
+    --dangerBg : lightpink;
+    --infoBg : lightblue;
+    --orangeBg : wheat;
+    --violetBg : thistle;
+    --mauveBg : plum;
+    --blueBorder : darkblue;
+    --greenBorder : darkgreen;
 
     /* Items rarity colors*/
     --white : #ffffff;
@@ -32,6 +51,39 @@
     --difficulty-star-empty-color : white;
 }
 
+html[data-bs-theme="dark"]{
+    /* Background colors*/
+    --bgColor : #1e293d;
+    --secondaryBgColor : rgb(44, 49, 54);
+
+    /* Text colors */
+    --mainTextColor : #e9ecef;
+    --secondaryTextcolor : rgba(255, 255, 255, 0.85);
+    --mutedTextColor : #adb5bd;
+
+    /* Surfaces & lines */
+    --cardBg : #252a2f;
+    --overlay : rgba(255, 255, 255, 0.08);
+    --overlayStrong : rgba(255, 255, 255, 0.12);
+    --overlayStronger : rgba(255, 255, 255, 0.18);
+    --overlaySoft : rgba(255, 255, 255, 0.06);
+    --borderColor : #5c636a;
+    --strongBorder : #c9cdd1;
+    --neutralBg : #343a40;
+    --successBg : #21452e;
+    --warningBg : #4a4018;
+    --dangerBg : #4d2529;
+    --infoBg : #1e3a52;
+    --orangeBg : #463619;
+    --violetBg : #3a2b45;
+    --mauveBg : #3f2440;
+    --blueBorder : #6ea3e0;
+    --greenBorder : #35a05a;
+
+    /* Classes gameplay difficulties */
+    --difficulty-star-empty-color : #495057;
+}
+
 html, body{
     height: 100%;
     margin: 0;
@@ -40,8 +92,12 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #fefcf5;/* #FFF5EE;*/
+    color: var(--mainTextColor);
 }
-  
+html[data-bs-theme="dark"] body{
+    background-color: #14181f;
+}
+
 app-root {
     display: flex;
     flex-direction: column;
@@ -49,22 +105,22 @@ app-root {
 }
 
 .info{
-    border: 1px solid darkgreen;
-    background-color: #ddffdd;
+    border: 1px solid var(--greenBorder);
+    background-color: var(--successBg);
     border-radius: 0.25rem;
     padding: 0.5rem;
 }
 
 .warning{
     border: 1px solid goldenrod;
-    background-color: #ffffcc;
+    background-color: var(--warningBg);
     border-radius: 0.25rem;
     padding: 0.5rem;
 }
 
 .danger{
-    border: darkred;
-    background-color: lightcoral;
+    border: var(--red);
+    background-color: var(--dangerBg);
     border-radius: 0.25rem;
     padding: 0.5rem;
 }
@@ -82,7 +138,7 @@ app-root {
 }
 
 .textcontentContainer{
-    background-color: white;
+    background-color: var(--cardBg);
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     overflow: hidden;
@@ -103,14 +159,14 @@ app-root {
     padding: 1rem;
     border: 1px rgba(0, 0, 0, 20%) solid;
     border-radius: 0.3rem;
-    background-color: rgba(27, 27, 27, 0.05);
+    background-color: var(--overlaySoft);
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-  
+
 .difficulty-container{
     display: flex;
     width: 100%;
@@ -125,7 +181,7 @@ img {
     flex-direction: column;
     background-color: var(--secondaryBgColor) ;
     color: var(--secondaryTextcolor);
-    border: 1px solid black;
+    border: 1px solid var(--borderColor);
     border-radius: 0.5rem;
     padding: 0.25rem;
     flex-wrap: wrap;
@@ -185,7 +241,7 @@ img {
 
 .dg_mini{
     background-color: rgba(138, 109, 109, 0.1);
-    border: 1px solid lightgrey;
+    border: 1px solid var(--borderColor);
     border-radius: 0.5rem;
     max-height: 4.5rem;
     min-width: 0.5rem; /* To allow images to shrink properly. Why is this even a thing ? css/10 */
@@ -193,5 +249,5 @@ img {
 }
 
 .dg_mini img {
-    /* object-fit: contain;*/ 
+    /* object-fit: contain;*/
 }

@@ -5,9 +5,9 @@
   }
 
   button{
-    background-color: white;
+    background-color: var(--cardBg);
     border-radius: 0.3rem;
-    border-color : gray;
+    border-color : var(--borderColor);
     width: fit-content;
     height: fit-content;
   }
@@ -34,24 +34,24 @@
     width: 100%;
     gap: 1rem;
     padding: 1rem;
-    border: solid 0.1rem #ccc;
+    border: solid 0.1rem var(--borderColor);
     border-radius: 0.2rem;
   }
 
   .item-tierlist:hover {
-    border: 0.2rem solid gray;
+    border: 0.2rem solid var(--borderColor);
   }
   
   .item-tierlist {
     display: flex;
     flex-direction: column;
     padding: 1.25rem 0.625rem; /* 20px, 10px*/
-    border: solid 0.2rem #ccc;
+    border: solid 0.2rem var(--borderColor);
     border-radius: 0.4rem;
     color: var(--mainTextColor);
     box-sizing: border-box;
     cursor: move;
-    background: white;
+    background: var(--cardBg);
     text-align: center;
     font-size: 1rem;
 
@@ -77,12 +77,12 @@
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
                 0 8px 10px 1px rgba(0, 0, 0, 0.14),
                 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-    border: 0.2rem solid gray;
+    border: 0.2rem solid var(--borderColor);
   }
   
   .cdk-drag-placeholder {
     opacity: 0.3;
-    border: 0.2rem dashed gray;
+    border: 0.2rem dashed var(--borderColor);
   }
   
   .cdk-drag-animating {
@@ -111,7 +111,7 @@
     font-size:2rem;
     height: fit-content;
     width: fit-content;
-    color:grey;
+    color:var(--mutedTextColor);
   }
 
   .tierlist-title{
@@ -141,7 +141,7 @@
 
   .row-title-textarea-input{
     font-size: 1.5rem;
-    color: gray;
+    color: var(--mutedTextColor);
     max-width: 100%;
   }
 

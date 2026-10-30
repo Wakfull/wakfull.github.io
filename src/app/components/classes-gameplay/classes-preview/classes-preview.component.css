@@ -39,7 +39,7 @@
 }
 
 .card-body{
-    background-color: white;
+    background-color: var(--cardBg);
 }
 
 .card-text{

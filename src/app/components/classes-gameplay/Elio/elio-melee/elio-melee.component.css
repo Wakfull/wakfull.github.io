@@ -2,8 +2,8 @@
     width: fit-content;
     padding : 0.5rem;
     border-radius: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    border : 1px solid darkgray;
+    background-color: var(--overlay);
+    border : 1px solid var(--borderColor);
 }
 
 .deckCode:hover{
@@ -12,5 +12,5 @@
 }
 
 .deckCode:active{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--overlayStronger);
 }

@@ -1,7 +1,7 @@
 
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: var(--overlaySoft);
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
@@ -11,13 +11,13 @@
 }
 
 .nav-item{
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid var(--borderColor);
     min-width: 5rem;
     text-align: center;
 }
 
 .navbar-nav .nav-item :hover{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--overlay);
 }
 
 #navbarNavGameplays .nav-item .nav-link{

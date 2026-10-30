@@ -1,11 +1,11 @@
 .masteryBonusDmg{
-    background-color: lightblue;
+    background-color: var(--infoBg);
     border-radius: 0.25rem;
     font-weight: bold;
 }
 
 .baseDmgBorder{
-    background-color: lightgray;
+    background-color: var(--neutralBg);
     border-radius: 0.25rem;
     font-weight: bold;
 }

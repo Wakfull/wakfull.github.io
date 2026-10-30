@@ -10,32 +10,32 @@
 .rune{
     display: flex;
     flex-direction: column;
-    border: 0.25rem solid black;
+    border: 0.25rem solid var(--strongBorder);
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--overlayStrong);
     border-radius: 0.5rem;
     height: fit-content;
     max-width: 13rem;
 }
 
 .rune-red{
-    border-color: darkred;
-    background-color: lightpink;
+    border-color: var(--red);
+    background-color: var(--dangerBg);
 }
 
 .rune-blue{
-    border-color: darkblue;
-    background-color: lightblue;
+    border-color: var(--blueBorder);
+    background-color: var(--infoBg);
 }
 
 .rune-green{
-    border-color: darkgreen;
-    background-color: lightgreen;
+    border-color: var(--greenBorder);
+    background-color: var(--successBg);
 }
 
 .rune-yellow{
     border-color: var(--yellow);
-    background-color: lightgoldenrodyellow;
+    background-color: var(--warningBg);
 }
 
 .rune-title{
