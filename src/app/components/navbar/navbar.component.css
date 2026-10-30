@@ -8,3 +8,24 @@
     max-width: 100%;
     height: auto;
 }
+
+/* Layout : brand on the left, menu centered, theme toggle on the right edge */
+@media (min-width: 992px) {
+    .navbar-nav {
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+.theme-toggle {
+    font-size: 1.25rem;
+    line-height: 1;
+    text-decoration: none;
+}
