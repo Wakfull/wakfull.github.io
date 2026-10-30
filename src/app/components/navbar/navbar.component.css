@@ -176,3 +176,14 @@
     z-index: 1040; /* below the panel (1045), above page content */
     background: rgba(0, 0, 0, 0.35);
 }
+
+/* The mobile panel & scrim are never meant to exist on wide screens,
+   regardless of the JS state — this guarantees the desktop view is
+   correct even before/without any state reset kicking in (e.g. after
+   resizing from mobile with the panel still open). */
+@media (min-width: 992px) {
+    .mobile-menu,
+    .mobile-scrim {
+        display: none;
+    }
+}
