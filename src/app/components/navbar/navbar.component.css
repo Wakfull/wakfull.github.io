@@ -1,6 +1,24 @@
 
+/* Fixed, constant-height bar : it never grows, so the hamburger & theme toggle
+   can never move, and the mobile menu lives in its own layer below the bar */
 .navbar{
   box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050; /* above Bootstrap's fixed navbar z-index (1020) and the dropdown panel (1045) */
+  height: var(--navbar-height);
+  /* Bootstrap's default vertical padding would make the bar taller than expected */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Push the page content below the fixed bar (only what the navbar component sees) */
+:host {
+  --navbar-height: 64px; /* matches the 64px brand icon */
+  display: block;
+  margin-top: var(--navbar-height);
 }
 
 .navbar-brand img {
@@ -9,7 +27,34 @@
     height: auto;
 }
 
-/* Layout : brand on the left, menu centered, theme toggle on the right edge */
+/* Layout : brand on the left, menu centered, theme toggle on the right edge.
+   .navbar-right is unwrapped (display: contents) so the hamburger & theme
+   toggle act as direct flex items of the navbar — that lets the theme toggle
+   pin to the far right in every layout while the hamburger can be centered
+   on small screens. */
+.navbar-right {
+    display: contents;
+}
+
+/* The hamburger only exists on small screens (Bootstrap hides it at lg+):
+   center it in the middle of the constant-height bar.
+   (positioned inside .navbar, which is position:fixed/relative) */
+.navbar-toggler {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.theme-toggle {
+    font-size: 1.25rem;
+    line-height: 1;
+    text-decoration: none;
+    /* Pin to the far right of the top row (and of the whole bar on desktop) */
+    margin-left: auto;
+}
+
+/* ---- Desktop menu (>= lg) : centered between brand and theme toggle ---- */
 @media (min-width: 992px) {
     .navbar-nav {
         display: flex;
@@ -17,15 +62,117 @@
         justify-content: center;
     }
 
-    .navbar-right {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
+    /* In the DOM, the buttons come before .navbar-collapse (so the theme
+       toggle is always visible on mobile). On wide screens we re-order them
+       after the menu so the toggle sits at the far right, as intended.
+       (The hamburger is display:none at lg+, so only the theme toggle counts.) */
+    .navbar-toggler,
+    .navbar-right .theme-toggle {
+        order: 1;
     }
 }
 
-.theme-toggle {
-    font-size: 1.25rem;
-    line-height: 1;
-    text-decoration: none;
+/* ---- Mobile menu (< lg) : fixed full-width panel below the bar ---- */
+.mobile-menu {
+    position: fixed;
+    top: var(--navbar-height); /* bar height */
+    left: 0;
+    right: 0;
+    z-index: 1045;
+    background-color: var(--cardBg);
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
+    border-top: 1px solid var(--borderColor);
+    max-height: calc(100vh - var(--navbar-height));
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0 1rem;
+}
+
+.mobile-top-item {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Accordion sections (Builds & stuffs / Divers / Astuces / Brèches) */
+.mobile-section {
+    border-top: 1px solid var(--borderColor);
+}
+
+.mobile-section-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: none;
+    border: 0;
+    color: var(--mainTextColor);
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Chevron flips down → up when the section opens; the body expands */
+.chevron {
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+.mobile-section.open .chevron {
+    transform: rotate(180deg);
+}
+
+.mobile-section-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.25s ease;
+}
+.mobile-section.open .mobile-section-body {
+    grid-template-rows: 1fr;
+}
+.mobile-section-body > .mobile-sub-list {
+    overflow: hidden;
+}
+
+.mobile-sub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0.5rem;
+}
+.mobile-sub-list .dropdown-item {
+    padding: 0.55rem 1.25rem 0.55rem 2.25rem;
+    color: var(--mainTextColor);
+    font-size: 1rem;
+}
+.mobile-sub-list li.with-divider {
+    border-top: 1px solid var(--borderColor);
+    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+}
+
+/* Theme-aware menu link hover/focus (vars follow the data-bs-theme) */
+.mobile-sub-list .dropdown-item:hover,
+.mobile-sub-list .dropdown-item:focus,
+.mobile-top-item:hover,
+.mobile-top-item:focus {
+    background-color: var(--overlaySoft);
+    color: var(--mainTextColor);
+}
+
+/* Scrim behind the panel : dims the page and closes the menu on tap */
+.mobile-scrim {
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1040; /* below the panel (1045), above page content */
+    background: rgba(0, 0, 0, 0.35);
 }

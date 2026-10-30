@@ -1,89 +1,82 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
     <a class="navbar-brand" routerLink="">
       <img src={{aekIconUrl}} width="64" height="64" alt="Icon">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- Hamburger: centered on the (fixed, constant-height) bar, mobile only -->
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()"
+            [attr.aria-expanded]="menuOpen" aria-controls="mobileMenuPanel" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Builds & stuffs
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" routerLink="/beforeGearing">Avant de se stuff</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" routerLink="/stuff/20">Lv 20</a>
-                <a class="dropdown-item" routerLink="/stuff/50">Lv 50</a>
-                <a class="dropdown-item" routerLink="/stuff/80">Lv 80</a>
-                <a class="dropdown-item" routerLink="/stuff/110">Lv 110</a>
-            </div>
-        </li>
-
-        <!-- 
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/classes">Gameplays</a>
-        </li>
-        -->
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Divers
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-              <a class="dropdown-item" routerLink="/modulation">Modulation</a>
-              <a class="dropdown-item" routerLink="/enchant">Enchantement</a>
-              <a class="dropdown-item" routerLink="/extResources">Sites à connaître</a>
-              <a class="dropdown-item" routerLink="/themes">Themes d'interface</a>
-              <a class="dropdown-item" routerLink="/howToStream">Comment stream Wakfu</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Astuces
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-              <a class="dropdown-item" routerLink="/eldersWisdom">Bien débuter</a>
-              <a class="dropdown-item" routerLink="/kamas">Faire ses premiers kamas</a>
-          </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Brèches
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-              <a class="dropdown-item" routerLink="/rift">Fonctionnement</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" routerLink="/rift/tainela">Brèche Tainela</a>
-              <a class="dropdown-item" routerLink="/rift/sufokia">Brèche Sufokia</a> 
-          </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/glossary">Glossaire</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/about">About Me</a>
-      </li>
-
-      </ul>
-    </div>
-
+    <!-- Theme toggle, pinned to the far right in every layout -->
     <div class="navbar-right">
-      <button type="button" class="btn btn-link theme-toggle" (click)="theme.toggle()" [attr.aria-label]="theme.current === 'light' ? 'Passer en mode sombre' : 'Passer en mode clair'">
+      <button type="button" class="btn btn-link theme-toggle" (click)="theme.toggle()"
+              [attr.aria-label]="theme.current === 'light' ? 'Passer en mode sombre' : 'Passer en mode clair'">
         <span *ngIf="theme.current === 'light'">🌙</span>
         <span *ngIf="theme.current === 'dark'">☀️</span>
       </button>
     </div>
 
-  </nav>
-  
-    
+    <!-- Desktop menu, centered between the brand and the theme toggle (hidden at lg+) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        @for (item of menuItems; track item.id) {
+          @if (item.sub) {
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" [id]="'navDropdown-' + item.id" href="#" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                {{ item.label }}
+              </a>
+              <div class="dropdown-menu" [attr.aria-labelledby]="'navDropdown-' + item.id">
+                @for (sub of item.sub; track sub.route) {
+                  @if (sub.dividerBefore) {
+                    <div class="dropdown-divider"></div>
+                  }
+                  <a class="dropdown-item" [routerLink]="sub.route">{{ sub.label }}</a>
+                }
+              </div>
+            </li>
+          } @else {
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="item.route!">{{ item.label }}</a>
+            </li>
+          }
+        }
+      </ul>
+    </div>
+</nav>
+
+<!-- Mobile menu: a real dropdown panel fixed below the bar, above the scrim -->
+<div class="mobile-menu" id="mobileMenuPanel" *ngIf="menuOpen">
+  <ul class="mobile-menu-list">
+    @for (item of menuItems; track item.id) {
+      @if (item.sub) {
+        <li class="mobile-section" [class.open]="openSections[item.id]">
+          <button class="mobile-section-header" type="button" (click)="toggleSection(item.id)"
+                  [attr.aria-expanded]="openSections[item.id]">
+            <span>{{ item.label }}</span>
+            <span class="chevron" aria-hidden="true">&#9662;</span>
+          </button>
+          <div class="mobile-section-body">
+            <ul class="mobile-sub-list">
+              @for (sub of item.sub; track sub.route) {
+                <li [class.with-divider]="sub.dividerBefore">
+                  <a class="dropdown-item" [routerLink]="sub.route">{{ sub.label }}</a>
+                </li>
+              }
+            </ul>
+          </div>
+        </li>
+      } @else {
+        <li>
+          <a class="dropdown-item mobile-top-item" [routerLink]="item.route!">{{ item.label }}</a>
+        </li>
+      }
+    }
+  </ul>
+</div>
+
+<!-- Tap-outside / dimming layer (mobile) -->
+<div class="mobile-scrim" *ngIf="menuOpen" (click)="closeMenu()" aria-hidden="true"></div>
