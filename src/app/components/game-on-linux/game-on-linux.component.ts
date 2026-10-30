@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AlternativeItemComponent } from '../../reusables/alternative-item/alternative-item.component';
 
 /* Interfaces */
@@ -8,6 +8,7 @@ import { AlternativeItem } from '../../interfaces/iAlternativeItem';
     selector: 'app-game-on-linux',
     imports: [AlternativeItemComponent],
     templateUrl: './game-on-linux.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './game-on-linux.component.css'
 })
 export class GameOnLinuxComponent {

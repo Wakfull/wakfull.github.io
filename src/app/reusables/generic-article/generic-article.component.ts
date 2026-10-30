@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-generic-article',
     imports: [],
     templateUrl: './generic-article.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './generic-article.component.css'
 })
 export class GenericArticleComponent {

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-dungeon-preview',
     imports: [RouterModule, CommonModule],
     templateUrl: './dungeon-preview.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './dungeon-preview.component.css'
 })
 export class DungeonPreviewComponent {

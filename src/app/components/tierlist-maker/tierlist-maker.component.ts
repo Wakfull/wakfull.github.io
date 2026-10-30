@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {CdkDragDrop, CdkDrag, CdkDropList, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 
 
@@ -41,6 +41,7 @@ interface IconDictionary {
     selector: 'app-tierlist-maker',
     imports: [CdkDropList, CdkDrag, FormsModule],
     templateUrl: './tierlist-maker.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './tierlist-maker.component.css'
 })
 export class TierlistMakerComponent {

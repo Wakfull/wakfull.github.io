@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-alternative-item',
     imports: [],
     templateUrl: './alternative-item.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './alternative-item.component.css'
 })
 export class AlternativeItemComponent {

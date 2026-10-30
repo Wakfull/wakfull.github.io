@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-elio-basic',
     imports: [RouterModule],
     templateUrl: './elio-basic.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './elio-basic.component.css'
 })
 export class ElioBasicComponent {

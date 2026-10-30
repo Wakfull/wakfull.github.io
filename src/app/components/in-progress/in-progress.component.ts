@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { PreviewItem } from '../../interfaces/iPreviewItem';
@@ -9,6 +9,7 @@ import { InProgressPreviewComponent } from './in-progress-preview/in-progress-pr
     selector: 'app-in-progress',
     imports: [RouterModule, InProgressPreviewComponent],
     templateUrl: './in-progress.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './in-progress.component.css'
 })
 export class InProgressComponent {

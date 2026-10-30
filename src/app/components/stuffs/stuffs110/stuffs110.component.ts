@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { DungeonService } from '../../../services/dungeon.service';
 import { DungeonItem } from '../../../interfaces/iDungeonItem';
 
@@ -6,6 +6,7 @@ import { DungeonItem } from '../../../interfaces/iDungeonItem';
     selector: 'app-stuffs110',
     imports: [],
     templateUrl: './stuffs110.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './stuffs110.component.css'
 })
 export class Stuffs110Component {

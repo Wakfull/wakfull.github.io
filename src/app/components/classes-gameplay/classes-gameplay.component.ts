@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from './classes-preview/classes-preview.component';
 import { ClassesService } from '../../services/classes.service';
@@ -16,6 +16,7 @@ interface IconDictionary {
     selector: 'app-classes-gameplay',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './classes-gameplay.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './classes-gameplay.component.css'
 })
 export class ClassesGameplayComponent {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ClassesService } from '../../../../services/classes.service';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { RouterModule } from '@angular/router';
@@ -9,6 +9,7 @@ import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.c
     selector: 'app-steam-gameplays',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './steam-gameplays.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './steam-gameplays.component.css'
 })
 export class SteamGameplaysComponent {

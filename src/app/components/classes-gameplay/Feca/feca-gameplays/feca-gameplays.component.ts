@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
@@ -9,6 +9,7 @@ import { ClassesService } from '../../../../services/classes.service';
     selector: 'app-feca-gameplays',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './feca-gameplays.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './feca-gameplays.component.css'
 })
 export class FecaGameplaysComponent {

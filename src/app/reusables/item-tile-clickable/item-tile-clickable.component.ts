@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-item-tile-clickable',
     imports: [],
     templateUrl: './item-tile-clickable.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './item-tile-clickable.component.css'
 })
 export class ItemTileClickableComponent {

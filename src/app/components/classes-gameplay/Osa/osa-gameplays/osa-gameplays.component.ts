@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ClassesService } from '../../../../services/classes.service';
 import { RouterModule } from '@angular/router';
 
@@ -9,6 +9,7 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
     selector: 'app-osa-gameplays',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './osa-gameplays.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './osa-gameplays.component.css'
 })
 export class OsaGameplaysComponent {

@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PreviewComponent } from './preview/preview.component';
 import { environment } from '../../../environments/environment';
@@ -8,6 +8,7 @@ import { environment } from '../../../environments/environment';
     selector: 'app-home',
     imports: [RouterModule, PreviewComponent],
     templateUrl: './home.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './home.component.css'
 })
 export class HomeComponent {

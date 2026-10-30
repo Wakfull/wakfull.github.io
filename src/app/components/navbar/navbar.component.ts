@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../services/theme.service';
 
@@ -7,6 +7,7 @@ import { ThemeService } from '../../services/theme.service';
     selector: 'app-navbar',
     imports: [CommonModule, RouterModule],
     templateUrl: './navbar.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './navbar.component.css'
 })
 export class NavbarComponent implements OnInit {

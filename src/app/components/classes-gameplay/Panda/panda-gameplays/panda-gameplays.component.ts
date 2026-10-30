@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 import { RouterModule } from '@angular/router';
@@ -9,6 +9,7 @@ import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.c
     selector: 'app-panda-gameplays',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './panda-gameplays.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './panda-gameplays.component.css'
 })
 export class PandaGameplaysComponent {

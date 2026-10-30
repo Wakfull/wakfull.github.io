@@ -1,5 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { GlossaryService } from './glossary.service';
@@ -8,6 +8,7 @@ import { GlossaryService } from './glossary.service';
     selector: 'app-glossary',
     imports: [FormsModule],
     templateUrl: './glossary.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './glossary.component.css'
 })
 export class GlossaryComponent {

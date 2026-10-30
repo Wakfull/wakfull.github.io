@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AlternativeItemComponent } from '../../reusables/alternative-item/alternative-item.component';
 import { GenericArticleComponent } from '../../reusables/generic-article/generic-article.component';
 
@@ -6,6 +6,7 @@ import { GenericArticleComponent } from '../../reusables/generic-article/generic
     selector: 'app-enchantement',
     imports: [AlternativeItemComponent, GenericArticleComponent],
     templateUrl: './enchantement.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './enchantement.component.css'
 })
 export class EnchantementComponent {

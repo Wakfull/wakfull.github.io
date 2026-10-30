@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesService } from '../../../services/classes.service';
 import { CommonModule } from '@angular/common';
@@ -21,6 +21,7 @@ interface PreviewItem {
     selector: 'app-gameplays-navbar',
     imports: [RouterModule, CommonModule],
     templateUrl: './gameplays-navbar.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './gameplays-navbar.component.css'
 })
 export class GameplaysNavbarComponent {

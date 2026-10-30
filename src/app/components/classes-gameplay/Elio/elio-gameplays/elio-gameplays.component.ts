@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 import { ClassesService } from '../../../../services/classes.service';
@@ -9,6 +9,7 @@ import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
     selector: 'app-elio-gameplays',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './elio-gameplays.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './elio-gameplays.component.css'
 })
 export class ElioGameplaysComponent {

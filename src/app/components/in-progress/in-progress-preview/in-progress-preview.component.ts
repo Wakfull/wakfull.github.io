@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-in-progress-preview',
     imports: [RouterModule, CommonModule],
     templateUrl: './in-progress-preview.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './in-progress-preview.component.css'
 })
 export class InProgressPreviewComponent {

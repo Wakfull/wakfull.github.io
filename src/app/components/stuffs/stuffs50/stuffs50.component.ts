@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { AlternativeItemComponent } from '../../../reusables/alternative-item/alternative-item.component';
 
 /* Services */
@@ -12,6 +12,7 @@ import { AlternativeItem } from '../../../interfaces/iAlternativeItem';
     selector: 'app-stuffs50',
     imports: [AlternativeItemComponent],
     templateUrl: './stuffs50.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './stuffs50.component.css'
 })
 export class Stuffs50Component implements OnInit {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem';
 import { ClassesService } from '../../../../services/classes.service';
 import { RouterModule } from '@angular/router';
@@ -9,6 +9,7 @@ import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.c
     selector: 'app-hupper-gameplays',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './hupper-gameplays.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './hupper-gameplays.component.css'
 })
 export class HupperGameplaysComponent {

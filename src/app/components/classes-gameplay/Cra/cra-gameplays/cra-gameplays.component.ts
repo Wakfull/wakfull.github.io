@@ -1,5 +1,5 @@
 
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { ClassesPreviewComponent } from '../../classes-preview/classes-preview.component';
 import { ClassesService } from '../../../../services/classes.service';
 import { PreviewItem } from '../../../../interfaces/iPreviewItem.js';
@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
     selector: 'app-cra-gameplays',
     imports: [RouterModule, ClassesPreviewComponent],
     templateUrl: './cra-gameplays.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './cra-gameplays.component.css'
 })
 export class CraGameplaysComponent {

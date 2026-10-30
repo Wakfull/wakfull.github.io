@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 interface StasisDifficultyBonus {
   [key: number]: number;
@@ -8,6 +8,7 @@ interface StasisDifficultyBonus {
     selector: 'app-calculator',
     imports: [],
     templateUrl: './calculator.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './calculator.component.css'
 })
 export class CalculatorComponent {

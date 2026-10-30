@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { DungeonPreviewComponent } from './dungeon-preview/dungeon-preview.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -20,6 +20,7 @@ interface PreviewDungeonItem {
     selector: 'app-dungeons',
     imports: [RouterModule, CommonModule, DungeonPreviewComponent, FormsModule],
     templateUrl: './dungeons.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './dungeons.component.css'
 })
 export class DungeonsComponent {
